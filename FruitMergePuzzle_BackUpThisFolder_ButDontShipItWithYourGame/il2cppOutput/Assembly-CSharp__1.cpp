@@ -226,6 +226,7 @@ struct LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880;
 struct LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D;
 struct SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95;
 struct WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E;
+struct U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8;
 struct U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0;
 struct U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3;
 struct U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264;
@@ -351,6 +352,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimateVertexColorsU3Ed__11_System_Colle
 IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimateVertexColorsU3Ed__3_System_Collections_IEnumerator_Reset_m319AC50F2DE1572FB7D7AF4F5F65958D01477899_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_Reset_m5A7148435B35A0A84329416FF765D45F6AA0F4E1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_Reset_mCCE19093B7355F3E23834E27A8517661DF833797_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_Reset_mE5E0678716735BDF0D632FE43E392981E75A1C4D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass10_0_U3CAnimateVertexColorsU3Eb__0_m8E51A05E012CCFA439DCF10A8B5C4FA196E4344A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_2_AddListener_mE2FC084F4ADB9D24D904D6A39A83763969F91E27_RuntimeMethod_var;
@@ -488,6 +490,16 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 };
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
+};
+struct U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___textComponent;
+	int32_t ___U3CtotalWordCountU3E5__2;
+	int32_t ___U3CtotalVisibleCharactersU3E5__3;
+	int32_t ___U3CcounterU3E5__4;
+	int32_t ___U3CvisibleCountU3E5__5;
 };
 struct U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264  : public RuntimeObject
 {
@@ -1078,7 +1090,7 @@ struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : 
 	float ___m_Seconds;
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D1748_t0066B7CCE2E2880E7250698CF6189A25577544C1 
+struct __StaticArrayInitTypeSizeU3D1775_t444C0870C84A0AE08CB5B4B7E77C62C85B770805 
 {
 	union
 	{
@@ -1088,12 +1100,12 @@ struct __StaticArrayInitTypeSizeU3D1748_t0066B7CCE2E2880E7250698CF6189A25577544C
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D1748_t0066B7CCE2E2880E7250698CF6189A25577544C1__padding[1748];
+		uint8_t __StaticArrayInitTypeSizeU3D1775_t444C0870C84A0AE08CB5B4B7E77C62C85B770805__padding[1775];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D3126_t21E712F3AB61EF6F9DD954A95E74700B3B1A292C 
+struct __StaticArrayInitTypeSizeU3D3174_t75B9B23917737ED2C695FCDF84FB62B86769259E 
 {
 	union
 	{
@@ -1103,7 +1115,7 @@ struct __StaticArrayInitTypeSizeU3D3126_t21E712F3AB61EF6F9DD954A95E74700B3B1A292
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D3126_t21E712F3AB61EF6F9DD954A95E74700B3B1A292C__padding[3126];
+		uint8_t __StaticArrayInitTypeSizeU3D3174_t75B9B23917737ED2C695FCDF84FB62B86769259E__padding[3174];
 	};
 };
 #pragma pack(pop, tp)
@@ -2665,8 +2677,8 @@ struct List_1_tE3A859FDD017A2D25E8161269BA1167C22EC7EB9_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D1748_t0066B7CCE2E2880E7250698CF6189A25577544C1 ___BA15137AED0F422FCC63EFB98B24BDFCFE001095EB9762ADFB1FFB84E26DD5DE;
-	__StaticArrayInitTypeSizeU3D3126_t21E712F3AB61EF6F9DD954A95E74700B3B1A292C ___D0DD5A4DD61045DD27560ECF34C92E8700CC6C7AB8ED17A1048B2E732901C780;
+	__StaticArrayInitTypeSizeU3D1775_t444C0870C84A0AE08CB5B4B7E77C62C85B770805 ___26CDE89836CCB795F7960F3140D0FCF2589A108CA42BF3CD63B79A6C0EF44180;
+	__StaticArrayInitTypeSizeU3D3174_t75B9B23917737ED2C695FCDF84FB62B86769259E ___8AD25E4C829F54063304FF3D75A7B7B34BE3CB3D44BA4A3AAE18EB39995F4EF0;
 };
 struct String_t_StaticFields
 {
@@ -2898,6 +2910,40 @@ struct TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+struct TMP_WordInfoU5BU5D_tD1759E5A84DCCCD42B718D79E953E72A432BB4DC  : public RuntimeArray
+{
+	ALIGN_FIELD (8) TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 m_Items[1];
+
+	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___textComponent), (void*)NULL);
+	}
+	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___textComponent), (void*)NULL);
+	}
+};
 struct WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E  : public RuntimeArray
 {
 	ALIGN_FIELD (8) WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* m_Items[1];
@@ -3170,40 +3216,6 @@ struct TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7  : public Ru
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___material), (void*)NULL);
 		#endif
-	}
-};
-struct TMP_WordInfoU5BU5D_tD1759E5A84DCCCD42B718D79E953E72A432BB4DC  : public RuntimeArray
-{
-	ALIGN_FIELD (8) TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 m_Items[1];
-
-	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___textComponent), (void*)NULL);
-	}
-	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___textComponent), (void*)NULL);
 	}
 };
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C  : public RuntimeArray
@@ -3531,6 +3543,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m90CDC07AEBE737318A490F4C2BC
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m446487BF7F55E757E7D552B2436AD74AC354EA99_gshared (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___0_item, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m378B392086AAB6F400944FA9839516326B3F7BB8_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___0_item, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_set_maxVisibleCharacters_mEDD8DCB11D204F3FC10BFAC49BF6E8E09548358A (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
@@ -3587,8 +3604,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForEndOfFrame__ctor_m4AF7E576C01E6B04443BB898B1AE5D645F7D45AB (WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F TextMesh_get_color_m128E5D16AA72D5284C70957253DEAEE4FBEB023E (TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B Color32_op_Implicit_m79AF5E0BDE9CE041CAC4D89CBFA66E71C6DD1B70_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_c, const RuntimeMethod* method) ;
@@ -3602,7 +3617,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TMPro_ExtensionMethods_Compare_m1BA0218F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_forward_mA178B5CF4F0F6133F9AF8ED3A4ECD2C604C60C26 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 inline TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* GameObject_AddComponent_TisTextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_m3DBA7F56D8D880227B1D70FAA3DF6988A4EE69F1 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
@@ -3701,7 +3715,6 @@ inline void UnityEvent_3_RemoveListener_mA451198DCB5DD86D0B87D256F26293566D20902
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C (Il2CppChar* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_values, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) ;
 inline TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
 	return ((  TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
@@ -3875,7 +3888,234 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67852
+// Method Definition Index: 67275
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8__ctor_mDF8D4C69F022D088AFC0E109FC0DBE0C9B938CAC (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 67276
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8_System_IDisposable_Dispose_m2F2F21F38D2DD8AE3D066E64850D404497A131C5 (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 67277
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRevealWordsU3Ed__8_MoveNext_mC5102728A86DCB2171E54CFEDFA7BE6F29AB355C (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		switch (L_1)
+		{
+			case 0:
+			{
+				goto IL_001b;
+			}
+			case 1:
+			{
+				goto IL_0104;
+			}
+			case 2:
+			{
+				goto IL_0132;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_001b:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:86>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___textComponent;
+		NullCheck(L_2);
+		VirtualActionInvoker2< bool, bool >::Invoke(106, L_2, (bool)0, (bool)0);
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:88>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___textComponent;
+		NullCheck(L_3);
+		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_4;
+		L_4 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_3, NULL);
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___wordCount;
+		__this->___U3CtotalWordCountU3E5__2 = L_5;
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:89>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___textComponent;
+		NullCheck(L_6);
+		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_7;
+		L_7 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_6, NULL);
+		NullCheck(L_7);
+		int32_t L_8 = L_7->___characterCount;
+		__this->___U3CtotalVisibleCharactersU3E5__3 = L_8;
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:90>
+		__this->___U3CcounterU3E5__4 = 0;
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:91>
+		V_1 = 0;
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:92>
+		__this->___U3CvisibleCountU3E5__5 = 0;
+	}
+
+IL_006b:
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:96>
+		int32_t L_9 = __this->___U3CcounterU3E5__4;
+		int32_t L_10 = __this->___U3CtotalWordCountU3E5__2;
+		V_1 = ((int32_t)(L_9%((int32_t)il2cpp_codegen_add(L_10, 1))));
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:99>
+		int32_t L_11 = V_1;
+		if (L_11)
+		{
+			goto IL_0087;
+		}
+	}
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:100>
+		__this->___U3CvisibleCountU3E5__5 = 0;
+		goto IL_00cc;
+	}
+
+IL_0087:
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:101>
+		int32_t L_12 = V_1;
+		int32_t L_13 = __this->___U3CtotalWordCountU3E5__2;
+		if ((((int32_t)L_12) >= ((int32_t)L_13)))
+		{
+			goto IL_00b7;
+		}
+	}
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:102>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_14 = __this->___textComponent;
+		NullCheck(L_14);
+		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_15;
+		L_15 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_14, NULL);
+		NullCheck(L_15);
+		TMP_WordInfoU5BU5D_tD1759E5A84DCCCD42B718D79E953E72A432BB4DC* L_16 = L_15->___wordInfo;
+		int32_t L_17 = V_1;
+		NullCheck(L_16);
+		int32_t L_18 = ((L_16)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_17, 1)))))->___lastCharacterIndex;
+		__this->___U3CvisibleCountU3E5__5 = ((int32_t)il2cpp_codegen_add(L_18, 1));
+		goto IL_00cc;
+	}
+
+IL_00b7:
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:103>
+		int32_t L_19 = V_1;
+		int32_t L_20 = __this->___U3CtotalWordCountU3E5__2;
+		if ((!(((uint32_t)L_19) == ((uint32_t)L_20))))
+		{
+			goto IL_00cc;
+		}
+	}
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:104>
+		int32_t L_21 = __this->___U3CtotalVisibleCharactersU3E5__3;
+		__this->___U3CvisibleCountU3E5__5 = L_21;
+	}
+
+IL_00cc:
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:106>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_22 = __this->___textComponent;
+		int32_t L_23 = __this->___U3CvisibleCountU3E5__5;
+		NullCheck(L_22);
+		TMP_Text_set_maxVisibleCharacters_mEDD8DCB11D204F3FC10BFAC49BF6E8E09548358A(L_22, L_23, NULL);
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:109>
+		int32_t L_24 = __this->___U3CvisibleCountU3E5__5;
+		int32_t L_25 = __this->___U3CtotalVisibleCharactersU3E5__3;
+		if ((((int32_t)L_24) < ((int32_t)L_25)))
+		{
+			goto IL_010b;
+		}
+	}
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:111>
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_26 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_26, (1.0f), NULL);
+		__this->___U3CU3E2__current = L_26;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_26);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0104:
+	{
+		__this->___U3CU3E1__state = (-1);
+	}
+
+IL_010b:
+	{
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:114>
+		int32_t L_27 = __this->___U3CcounterU3E5__4;
+		__this->___U3CcounterU3E5__4 = ((int32_t)il2cpp_codegen_add(L_27, 1));
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:116>
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_28 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_28, (0.100000001f), NULL);
+		__this->___U3CU3E2__current = L_28;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_28);
+		__this->___U3CU3E1__state = 2;
+		return (bool)1;
+	}
+
+IL_0132:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs:94>
+		goto IL_006b;
+	}
+}
+// Method Definition Index: 67278
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealWordsU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4D9A6269831C00345D245D0EED2E5FC20BBF4683 (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 67279
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_Reset_mE5E0678716735BDF0D632FE43E392981E75A1C4D (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_Reset_mE5E0678716735BDF0D632FE43E392981E75A1C4D_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 67280
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_get_Current_m3E9D4960A972BD7601F6454E6F9A614AA21D553E (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 67281
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Awake_m600F1825C26BB683047156FD815AE4376D2672F2 (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3886,12 +4126,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Awake_m600F1825C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:39>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		__this->___m_transform = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_transform), (void*)L_0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:40>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:40>
 		String_t* L_1;
 		L_1 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
 		String_t* L_2;
@@ -3900,7 +4140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Awake_m600F1825C
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_3, L_2, NULL);
 		__this->___m_floatingText = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_floatingText), (void*)L_3);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:46>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4;
 		L_4 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		NullCheck(L_4);
@@ -3908,11 +4148,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Awake_m600F1825C
 		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_4, NULL);
 		__this->___m_cameraTransform = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_cameraTransform), (void*)L_5);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:47>
 		return;
 	}
 }
-// Method Definition Index: 67853
+// Method Definition Index: 67282
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4310A0014ECA36144B9DCE093FE8AE49 (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3927,7 +4167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:51>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:51>
 		int32_t L_0 = __this->___SpawnType;
 		if (L_0)
 		{
@@ -3935,14 +4175,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:54>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:54>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___m_floatingText;
 		NullCheck(L_1);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_2;
 		L_2 = GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C(L_1, GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C_RuntimeMethod_var);
 		__this->___m_textMeshPro = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_textMeshPro), (void*)L_2);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:55>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_3 = __this->___m_textMeshPro;
 		NullCheck(L_3);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_4;
@@ -3952,14 +4192,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_5), (3.0f), (3.0f), NULL);
 		NullCheck(L_4);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_4, L_5, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:57>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:57>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___m_floatingText;
 		NullCheck(L_6);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
 		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
 		__this->___m_floatingText_Transform = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_floatingText_Transform), (void*)L_7);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:58>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___m_floatingText_Transform;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = __this->___m_transform;
 		NullCheck(L_9);
@@ -3972,11 +4212,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4
 		L_12 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_10, L_11, NULL);
 		NullCheck(L_8);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_8, L_12, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:63>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:63>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_13 = __this->___m_textMeshPro;
 		NullCheck(L_13);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_13, ((int32_t)514), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:64>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_14 = __this->___m_textMeshPro;
 		int32_t L_15;
 		L_15 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
@@ -3991,28 +4231,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4
 		L_19 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_18, NULL);
 		NullCheck(L_14);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_14, L_19);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:65>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:65>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_20 = __this->___m_textMeshPro;
 		NullCheck(L_20);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_20, (24.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:68>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_21 = __this->___m_textMeshPro;
 		NullCheck(L_21);
 		List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607* L_22;
 		L_22 = TMP_Text_get_fontFeatures_mB68611B8CC517E049004F25EB9966F1CC3830499_inline(L_21, NULL);
 		NullCheck(L_22);
 		List_1_Clear_mF99932B21C9883F8D329D36A63CB886718B9C18E_inline(L_22, List_1_Clear_mF99932B21C9883F8D329D36A63CB886718B9C18E_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:69>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_23 = __this->___m_textMeshPro;
 		String_t* L_24 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_defaults.string_class))->___Empty;
 		NullCheck(L_23);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_23, L_24);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:70>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:70>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_25 = __this->___m_textMeshPro;
 		bool L_26 = __this->___IsTextObjectScaleStatic;
 		NullCheck(L_25);
 		TMP_Text_set_isTextObjectScaleStatic_m8436FC38400ABE08F513770AF9C8CC6743DBE092(L_25, L_26, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:72>
 		RuntimeObject* L_27;
 		L_27 = TextMeshProFloatingText_DisplayTextMeshProFloatingText_mA1E370089458CD380E9BA7740C2BC2032F084148(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_28;
@@ -4022,7 +4262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4
 
 IL_0118:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:74>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:74>
 		int32_t L_29 = __this->___SpawnType;
 		if ((!(((uint32_t)L_29) == ((uint32_t)1))))
 		{
@@ -4030,14 +4270,14 @@ IL_0118:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:78>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:78>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = __this->___m_floatingText;
 		NullCheck(L_30);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
 		L_31 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_30, NULL);
 		__this->___m_floatingText_Transform = L_31;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_floatingText_Transform), (void*)L_31);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:79>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:79>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32 = __this->___m_floatingText_Transform;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33 = __this->___m_transform;
 		NullCheck(L_33);
@@ -4050,20 +4290,20 @@ IL_0118:
 		L_36 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_34, L_35, NULL);
 		NullCheck(L_32);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_32, L_36, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:81>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:81>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37 = __this->___m_floatingText;
 		NullCheck(L_37);
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_38;
 		L_38 = GameObject_AddComponent_TisTextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8_mFAD74D91BCACF9C3FAE6960EB58D5C346DDBD9C2(L_37, GameObject_AddComponent_TisTextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8_mFAD74D91BCACF9C3FAE6960EB58D5C346DDBD9C2_RuntimeMethod_var);
 		__this->___m_textMesh = L_38;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_textMesh), (void*)L_38);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:82>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:82>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_39 = __this->___m_textMesh;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_40;
 		L_40 = Resources_Load_TisFont_tC95270EA3198038970422D78B74A7F2E218A96B6_m2B532BE5E14BE59B8F59F82BF8193EEEE249DC6D(_stringLiteral9D329ACFC4F7EECCB821A7FEF99A0F23E1C721B7, Resources_Load_TisFont_tC95270EA3198038970422D78B74A7F2E218A96B6_m2B532BE5E14BE59B8F59F82BF8193EEEE249DC6D_RuntimeMethod_var);
 		NullCheck(L_39);
 		TextMesh_set_font_m7E407CAEDBB382B95B70069D8FAB8A9E74EAAA74(L_39, L_40, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:83>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:83>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_41 = __this->___m_textMesh;
 		NullCheck(L_41);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_42;
@@ -4077,7 +4317,7 @@ IL_0118:
 		L_45 = Font_get_material_m61ABDEC14C6D659DDC5A4F080023699116C17364(L_44, NULL);
 		NullCheck(L_42);
 		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_42, L_45, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:84>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:84>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_46 = __this->___m_textMesh;
 		int32_t L_47;
 		L_47 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
@@ -4092,15 +4332,15 @@ IL_0118:
 		L_51 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_50, NULL);
 		NullCheck(L_46);
 		TextMesh_set_color_mF08F30C3CD797C16289225B567724B9F07DC641E(L_46, L_51, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:85>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:85>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_52 = __this->___m_textMesh;
 		NullCheck(L_52);
 		TextMesh_set_anchor_m3FCB7C4B1FF66CE189B56076C0306AFE984FCD32(L_52, 7, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:86>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:86>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_53 = __this->___m_textMesh;
 		NullCheck(L_53);
 		TextMesh_set_fontSize_mAB9F7FFC0E4DB759B786F6A9357B18C86015498B(L_53, ((int32_t)24), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:88>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:88>
 		RuntimeObject* L_54;
 		L_54 = TextMeshProFloatingText_DisplayTextMeshFloatingText_mA02B20CF33E43FE99FD5F1B90F7F350262F0BEBE(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_55;
@@ -4110,13 +4350,13 @@ IL_0118:
 
 IL_020f:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:90>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:90>
 		int32_t L_56 = __this->___SpawnType;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:95>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:95>
 		return;
 	}
 }
-// Method Definition Index: 67854
+// Method Definition Index: 67283
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_DisplayTextMeshProFloatingText_mA1E370089458CD380E9BA7740C2BC2032F084148 (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4135,7 +4375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_Displa
 		return L_1;
 	}
 }
-// Method Definition Index: 67855
+// Method Definition Index: 67284
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_DisplayTextMeshFloatingText_mA02B20CF33E43FE99FD5F1B90F7F350262F0BEBE (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4154,15 +4394,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_Displa
 		return L_1;
 	}
 }
-// Method Definition Index: 67856
+// Method Definition Index: 67285
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__ctor_mD08AF0FB6944A51BC6EA15D6BE4E33AA4A916E3E (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:20>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:20>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
 		L_0 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		__this->___lastPOS = L_0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:21>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:21>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_1;
 		L_1 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		__this->___lastRotation = L_1;
@@ -4170,7 +4410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__ctor_mD08AF0FB6
 		return;
 	}
 }
-// Method Definition Index: 67857
+// Method Definition Index: 67286
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__cctor_m272097816057A64A9FFE16F69C6844DCF88E9557 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4183,18 +4423,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__cctor_m27209781
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:28>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:28>
 		WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663* L_0 = (WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663*)il2cpp_codegen_object_new(WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663_il2cpp_TypeInfo_var);
 		WaitForEndOfFrame__ctor_m4AF7E576C01E6B04443BB898B1AE5D645F7D45AB(L_0, NULL);
 		((TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_StaticFields*)il2cpp_codegen_static_fields_for(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var))->___k_WaitForEndOfFrame = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_StaticFields*)il2cpp_codegen_static_fields_for(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var))->___k_WaitForEndOfFrame), (void*)L_0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:29>
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:30>
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:31>
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:32>
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:33>
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:34>
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:35>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:30>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:31>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:35>
 		WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E* L_1 = (WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E*)(WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E*)SZArrayNew(WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E_il2cpp_TypeInfo_var, (uint32_t)((int32_t)20));
 		WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E* L_2 = L_1;
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_3 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
@@ -4309,7 +4549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__cctor_m27209781
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67858
+// Method Definition Index: 67287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16__ctor_m1ECB51A93EE3B236301948784A3260FD72814923 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -4319,14 +4559,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16__
 		return;
 	}
 }
-// Method Definition Index: 67859
+// Method Definition Index: 67288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16_System_IDisposable_Dispose_m461761745A9C5FF4F7995C3DB33DB43848AEB05B (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67860
+// Method Definition Index: 67289
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDisplayTextMeshFloatingTextU3Ed__16_MoveNext_m1FC162511DF31A9CDBD0101083FBCB11380554C4 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4369,16 +4609,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDisplayTextMeshFloatingTextU3Ed__16_M
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:171>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:171>
 		__this->___U3CCountDurationU3E5__2 = (2.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:172>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:172>
 		float L_3;
 		L_3 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((5.0f), (20.0f), NULL);
 		__this->___U3Cstarting_CountU3E5__3 = L_3;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:173>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:173>
 		float L_4 = __this->___U3Cstarting_CountU3E5__3;
 		__this->___U3Ccurrent_CountU3E5__4 = L_4;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:175>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:175>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_5 = V_1;
 		NullCheck(L_5);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = L_5->___m_floatingText_Transform;
@@ -4386,7 +4626,7 @@ IL_0022:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
 		__this->___U3Cstart_posU3E5__5 = L_7;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:176>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:176>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_8 = V_1;
 		NullCheck(L_8);
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_9 = L_8->___m_textMesh;
@@ -4396,11 +4636,11 @@ IL_0022:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_11;
 		L_11 = Color32_op_Implicit_m79AF5E0BDE9CE041CAC4D89CBFA66E71C6DD1B70_inline(L_10, NULL);
 		__this->___U3Cstart_colorU3E5__6 = L_11;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:177>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:177>
 		__this->___U3CalphaU3E5__7 = (255.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:178>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:178>
 		V_2 = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:180>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:180>
 		float L_12 = __this->___U3Cstarting_CountU3E5__3;
 		float L_13 = __this->___U3CCountDurationU3E5__2;
 		__this->___U3CfadeDurationU3E5__8 = ((float)il2cpp_codegen_multiply(((float)((3.0f)/L_12)), L_13));
@@ -4409,14 +4649,14 @@ IL_0022:
 
 IL_00a7:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:184>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:184>
 		float L_14 = __this->___U3Ccurrent_CountU3E5__4;
 		float L_15;
 		L_15 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_16 = __this->___U3CCountDurationU3E5__2;
 		float L_17 = __this->___U3Cstarting_CountU3E5__3;
 		__this->___U3Ccurrent_CountU3E5__4 = ((float)il2cpp_codegen_subtract(L_14, ((float)il2cpp_codegen_multiply(((float)(L_15/L_16)), L_17))));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:186>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:186>
 		float L_18 = __this->___U3Ccurrent_CountU3E5__4;
 		if ((!(((float)L_18) <= ((float)(3.0f)))))
 		{
@@ -4424,7 +4664,7 @@ IL_00a7:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:189>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:189>
 		float L_19 = __this->___U3CalphaU3E5__7;
 		float L_20;
 		L_20 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
@@ -4436,10 +4676,10 @@ IL_00a7:
 
 IL_0102:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:192>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:192>
 		float L_23 = __this->___U3Ccurrent_CountU3E5__4;
 		V_2 = il2cpp_codegen_cast_double_to_int<int32_t>(L_23);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:193>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:193>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_24 = V_1;
 		NullCheck(L_24);
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_25 = L_24->___m_textMesh;
@@ -4447,7 +4687,7 @@ IL_0102:
 		L_26 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_2), NULL);
 		NullCheck(L_25);
 		TextMesh_set_text_mDF79D39638ED82797D0B0B3BB9E6B10712F8EA9E(L_25, L_26, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:196>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:196>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_27 = V_1;
 		NullCheck(L_27);
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_28 = L_27->___m_textMesh;
@@ -4465,7 +4705,7 @@ IL_0102:
 		L_37 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_36, NULL);
 		NullCheck(L_28);
 		TextMesh_set_color_mF08F30C3CD797C16289225B567724B9F07DC641E(L_28, L_37, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:199>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:199>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_38 = V_1;
 		NullCheck(L_38);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39 = L_38->___m_floatingText_Transform;
@@ -4483,7 +4723,7 @@ IL_0102:
 		L_45 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_41, L_44, NULL);
 		NullCheck(L_40);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_40, L_45, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:202>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:202>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_46 = V_1;
 		NullCheck(L_46);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = L_46->___lastPOS;
@@ -4520,7 +4760,7 @@ IL_0102:
 
 IL_01c4:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:204>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:204>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_58 = V_1;
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_59 = V_1;
 		NullCheck(L_59);
@@ -4530,7 +4770,7 @@ IL_01c4:
 		L_61 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_60, NULL);
 		NullCheck(L_58);
 		L_58->___lastPOS = L_61;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:205>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:205>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_62 = V_1;
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_63 = V_1;
 		NullCheck(L_63);
@@ -4540,7 +4780,7 @@ IL_01c4:
 		L_65 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_64, NULL);
 		NullCheck(L_62);
 		L_62->___lastRotation = L_65;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:206>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:206>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_66 = V_1;
 		NullCheck(L_66);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_67 = L_66->___m_floatingText_Transform;
@@ -4549,7 +4789,7 @@ IL_01c4:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_69 = L_68->___lastRotation;
 		NullCheck(L_67);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_67, L_69, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:207>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:207>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_70 = V_1;
 		NullCheck(L_70);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_71 = L_70->___m_transform;
@@ -4562,7 +4802,7 @@ IL_01c4:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75;
 		L_75 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_72, L_74, NULL);
 		V_3 = L_75;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:208>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:208>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_76 = V_1;
 		NullCheck(L_76);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77 = L_76->___m_transform;
@@ -4579,7 +4819,7 @@ IL_01c4:
 
 IL_022f:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:211>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:211>
 		il2cpp_codegen_runtime_class_init_inline(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var);
 		WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663* L_83 = ((TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_StaticFields*)il2cpp_codegen_static_fields_for(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var))->___k_WaitForEndOfFrame;
 		__this->___U3CU3E2__current = L_83;
@@ -4595,7 +4835,7 @@ IL_0243:
 
 IL_024a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:182>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:182>
 		float L_84 = __this->___U3Ccurrent_CountU3E5__4;
 		if ((((float)L_84) > ((float)(0.0f))))
 		{
@@ -4603,7 +4843,7 @@ IL_024a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:216>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:216>
 		il2cpp_codegen_runtime_class_init_inline(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var);
 		WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E* L_85 = ((TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_StaticFields*)il2cpp_codegen_static_fields_for(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var))->___k_WaitForSecondsRandom;
 		int32_t L_86;
@@ -4620,14 +4860,14 @@ IL_024a:
 IL_0277:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:218>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:218>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_89 = V_1;
 		NullCheck(L_89);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_90 = L_89->___m_floatingText_Transform;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91 = __this->___U3Cstart_posU3E5__5;
 		NullCheck(L_90);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_90, L_91, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:220>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:220>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_92 = V_1;
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_93 = V_1;
 		NullCheck(L_93);
@@ -4636,11 +4876,11 @@ IL_0277:
 		NullCheck(L_92);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_95;
 		L_95 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(L_92, L_94, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:221>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:221>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 67861
+// Method Definition Index: 67290
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6A5E330ACDAD25422A7D642301F58E6C1EE1B041 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4648,7 +4888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingText
 		return L_0;
 	}
 }
-// Method Definition Index: 67862
+// Method Definition Index: 67291
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_Reset_m5A7148435B35A0A84329416FF765D45F6AA0F4E1 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4657,7 +4897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16_S
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_Reset_m5A7148435B35A0A84329416FF765D45F6AA0F4E1_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67863
+// Method Definition Index: 67292
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_get_Current_m066140B8D4CD5DE3527A3A05183AE89B487B5D55 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4673,7 +4913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingText
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67864
+// Method Definition Index: 67293
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__15__ctor_mD3C24C6814482113FD231827E550FBBCC91424A0 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -4683,14 +4923,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__1
 		return;
 	}
 }
-// Method Definition Index: 67865
+// Method Definition Index: 67294
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__15_System_IDisposable_Dispose_m83285E807FA4462B99B68D1EB12B2360238C53EB (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67866
+// Method Definition Index: 67295
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDisplayTextMeshProFloatingTextU3Ed__15_MoveNext_m588E025C05E03684A11ABC91B50734A349D28CC8 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4733,16 +4973,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDisplayTextMeshProFloatingTextU3Ed__1
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:115>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:115>
 		__this->___U3CCountDurationU3E5__2 = (2.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:116>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:116>
 		float L_3;
 		L_3 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((5.0f), (20.0f), NULL);
 		__this->___U3Cstarting_CountU3E5__3 = L_3;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:117>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:117>
 		float L_4 = __this->___U3Cstarting_CountU3E5__3;
 		__this->___U3Ccurrent_CountU3E5__4 = L_4;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:119>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_5 = V_1;
 		NullCheck(L_5);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = L_5->___m_floatingText_Transform;
@@ -4750,7 +4990,7 @@ IL_0022:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
 		__this->___U3Cstart_posU3E5__5 = L_7;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:120>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:120>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_8 = V_1;
 		NullCheck(L_8);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_9 = L_8->___m_textMeshPro;
@@ -4760,11 +5000,11 @@ IL_0022:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_11;
 		L_11 = Color32_op_Implicit_m79AF5E0BDE9CE041CAC4D89CBFA66E71C6DD1B70_inline(L_10, NULL);
 		__this->___U3Cstart_colorU3E5__6 = L_11;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:121>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:121>
 		__this->___U3CalphaU3E5__7 = (255.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:122>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:122>
 		V_2 = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:125>
 		float L_12 = __this->___U3Cstarting_CountU3E5__3;
 		float L_13 = __this->___U3CCountDurationU3E5__2;
 		__this->___U3CfadeDurationU3E5__8 = ((float)il2cpp_codegen_multiply(((float)((3.0f)/L_12)), L_13));
@@ -4773,14 +5013,14 @@ IL_0022:
 
 IL_00a7:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:129>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:129>
 		float L_14 = __this->___U3Ccurrent_CountU3E5__4;
 		float L_15;
 		L_15 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_16 = __this->___U3CCountDurationU3E5__2;
 		float L_17 = __this->___U3Cstarting_CountU3E5__3;
 		__this->___U3Ccurrent_CountU3E5__4 = ((float)il2cpp_codegen_subtract(L_14, ((float)il2cpp_codegen_multiply(((float)(L_15/L_16)), L_17))));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:131>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:131>
 		float L_18 = __this->___U3Ccurrent_CountU3E5__4;
 		if ((!(((float)L_18) <= ((float)(3.0f)))))
 		{
@@ -4788,7 +5028,7 @@ IL_00a7:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:134>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:134>
 		float L_19 = __this->___U3CalphaU3E5__7;
 		float L_20;
 		L_20 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
@@ -4800,10 +5040,10 @@ IL_00a7:
 
 IL_0102:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:137>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:137>
 		float L_23 = __this->___U3Ccurrent_CountU3E5__4;
 		V_2 = il2cpp_codegen_cast_double_to_int<int32_t>(L_23);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:138>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:138>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_24 = V_1;
 		NullCheck(L_24);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_25 = L_24->___m_textMeshPro;
@@ -4811,7 +5051,7 @@ IL_0102:
 		L_26 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_2), NULL);
 		NullCheck(L_25);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_25, L_26);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:141>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:141>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_27 = V_1;
 		NullCheck(L_27);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_28 = L_27->___m_textMeshPro;
@@ -4829,7 +5069,7 @@ IL_0102:
 		L_37 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_36, NULL);
 		NullCheck(L_28);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_28, L_37);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:144>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:144>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_38 = V_1;
 		NullCheck(L_38);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39 = L_38->___m_floatingText_Transform;
@@ -4847,7 +5087,7 @@ IL_0102:
 		L_45 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_41, L_44, NULL);
 		NullCheck(L_40);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_40, L_45, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:147>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:147>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_46 = V_1;
 		NullCheck(L_46);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = L_46->___lastPOS;
@@ -4884,7 +5124,7 @@ IL_0102:
 
 IL_01c4:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:149>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:149>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_58 = V_1;
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_59 = V_1;
 		NullCheck(L_59);
@@ -4894,7 +5134,7 @@ IL_01c4:
 		L_61 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_60, NULL);
 		NullCheck(L_58);
 		L_58->___lastPOS = L_61;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:150>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:150>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_62 = V_1;
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_63 = V_1;
 		NullCheck(L_63);
@@ -4904,7 +5144,7 @@ IL_01c4:
 		L_65 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_64, NULL);
 		NullCheck(L_62);
 		L_62->___lastRotation = L_65;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:151>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:151>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_66 = V_1;
 		NullCheck(L_66);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_67 = L_66->___m_floatingText_Transform;
@@ -4913,7 +5153,7 @@ IL_01c4:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_69 = L_68->___lastRotation;
 		NullCheck(L_67);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_67, L_69, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:152>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:152>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_70 = V_1;
 		NullCheck(L_70);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_71 = L_70->___m_transform;
@@ -4926,7 +5166,7 @@ IL_01c4:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75;
 		L_75 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_72, L_74, NULL);
 		V_3 = L_75;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:153>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:153>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_76 = V_1;
 		NullCheck(L_76);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77 = L_76->___m_transform;
@@ -4943,7 +5183,7 @@ IL_01c4:
 
 IL_022f:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:156>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:156>
 		il2cpp_codegen_runtime_class_init_inline(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var);
 		WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663* L_83 = ((TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_StaticFields*)il2cpp_codegen_static_fields_for(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var))->___k_WaitForEndOfFrame;
 		__this->___U3CU3E2__current = L_83;
@@ -4959,7 +5199,7 @@ IL_0243:
 
 IL_024a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:127>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:127>
 		float L_84 = __this->___U3Ccurrent_CountU3E5__4;
 		if ((((float)L_84) > ((float)(0.0f))))
 		{
@@ -4967,7 +5207,7 @@ IL_024a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:161>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:161>
 		il2cpp_codegen_runtime_class_init_inline(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var);
 		WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E* L_85 = ((TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_StaticFields*)il2cpp_codegen_static_fields_for(TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_il2cpp_TypeInfo_var))->___k_WaitForSecondsRandom;
 		int32_t L_86;
@@ -4984,14 +5224,14 @@ IL_024a:
 IL_0277:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:163>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:163>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_89 = V_1;
 		NullCheck(L_89);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_90 = L_89->___m_floatingText_Transform;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91 = __this->___U3Cstart_posU3E5__5;
 		NullCheck(L_90);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_90, L_91, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:165>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:165>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_92 = V_1;
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_93 = V_1;
 		NullCheck(L_93);
@@ -5000,11 +5240,11 @@ IL_0277:
 		NullCheck(L_92);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_95;
 		L_95 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(L_92, L_94, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:166>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs:166>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 67867
+// Method Definition Index: 67296
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2412DC176F8CA3096658EB0E27AC28218DAEC03A (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5012,7 +5252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingT
 		return L_0;
 	}
 }
-// Method Definition Index: 67868
+// Method Definition Index: 67297
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_Reset_mCCE19093B7355F3E23834E27A8517661DF833797 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5021,7 +5261,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__1
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_Reset_mCCE19093B7355F3E23834E27A8517661DF833797_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67869
+// Method Definition Index: 67298
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_get_Current_mE53E0B4DBE6AF5DAC110C3F626B34C5965845E54 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5037,15 +5277,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingT
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67870
+// Method Definition Index: 67299
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner_Awake_m9A84A570D2582918A6B1287139527E9AB2CF088D (TextMeshSpawner_tB6905931E9BE4D7A2A2E37A51E221A7B462D75BB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:21>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:21>
 		return;
 	}
 }
-// Method Definition Index: 67871
+// Method Definition Index: 67300
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner_Start_m3EE98071CA27A18904B859A0A6B215BDFEB50A66 (TextMeshSpawner_tB6905931E9BE4D7A2A2E37A51E221A7B462D75BB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5063,14 +5303,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner_Start_m3EE98071CA27A1890
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:26>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:26>
 		V_0 = 0;
 		goto IL_0159;
 	}
 
 IL_0007:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:28>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:28>
 		int32_t L_0 = __this->___SpawnType;
 		if (L_0)
 		{
@@ -5078,11 +5318,11 @@ IL_0007:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:32>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_1, NULL);
 		V_1 = L_1;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:33>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = V_1;
 		NullCheck(L_2);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
@@ -5096,20 +5336,20 @@ IL_0007:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_6), L_4, (0.5f), L_5, NULL);
 		NullCheck(L_3);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_3, L_6, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:40>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:40>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = V_1;
 		NullCheck(L_7);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_8;
 		L_8 = GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C(L_7, GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:43>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:43>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_9 = L_8;
 		NullCheck(L_9);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_9, (96.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:45>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_10 = L_9;
 		NullCheck(L_10);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_10, _stringLiteral15196F05B117690F3E12E56AA0C43803EA0D2A46);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:46>
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_11;
 		memset((&L_11), 0, sizeof(L_11));
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&L_11), (uint8_t)((int32_t)255), (uint8_t)((int32_t)255), (uint8_t)0, (uint8_t)((int32_t)255), NULL);
@@ -5117,14 +5357,14 @@ IL_0007:
 		L_12 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_11, NULL);
 		NullCheck(L_10);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_10, L_12);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:51>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:51>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_1;
 		NullCheck(L_13);
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_14;
 		L_14 = GameObject_AddComponent_TisTextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_m3DBA7F56D8D880227B1D70FAA3DF6988A4EE69F1(L_13, GameObject_AddComponent_TisTextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_m3DBA7F56D8D880227B1D70FAA3DF6988A4EE69F1_RuntimeMethod_var);
 		__this->___floatingText_Script = L_14;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___floatingText_Script), (void*)L_14);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:52>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:52>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_15 = __this->___floatingText_Script;
 		NullCheck(L_15);
 		L_15->___SpawnType = 0;
@@ -5133,11 +5373,11 @@ IL_0007:
 
 IL_00a3:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:57>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:57>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_16, NULL);
 		V_2 = L_16;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:58>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_2;
 		NullCheck(L_17);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
@@ -5151,12 +5391,12 @@ IL_00a3:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_21), L_19, (0.5f), L_20, NULL);
 		NullCheck(L_18);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_18, L_21, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:62>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:62>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = V_2;
 		NullCheck(L_22);
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_23;
 		L_23 = GameObject_AddComponent_TisTextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8_mFAD74D91BCACF9C3FAE6960EB58D5C346DDBD9C2(L_22, GameObject_AddComponent_TisTextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8_mFAD74D91BCACF9C3FAE6960EB58D5C346DDBD9C2_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:63>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:63>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_24 = L_23;
 		NullCheck(L_24);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_25;
@@ -5167,20 +5407,20 @@ IL_00a3:
 		L_27 = Font_get_material_m61ABDEC14C6D659DDC5A4F080023699116C17364(L_26, NULL);
 		NullCheck(L_25);
 		Renderer_set_sharedMaterial_m5E842F9A06CFB7B77656EB319881CB4B3E8E4288(L_25, L_27, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:64>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_28 = L_24;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_29 = __this->___TheFont;
 		NullCheck(L_28);
 		TextMesh_set_font_m7E407CAEDBB382B95B70069D8FAB8A9E74EAAA74(L_28, L_29, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:65>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:65>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_30 = L_28;
 		NullCheck(L_30);
 		TextMesh_set_anchor_m3FCB7C4B1FF66CE189B56076C0306AFE984FCD32(L_30, 7, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:66>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:66>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_31 = L_30;
 		NullCheck(L_31);
 		TextMesh_set_fontSize_mAB9F7FFC0E4DB759B786F6A9357B18C86015498B(L_31, ((int32_t)96), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:68>
 		TextMesh_t7E1981C7B03E50D5CA5A3AD5B0D9BB0AB6EE91F8* L_32 = L_31;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_33;
 		memset((&L_33), 0, sizeof(L_33));
@@ -5189,17 +5429,17 @@ IL_00a3:
 		L_34 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_33, NULL);
 		NullCheck(L_32);
 		TextMesh_set_color_mF08F30C3CD797C16289225B567724B9F07DC641E(L_32, L_34, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:69>
 		NullCheck(L_32);
 		TextMesh_set_text_mDF79D39638ED82797D0B0B3BB9E6B10712F8EA9E(L_32, _stringLiteral15196F05B117690F3E12E56AA0C43803EA0D2A46, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:72>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35 = V_2;
 		NullCheck(L_35);
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_36;
 		L_36 = GameObject_AddComponent_TisTextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_m3DBA7F56D8D880227B1D70FAA3DF6988A4EE69F1(L_35, GameObject_AddComponent_TisTextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31_m3DBA7F56D8D880227B1D70FAA3DF6988A4EE69F1_RuntimeMethod_var);
 		__this->___floatingText_Script = L_36;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___floatingText_Script), (void*)L_36);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:73>
 		TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* L_37 = __this->___floatingText_Script;
 		NullCheck(L_37);
 		L_37->___SpawnType = 1;
@@ -5207,14 +5447,14 @@ IL_00a3:
 
 IL_0155:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:26>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:26>
 		int32_t L_38 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_38, 1));
 	}
 
 IL_0159:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:26>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:26>
 		int32_t L_39 = V_0;
 		int32_t L_40 = __this->___NumberOfNPC;
 		if ((((int32_t)L_39) < ((int32_t)L_40)))
@@ -5223,15 +5463,15 @@ IL_0159:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:76>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:76>
 		return;
 	}
 }
-// Method Definition Index: 67872
+// Method Definition Index: 67301
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner__ctor_m8409A62C31C4A6B6CEC2F48F1DC9777460C28233 (TextMeshSpawner_tB6905931E9BE4D7A2A2E37A51E221A7B462D75BB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:12>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs:12>
 		__this->___NumberOfNPC = ((int32_t)12);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -5245,7 +5485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner__ctor_m8409A62C31C4A6B6C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67873
+// Method Definition Index: 67302
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay_Awake_m0F92D44F62A9AC086DE3DF1E4C7BFAF645EE7084 (TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5264,7 +5504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay_Awake_m0F92D44F
 	}
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:26>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:26>
 		bool L_0;
 		L_0 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1(__this, NULL);
 		if (L_0)
@@ -5273,29 +5513,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay_Awake_m0F92D44F
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:27>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:27>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:29>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1;
 		L_1 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___m_camera = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_camera), (void*)L_1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:31>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:31>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_2, _stringLiteralA6107EE62A5874EF8D2DEAC7D3C0A9F07B89E096, NULL);
 		V_0 = L_2;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:32>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = V_0;
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_3, NULL);
 		__this->___m_frameCounter_transform = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_frameCounter_transform), (void*)L_4);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:33>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_6 = __this->___m_camera;
 		NullCheck(L_6);
@@ -5303,58 +5543,58 @@ IL_0009:
 		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_6, NULL);
 		NullCheck(L_5);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_5, L_7, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:34>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___m_frameCounter_transform;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
 		L_9 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_8);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_8, L_9, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:37>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:37>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = V_0;
 		NullCheck(L_10);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_11;
 		L_11 = GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C(L_10, GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C_RuntimeMethod_var);
 		__this->___m_TextMeshPro = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextMeshPro), (void*)L_11);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:38>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:38>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_12 = __this->___m_TextMeshPro;
 		TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* L_13;
 		L_13 = Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3(_stringLiteralAB3448E21FA53C63C06270903A13B17D02935BE0, Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3_RuntimeMethod_var);
 		NullCheck(L_12);
 		TMP_Text_set_font_mC55E4A8C1C09595031384B35F2C2FB2FC3479E83(L_12, L_13, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:39>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_14 = __this->___m_TextMeshPro;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_15;
 		L_15 = Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E(_stringLiteral9ECD13393A1BC799BB4763A4E4CD5B53E220C53A, Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E_RuntimeMethod_var);
 		NullCheck(L_14);
 		VirtualActionInvoker1< Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* >::Invoke(68, L_14, L_15);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:41>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:41>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_16 = __this->___m_TextMeshPro;
 		NullCheck(L_16);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_16, (30.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:43>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:43>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_17 = __this->___m_TextMeshPro;
 		NullCheck(L_17);
 		TMP_Text_set_isOverlay_m0DA2AC113AE402CA25097641AD38D0822C6D5561(L_17, (bool)1, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:44>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:44>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = V_0;
 		NullCheck(L_18);
 		TextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C* L_19;
 		L_19 = GameObject_GetComponent_TisTextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C_mA04134D48462B7543775CE11D71859B1D2A99872(L_18, GameObject_GetComponent_TisTextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C_mA04134D48462B7543775CE11D71859B1D2A99872_RuntimeMethod_var);
 		__this->___m_textContainer = L_19;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_textContainer), (void*)L_19);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:46>
 		int32_t L_20 = __this->___AnchorPosition;
 		TMPro_InstructionOverlay_Set_FrameCounter_Position_m3CC1B812C740BAE87C6B5CA94DC64E6131F42A7C(__this, L_20, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:49>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:49>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_21 = __this->___m_TextMeshPro;
 		NullCheck(L_21);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_21, _stringLiteral269F8BFBE6C7517C00380B92291D0799AAB2F285);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:51>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:51>
 		return;
 	}
 }
-// Method Definition Index: 67874
+// Method Definition Index: 67303
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay_Set_FrameCounter_Position_m3CC1B812C740BAE87C6B5CA94DC64E6131F42A7C (TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62* __this, int32_t ___0_anchor_position, const RuntimeMethod* method) 
 {
 	{
@@ -5385,11 +5625,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay_Set_FrameCounte
 
 IL_0017:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:63>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:63>
 		TextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C* L_1 = __this->___m_textContainer;
 		NullCheck(L_1);
 		TextContainer_set_anchorPosition_mA915529616A0B4679FAAA6183FC194597E03EA50(L_1, 0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:64>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_3 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
@@ -5400,17 +5640,17 @@ IL_0017:
 		L_5 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_3, L_4, NULL);
 		NullCheck(L_2);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_2, L_5, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:65>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:65>
 		return;
 	}
 
 IL_004e:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:68>
 		TextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C* L_6 = __this->___m_textContainer;
 		NullCheck(L_6);
 		TextContainer_set_anchorPosition_mA915529616A0B4679FAAA6183FC194597E03EA50(L_6, 6, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:69>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_8 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
@@ -5421,17 +5661,17 @@ IL_004e:
 		L_10 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_8, L_9, NULL);
 		NullCheck(L_7);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_7, L_10, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:70>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:70>
 		return;
 	}
 
 IL_0085:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:73>
 		TextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C* L_11 = __this->___m_textContainer;
 		NullCheck(L_11);
 		TextContainer_set_anchorPosition_mA915529616A0B4679FAAA6183FC194597E03EA50(L_11, 2, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:74>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:74>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_13 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
@@ -5442,17 +5682,17 @@ IL_0085:
 		L_15 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_13, L_14, NULL);
 		NullCheck(L_12);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_12, L_15, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:75>
 		return;
 	}
 
 IL_00bc:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:78>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:78>
 		TextContainer_t949A6EBEE5C8832723E73D8D3DCF4C8D0B3D7F3C* L_16 = __this->___m_textContainer;
 		NullCheck(L_16);
 		TextContainer_set_anchorPosition_mA915529616A0B4679FAAA6183FC194597E03EA50(L_16, 8, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:79>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:79>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_18 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
@@ -5463,15 +5703,15 @@ IL_00bc:
 		L_20 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_18, L_19, NULL);
 		NullCheck(L_17);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_17, L_20, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:82>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:82>
 		return;
 	}
 }
-// Method Definition Index: 67875
+// Method Definition Index: 67304
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay__ctor_m247258528E488171765F77A9A3C6B7E079E64839 (TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:13>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs:13>
 		__this->___AnchorPosition = 1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -5493,7 +5733,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay__ctor_m24725852
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67876
+// Method Definition Index: 67305
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Awake_m6E620605AE9CCC3789A2D5CFD841E5DAB8592063 (TMP_ExampleScript_01_t12A14830C25DE1BA02443B22907A196BE4B44305* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5521,7 +5761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Awake_m6E620605AE9C
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* G_B5_0 = NULL;
 	TMP_ExampleScript_01_t12A14830C25DE1BA02443B22907A196BE4B44305* G_B5_1 = NULL;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:29>
 		int32_t L_0 = __this->___ObjectType;
 		if (L_0)
 		{
@@ -5529,7 +5769,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Awake_m6E620605AE9C
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:30>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:30>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_1;
 		L_1 = Component_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m991A1A2A2EFE70B64BBECFF1B44EE5C04FF8994E(__this, Component_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m991A1A2A2EFE70B64BBECFF1B44EE5C04FF8994E_RuntimeMethod_var);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_2 = L_1;
@@ -5562,7 +5802,7 @@ IL_001e:
 
 IL_0025:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:32>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5;
 		L_5 = Component_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m23F8F2F9DD5A54329CEB47D53B4CAA8BC4A562AA(__this, Component_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m23F8F2F9DD5A54329CEB47D53B4CAA8BC4A562AA_RuntimeMethod_var);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = L_5;
@@ -5594,33 +5834,33 @@ IL_003b:
 
 IL_0040:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:35>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:35>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = __this->___m_text;
 		TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* L_10;
 		L_10 = Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3(_stringLiteralCEB055F85C5660DEABF3989A924C2D2EDB0C8C84, Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3_RuntimeMethod_var);
 		NullCheck(L_9);
 		TMP_Text_set_font_mC55E4A8C1C09595031384B35F2C2FB2FC3479E83(L_9, L_10, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:38>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:38>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_11 = __this->___m_text;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_12;
 		L_12 = Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E(_stringLiteralA294DAD207C32424675CE40B7B7673FBE9C295B3, Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E_RuntimeMethod_var);
 		NullCheck(L_11);
 		VirtualActionInvoker1< Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* >::Invoke(68, L_11, L_12);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:41>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:41>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_13 = __this->___m_text;
 		NullCheck(L_13);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_13, (120.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:44>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:44>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_14 = __this->___m_text;
 		NullCheck(L_14);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_14, _stringLiteral0570B799853B77BFC04E0AB8BD83CD1E5089060A);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:47>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_15 = __this->___m_text;
 		NullCheck(L_15);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16;
 		L_16 = TMP_Text_GetPreferredValues_m1F06F3D203FD8F13D0335F697E839E5DAA61DD14(L_15, (std::numeric_limits<float>::infinity()), (std::numeric_limits<float>::infinity()), NULL);
 		V_0 = L_16;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:50>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:50>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_17 = __this->___m_text;
 		NullCheck(L_17);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_18;
@@ -5634,11 +5874,11 @@ IL_0040:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_23), L_20, L_22, NULL);
 		NullCheck(L_18);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_18, L_23, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:51>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:51>
 		return;
 	}
 }
-// Method Definition Index: 67877
+// Method Definition Index: 67306
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Update_m3D4A9AB04728F0ABD4C7C8A462E2C811308D97A1 (TMP_ExampleScript_01_t12A14830C25DE1BA02443B22907A196BE4B44305* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5648,7 +5888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Update_m3D4A9AB0472
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:56>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:56>
 		bool L_0 = __this->___isStatic;
 		if (L_0)
 		{
@@ -5656,23 +5896,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Update_m3D4A9AB0472
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:58>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___m_text;
 		int32_t L_2 = __this->___count;
 		NullCheck(L_1);
 		TMP_Text_SetText_mC6973FFC60DB6A96B0C4253CD2FD9D0789ECC533(L_1, _stringLiteral71BD498E5FC7E3B8709294B88AB8FAB2CFF77CAE, ((float)((int32_t)(L_2%((int32_t)1000)))), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:59>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:59>
 		int32_t L_3 = __this->___count;
 		__this->___count = ((int32_t)il2cpp_codegen_add(L_3, 1));
 	}
 
 IL_0033:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:61>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs:61>
 		return;
 	}
 }
-// Method Definition Index: 67878
+// Method Definition Index: 67307
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01__ctor_m43F9206FDB1606CD28F1A441188E777546CFEA2A (TMP_ExampleScript_01_t12A14830C25DE1BA02443B22907A196BE4B44305* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5696,7 +5936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01__ctor_m43F9206FDB16
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67879
+// Method Definition Index: 67308
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Awake_m99156EF53E5848DE83107BFAC803C33DC964265C (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5714,7 +5954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Awake_m99156EF53E58
 	}
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:29>
 		bool L_0;
 		L_0 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1(__this, NULL);
 		if (L_0)
@@ -5723,51 +5963,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Awake_m99156EF53E58
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:30>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:30>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:32>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1;
 		L_1 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___m_camera = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_camera), (void*)L_1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:33>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_set_targetFrameRate_mB90EEA60DAE55CD71C38D4B7DFDBE2B34EA6B46F(((int32_t)9999), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:35>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:35>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_2, _stringLiteralA6107EE62A5874EF8D2DEAC7D3C0A9F07B89E096, NULL);
 		V_0 = L_2;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:37>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:37>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = V_0;
 		NullCheck(L_3);
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_4;
 		L_4 = GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C(L_3, GameObject_AddComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_mD3BE0A75BBE971456A1D7C8C6F6688A094A81C9C_RuntimeMethod_var);
 		__this->___m_TextMeshPro = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextMeshPro), (void*)L_4);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:38>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:38>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_5 = __this->___m_TextMeshPro;
 		TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* L_6;
 		L_6 = Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3(_stringLiteralAB3448E21FA53C63C06270903A13B17D02935BE0, Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3_RuntimeMethod_var);
 		NullCheck(L_5);
 		TMP_Text_set_font_mC55E4A8C1C09595031384B35F2C2FB2FC3479E83(L_5, L_6, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:39>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_7 = __this->___m_TextMeshPro;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_8;
 		L_8 = Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E(_stringLiteral9ECD13393A1BC799BB4763A4E4CD5B53E220C53A, Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E_RuntimeMethod_var);
 		NullCheck(L_7);
 		VirtualActionInvoker1< Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* >::Invoke(68, L_7, L_8);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:42>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:42>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
 		NullCheck(L_9);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
 		L_10 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_9, NULL);
 		__this->___m_frameCounter_transform = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_frameCounter_transform), (void*)L_10);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:43>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:43>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_12 = __this->___m_camera;
 		NullCheck(L_12);
@@ -5775,45 +6015,45 @@ IL_0009:
 		L_13 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_12, NULL);
 		NullCheck(L_11);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_11, L_13, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:44>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:44>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = __this->___m_frameCounter_transform;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_15;
 		L_15 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_14);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_14, L_15, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:46>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_16 = __this->___m_TextMeshPro;
 		NullCheck(L_16);
 		TMP_Text_set_textWrappingMode_mBD3A313CC85C9BB85F924D589A33A500E21DCA3D(L_16, 0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:47>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_17 = __this->___m_TextMeshPro;
 		NullCheck(L_17);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_17, (24.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:58>
 		int32_t L_18 = __this->___AnchorPosition;
 		TMP_FrameRateCounter_Set_FrameCounter_Position_m1CC40A8236B2161050D19C4B2EBFF34B96645723(__this, L_18, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:59>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:59>
 		int32_t L_19 = __this->___AnchorPosition;
 		__this->___last_AnchorPosition = L_19;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:62>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:62>
 		return;
 	}
 }
-// Method Definition Index: 67880
+// Method Definition Index: 67309
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Start_m9B5D0A86D174DA019F3EB5C6E9BD54634B2F909A (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:66>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:66>
 		float L_0;
 		L_0 = Time_get_realtimeSinceStartup_m73B3CB73175D79A44333D59BB70F9EDE55EC9510(NULL);
 		__this->___m_LastInterval = L_0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:67>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:67>
 		__this->___m_Frames = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:68>
 		return;
 	}
 }
-// Method Definition Index: 67881
+// Method Definition Index: 67310
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Update_m5251EE9AC9DCB99D0871EE83624C8A9012E6A079 (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5829,7 +6069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Update_m5251EE9AC9D
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:72>
 		int32_t L_0 = __this->___AnchorPosition;
 		int32_t L_1 = __this->___last_AnchorPosition;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
@@ -5838,24 +6078,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Update_m5251EE9AC9D
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:73>
 		int32_t L_2 = __this->___AnchorPosition;
 		TMP_FrameRateCounter_Set_FrameCounter_Position_m1CC40A8236B2161050D19C4B2EBFF34B96645723(__this, L_2, NULL);
 	}
 
 IL_001a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:75>
 		int32_t L_3 = __this->___AnchorPosition;
 		__this->___last_AnchorPosition = L_3;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:77>
 		int32_t L_4 = __this->___m_Frames;
 		__this->___m_Frames = ((int32_t)il2cpp_codegen_add(L_4, 1));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:78>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:78>
 		float L_5;
 		L_5 = Time_get_realtimeSinceStartup_m73B3CB73175D79A44333D59BB70F9EDE55EC9510(NULL);
 		V_0 = L_5;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:80>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:80>
 		float L_6 = V_0;
 		float L_7 = __this->___m_LastInterval;
 		float L_8 = __this->___UpdateInterval;
@@ -5865,17 +6105,17 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:83>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:83>
 		int32_t L_9 = __this->___m_Frames;
 		float L_10 = V_0;
 		float L_11 = __this->___m_LastInterval;
 		V_1 = ((float)(((float)L_9)/((float)il2cpp_codegen_subtract(L_10, L_11))));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:84>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:84>
 		float L_12 = V_1;
 		float L_13;
 		L_13 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_12, (9.99999975E-06f), NULL);
 		V_2 = ((float)((1000.0f)/L_13));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:86>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:86>
 		float L_14 = V_1;
 		if ((!(((float)L_14) < ((float)(30.0f)))))
 		{
@@ -5883,7 +6123,7 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:87>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:87>
 		__this->___htmlColorTag = _stringLiteralA87D266F5AAE1AF5998468D25833A8C6AD50D4FD;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___htmlColorTag), (void*)_stringLiteralA87D266F5AAE1AF5998468D25833A8C6AD50D4FD);
 		goto IL_00a5;
@@ -5891,7 +6131,7 @@ IL_001a:
 
 IL_0085:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:88>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:88>
 		float L_15 = V_1;
 		if ((!(((float)L_15) < ((float)(10.0f)))))
 		{
@@ -5899,7 +6139,7 @@ IL_0085:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:89>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:89>
 		__this->___htmlColorTag = _stringLiteral8ACAA4E0B28437F5FD1A41CE6591A16813F05377;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___htmlColorTag), (void*)_stringLiteral8ACAA4E0B28437F5FD1A41CE6591A16813F05377);
 		goto IL_00a5;
@@ -5907,14 +6147,14 @@ IL_0085:
 
 IL_009a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:91>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:91>
 		__this->___htmlColorTag = _stringLiteral7F85A2723BB62FEF95DD6F8C5F0FF606EA62246A;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___htmlColorTag), (void*)_stringLiteral7F85A2723BB62FEF95DD6F8C5F0FF606EA62246A);
 	}
 
 IL_00a5:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:96>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_16 = __this->___m_TextMeshPro;
 		String_t* L_17 = __this->___htmlColorTag;
 		String_t* L_18;
@@ -5923,24 +6163,24 @@ IL_00a5:
 		float L_20 = V_2;
 		NullCheck(L_16);
 		TMP_Text_SetText_m033947AEEEBDA12707E4B0535B4CCD7EB28B5F31(L_16, L_18, L_19, L_20, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:98>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:98>
 		__this->___m_Frames = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:99>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:99>
 		float L_21 = V_0;
 		__this->___m_LastInterval = L_21;
 	}
 
 IL_00d0:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:101>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:101>
 		return;
 	}
 }
-// Method Definition Index: 67882
+// Method Definition Index: 67311
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Set_FrameCounter_Position_m1CC40A8236B2161050D19C4B2EBFF34B96645723 (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, int32_t ___0_anchor_position, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:107>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_0 = __this->___m_TextMeshPro;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
 		memset((&L_1), 0, sizeof(L_1));
@@ -5974,11 +6214,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Set_FrameCounter_Po
 
 IL_003b:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:112>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:112>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_3 = __this->___m_TextMeshPro;
 		NullCheck(L_3);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_3, ((int32_t)257), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:113>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:113>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_4 = __this->___m_TextMeshPro;
 		NullCheck(L_4);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_5;
@@ -5988,7 +6228,7 @@ IL_003b:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_6), (0.0f), (1.0f), NULL);
 		NullCheck(L_5);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_5, L_6, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:114>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:114>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_8 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
@@ -5999,17 +6239,17 @@ IL_003b:
 		L_10 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_8, L_9, NULL);
 		NullCheck(L_7);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_7, L_10, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:115>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:115>
 		return;
 	}
 
 IL_0095:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:117>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:117>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_11 = __this->___m_TextMeshPro;
 		NullCheck(L_11);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_11, ((int32_t)1025), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:118>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:118>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_12 = __this->___m_TextMeshPro;
 		NullCheck(L_12);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_13;
@@ -6019,7 +6259,7 @@ IL_0095:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_14), (0.0f), (0.0f), NULL);
 		NullCheck(L_13);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_13, L_14, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:119>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_16 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
@@ -6030,17 +6270,17 @@ IL_0095:
 		L_18 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_16, L_17, NULL);
 		NullCheck(L_15);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_15, L_18, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:120>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:120>
 		return;
 	}
 
 IL_00ef:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:122>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:122>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_19 = __this->___m_TextMeshPro;
 		NullCheck(L_19);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_19, ((int32_t)260), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:123>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:123>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_20 = __this->___m_TextMeshPro;
 		NullCheck(L_20);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_21;
@@ -6050,7 +6290,7 @@ IL_00ef:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_22), (1.0f), (1.0f), NULL);
 		NullCheck(L_21);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_21, L_22, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:124>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:124>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_24 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
@@ -6061,17 +6301,17 @@ IL_00ef:
 		L_26 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_24, L_25, NULL);
 		NullCheck(L_23);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_23, L_26, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:125>
 		return;
 	}
 
 IL_0149:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:127>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:127>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_27 = __this->___m_TextMeshPro;
 		NullCheck(L_27);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_27, ((int32_t)1028), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:128>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:128>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_28 = __this->___m_TextMeshPro;
 		NullCheck(L_28);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_29;
@@ -6081,7 +6321,7 @@ IL_0149:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_30), (1.0f), (0.0f), NULL);
 		NullCheck(L_29);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_29, L_30, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:129>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:129>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31 = __this->___m_frameCounter_transform;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_32 = __this->___m_camera;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
@@ -6092,17 +6332,17 @@ IL_0149:
 		L_34 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_32, L_33, NULL);
 		NullCheck(L_31);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_31, L_34, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:132>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:132>
 		return;
 	}
 }
-// Method Definition Index: 67883
+// Method Definition Index: 67312
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter__ctor_mD8804AE37CED37A01DF943624D3C2C48FBC9AE43 (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:10>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:10>
 		__this->___UpdateInterval = (5.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:16>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs:16>
 		__this->___AnchorPosition = 2;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -6124,7 +6364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter__ctor_mD8804AE37CED
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67884
+// Method Definition Index: 67313
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB37230534C49AD9CA342D96757AA3E (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6146,7 +6386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:15>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:15>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_0 = __this->___TextEventHandler;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6157,14 +6397,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:18>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:18>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_2 = __this->___TextEventHandler;
 		NullCheck(L_2);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3;
 		L_3 = Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5(L_2, Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5_RuntimeMethod_var);
 		__this->___m_TextComponent = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_3);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:20>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:20>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_4 = __this->___TextEventHandler;
 		NullCheck(L_4);
 		CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* L_5;
@@ -6173,7 +6413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB
 		UnityAction_2__ctor_m9F49CFF4FADF7EF080CEA8DCAD9FA2EB8D63F35D(L_6, __this, (intptr_t)((void*)TMP_TextEventCheck_OnCharacterSelection_mB421E2CFB617397137CF1AE9CC2F49E46EB3F0AE_RuntimeMethod_var), NULL);
 		NullCheck(L_5);
 		UnityEvent_2_AddListener_mE2FC084F4ADB9D24D904D6A39A83763969F91E27(L_5, L_6, UnityEvent_2_AddListener_mE2FC084F4ADB9D24D904D6A39A83763969F91E27_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:21>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:21>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_7 = __this->___TextEventHandler;
 		NullCheck(L_7);
 		SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* L_8;
@@ -6182,7 +6422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB
 		UnityAction_2__ctor_m9F49CFF4FADF7EF080CEA8DCAD9FA2EB8D63F35D(L_9, __this, (intptr_t)((void*)TMP_TextEventCheck_OnSpriteSelection_mD88D899DE3321CC15502BB1174709BE290AB6215_RuntimeMethod_var), NULL);
 		NullCheck(L_8);
 		UnityEvent_2_AddListener_mE2FC084F4ADB9D24D904D6A39A83763969F91E27(L_8, L_9, UnityEvent_2_AddListener_mE2FC084F4ADB9D24D904D6A39A83763969F91E27_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:22>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:22>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_10 = __this->___TextEventHandler;
 		NullCheck(L_10);
 		WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* L_11;
@@ -6191,7 +6431,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB
 		UnityAction_3__ctor_m16AB9F4E444421420CA4A34EA0A6F60B15E20B9D(L_12, __this, (intptr_t)((void*)TMP_TextEventCheck_OnWordSelection_m180B102DAED1F3313F2F4BB6CF588FF96C8CAB79_RuntimeMethod_var), NULL);
 		NullCheck(L_11);
 		UnityEvent_3_AddListener_mE456028DE63E2FF37E53F2618AA321B5551B881A(L_11, L_12, UnityEvent_3_AddListener_mE456028DE63E2FF37E53F2618AA321B5551B881A_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:23>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:23>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_13 = __this->___TextEventHandler;
 		NullCheck(L_13);
 		LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* L_14;
@@ -6200,7 +6440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB
 		UnityAction_3__ctor_m16AB9F4E444421420CA4A34EA0A6F60B15E20B9D(L_15, __this, (intptr_t)((void*)TMP_TextEventCheck_OnLineSelection_mE0538FFAFE04A286F937907D0E4664338DCF1559_RuntimeMethod_var), NULL);
 		NullCheck(L_14);
 		UnityEvent_3_AddListener_mE456028DE63E2FF37E53F2618AA321B5551B881A(L_14, L_15, UnityEvent_3_AddListener_mE456028DE63E2FF37E53F2618AA321B5551B881A_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:24>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:24>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_16 = __this->___TextEventHandler;
 		NullCheck(L_16);
 		LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* L_17;
@@ -6213,11 +6453,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB
 
 IL_00ae:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:26>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:26>
 		return;
 	}
 }
-// Method Definition Index: 67885
+// Method Definition Index: 67314
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CBF131CB80B73A7C71378CA063CFC4C6 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6238,7 +6478,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:31>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:31>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_0 = __this->___TextEventHandler;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6249,7 +6489,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CB
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:33>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_2 = __this->___TextEventHandler;
 		NullCheck(L_2);
 		CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* L_3;
@@ -6258,7 +6498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CB
 		UnityAction_2__ctor_m9F49CFF4FADF7EF080CEA8DCAD9FA2EB8D63F35D(L_4, __this, (intptr_t)((void*)TMP_TextEventCheck_OnCharacterSelection_mB421E2CFB617397137CF1AE9CC2F49E46EB3F0AE_RuntimeMethod_var), NULL);
 		NullCheck(L_3);
 		UnityEvent_2_RemoveListener_m57B7F9B719A15831F63EA67147A848E324F3760B(L_3, L_4, UnityEvent_2_RemoveListener_m57B7F9B719A15831F63EA67147A848E324F3760B_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:34>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_5 = __this->___TextEventHandler;
 		NullCheck(L_5);
 		SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* L_6;
@@ -6267,7 +6507,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CB
 		UnityAction_2__ctor_m9F49CFF4FADF7EF080CEA8DCAD9FA2EB8D63F35D(L_7, __this, (intptr_t)((void*)TMP_TextEventCheck_OnSpriteSelection_mD88D899DE3321CC15502BB1174709BE290AB6215_RuntimeMethod_var), NULL);
 		NullCheck(L_6);
 		UnityEvent_2_RemoveListener_m57B7F9B719A15831F63EA67147A848E324F3760B(L_6, L_7, UnityEvent_2_RemoveListener_m57B7F9B719A15831F63EA67147A848E324F3760B_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:35>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:35>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_8 = __this->___TextEventHandler;
 		NullCheck(L_8);
 		WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* L_9;
@@ -6276,7 +6516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CB
 		UnityAction_3__ctor_m16AB9F4E444421420CA4A34EA0A6F60B15E20B9D(L_10, __this, (intptr_t)((void*)TMP_TextEventCheck_OnWordSelection_m180B102DAED1F3313F2F4BB6CF588FF96C8CAB79_RuntimeMethod_var), NULL);
 		NullCheck(L_9);
 		UnityEvent_3_RemoveListener_m9741C57D75E2CE8CCD912E252CBACCE5FC950523(L_9, L_10, UnityEvent_3_RemoveListener_m9741C57D75E2CE8CCD912E252CBACCE5FC950523_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:36>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:36>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_11 = __this->___TextEventHandler;
 		NullCheck(L_11);
 		LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* L_12;
@@ -6285,7 +6525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CB
 		UnityAction_3__ctor_m16AB9F4E444421420CA4A34EA0A6F60B15E20B9D(L_13, __this, (intptr_t)((void*)TMP_TextEventCheck_OnLineSelection_mE0538FFAFE04A286F937907D0E4664338DCF1559_RuntimeMethod_var), NULL);
 		NullCheck(L_12);
 		UnityEvent_3_RemoveListener_m9741C57D75E2CE8CCD912E252CBACCE5FC950523(L_12, L_13, UnityEvent_3_RemoveListener_m9741C57D75E2CE8CCD912E252CBACCE5FC950523_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:37>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:37>
 		TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* L_14 = __this->___TextEventHandler;
 		NullCheck(L_14);
 		LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* L_15;
@@ -6298,11 +6538,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CB
 
 IL_009d:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:39>
 		return;
 	}
 }
-// Method Definition Index: 67886
+// Method Definition Index: 67315
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnCharacterSelection_mB421E2CFB617397137CF1AE9CC2F49E46EB3F0AE (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, Il2CppChar ___0_c, int32_t ___1_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6316,7 +6556,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnCharacterSelection_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:44>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:44>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -6342,11 +6582,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnCharacterSelection_
 		L_8 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_7, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_8, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:45>
 		return;
 	}
 }
-// Method Definition Index: 67887
+// Method Definition Index: 67316
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnSpriteSelection_mD88D899DE3321CC15502BB1174709BE290AB6215 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, Il2CppChar ___0_c, int32_t ___1_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6360,7 +6600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnSpriteSelection_mD8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:49>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:49>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -6386,11 +6626,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnSpriteSelection_mD8
 		L_8 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_7, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_8, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:50>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:50>
 		return;
 	}
 }
-// Method Definition Index: 67888
+// Method Definition Index: 67317
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnWordSelection_m180B102DAED1F3313F2F4BB6CF588FF96C8CAB79 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, String_t* ___0_word, int32_t ___1_firstCharacterIndex, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6405,7 +6645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnWordSelection_m180B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:54>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:54>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -6437,11 +6677,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnWordSelection_m180B
 		L_11 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_10, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_11, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:55>
 		return;
 	}
 }
-// Method Definition Index: 67889
+// Method Definition Index: 67318
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLineSelection_mE0538FFAFE04A286F937907D0E4664338DCF1559 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, String_t* ___0_lineText, int32_t ___1_firstCharacterIndex, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6456,7 +6696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLineSelection_mE053
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:59>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:59>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -6488,11 +6728,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLineSelection_mE053
 		L_11 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_10, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_11, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:60>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:60>
 		return;
 	}
 }
-// Method Definition Index: 67890
+// Method Definition Index: 67319
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLinkSelection_m72BF9241651D44805590F1DBADF2FD864D209779 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, String_t* ___0_linkID, String_t* ___1_linkText, int32_t ___2_linkIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6508,7 +6748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLinkSelection_m72BF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:64>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___m_TextComponent;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6519,7 +6759,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLinkSelection_m72BF
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:66>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:66>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___m_TextComponent;
 		NullCheck(L_2);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_3;
@@ -6532,7 +6772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLinkSelection_m72BF
 
 IL_0025:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:69>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_6;
 		NullCheck(L_7);
@@ -6563,11 +6803,11 @@ IL_0025:
 		L_17 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_16, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_17, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:70>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs:70>
 		return;
 	}
 }
-// Method Definition Index: 67891
+// Method Definition Index: 67320
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck__ctor_m8F6CDB8774BDF6C6B909919393AC0290BA2BB0AF (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6583,7 +6823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck__ctor_m8F6CDB8774BDF6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67892
+// Method Definition Index: 67321
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfoDebugTool__ctor_m54C6EE99B1DC2B4DE1F8E870974B3B41B970C37E (TMP_TextInfoDebugTool_tC8728D25321C0091ECD61B136B0E3A5B4AB4B76F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6599,7 +6839,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfoDebugTool__ctor_m54C6EE99B1D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67893
+// Method Definition Index: 67322
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_Awake_m662ED2E3CDB7AE16174109344A01A50AF3C44797 (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6609,7 +6849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_Awake_m662ED2E3CDB7AE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:22>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:22>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_0);
@@ -6617,20 +6857,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_Awake_m662ED2E3CDB7AE
 		L_1 = GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F(L_0, GameObject_GetComponent_TisTextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E_m788ADD6C98FD3A1039F72A865AB7D335AEA6116F_RuntimeMethod_var);
 		__this->___m_TextMeshPro = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextMeshPro), (void*)L_1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:23>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:23>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2;
 		L_2 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___m_Camera = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Camera), (void*)L_2);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:26>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:26>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_3 = __this->___m_TextMeshPro;
 		NullCheck(L_3);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_3, (bool)0, (bool)0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:27>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:27>
 		return;
 	}
 }
-// Method Definition Index: 67894
+// Method Definition Index: 67323
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_LateUpdate_m1A711EC87962C6C5A7157414CD059D984D3BD55B (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6665,9 +6905,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_LateUpdate_m1A711EC87
 	int32_t V_14 = 0;
 	int32_t V_15 = 0;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:32>
 		__this->___m_isHoveringObject = (bool)0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:34>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_0 = __this->___m_TextMeshPro;
 		NullCheck(L_0);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_1;
@@ -6685,13 +6925,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_LateUpdate_m1A711EC87
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:36>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:36>
 		__this->___m_isHoveringObject = (bool)1;
 	}
 
 IL_002a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:39>
 		bool L_5 = __this->___m_isHoveringObject;
 		if (!L_5)
 		{
@@ -6699,7 +6939,7 @@ IL_002a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:42>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:42>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_6 = __this->___m_TextMeshPro;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
@@ -6709,7 +6949,7 @@ IL_002a:
 		int32_t L_9;
 		L_9 = TMP_TextUtilities_FindIntersectingCharacter_m89C20D1FB440DECC3C06670B457A707B6DB36453(L_6, L_7, L_8, (bool)1, NULL);
 		V_0 = L_9;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:43>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:43>
 		int32_t L_10 = V_0;
 		if ((((int32_t)L_10) == ((int32_t)(-1))))
 		{
@@ -6743,10 +6983,10 @@ IL_002a:
 
 IL_007a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:47>
 		int32_t L_15 = V_0;
 		__this->___m_lastCharIndex = L_15;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:49>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:49>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_16 = __this->___m_TextMeshPro;
 		NullCheck(L_16);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_17;
@@ -6757,7 +6997,7 @@ IL_007a:
 		NullCheck(L_18);
 		int32_t L_20 = ((L_18)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_19)))->___materialReferenceIndex;
 		V_3 = L_20;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:51>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:51>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_21 = __this->___m_TextMeshPro;
 		NullCheck(L_21);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_22;
@@ -6768,7 +7008,7 @@ IL_007a:
 		NullCheck(L_23);
 		int32_t L_25 = ((L_23)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_24)))->___vertexIndex;
 		V_4 = L_25;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:53>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:53>
 		int32_t L_26;
 		L_26 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
 		int32_t L_27;
@@ -6776,7 +7016,7 @@ IL_007a:
 		int32_t L_28;
 		L_28 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&V_5), (uint8_t)((int32_t)(uint8_t)L_26), (uint8_t)((int32_t)(uint8_t)L_27), (uint8_t)((int32_t)(uint8_t)L_28), (uint8_t)((int32_t)255), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:55>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_29 = __this->___m_TextMeshPro;
 		NullCheck(L_29);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_30;
@@ -6787,31 +7027,31 @@ IL_007a:
 		NullCheck(L_31);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_33 = ((L_31)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_32)))->___colors32;
 		V_6 = L_33;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:57>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:57>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_34 = V_6;
 		int32_t L_35 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_36 = V_5;
 		NullCheck(L_34);
 		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(L_35), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_36);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:58>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_37 = V_6;
 		int32_t L_38 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_39 = V_5;
 		NullCheck(L_37);
 		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_38, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_39);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:59>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:59>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_40 = V_6;
 		int32_t L_41 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_42 = V_5;
 		NullCheck(L_40);
 		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_41, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_42);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:60>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:60>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_43 = V_6;
 		int32_t L_44 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_45 = V_5;
 		NullCheck(L_43);
 		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_44, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_45);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:63>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:63>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_46 = __this->___m_TextMeshPro;
 		NullCheck(L_46);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_47;
@@ -6828,7 +7068,7 @@ IL_007a:
 
 IL_015b:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:69>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_52 = __this->___m_TextMeshPro;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
 		L_53 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
@@ -6837,7 +7077,7 @@ IL_015b:
 		int32_t L_55;
 		L_55 = TMP_TextUtilities_FindIntersectingLink_mC752442B8650D5146505B5C18C7D92B681D276E9(L_52, L_53, L_54, NULL);
 		V_1 = L_55;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:72>
 		int32_t L_56 = V_1;
 		if ((!(((uint32_t)L_56) == ((uint32_t)(-1)))))
 		{
@@ -6864,13 +7104,13 @@ IL_017f:
 
 IL_0188:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:75>
 		__this->___m_selectedLink = (-1);
 	}
 
 IL_018f:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:79>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:79>
 		int32_t L_60 = V_1;
 		if ((((int32_t)L_60) == ((int32_t)(-1))))
 		{
@@ -6886,10 +7126,10 @@ IL_018f:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:81>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:81>
 		int32_t L_63 = V_1;
 		__this->___m_selectedLink = L_63;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:83>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:83>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_64 = __this->___m_TextMeshPro;
 		NullCheck(L_64);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_65;
@@ -6901,7 +7141,7 @@ IL_018f:
 		int32_t L_68 = L_67;
 		TMP_LinkInfo_t9DC08E8BF8C5E8094AFF8C9FB3C251AF88B92DA6 L_69 = (L_66)->GetAt(static_cast<il2cpp_array_size_t>(L_68));
 		V_7 = L_69;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:90>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:90>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_70 = __this->___m_TextMeshPro;
 		NullCheck(L_70);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_71;
@@ -6914,7 +7154,7 @@ IL_018f:
 		il2cpp_codegen_runtime_class_init_inline(RectTransformUtility_t65C00A84A72F17D78B81F2E7D88C2AA98AB61244_il2cpp_TypeInfo_var);
 		bool L_75;
 		L_75 = RectTransformUtility_ScreenPointToWorldPointInRectangle_mA09F3D77E4731EF789E23E19D5CBA5EE5D1CF745(L_71, L_73, L_74, (&V_8), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:92>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:92>
 		String_t* L_76;
 		L_76 = TMP_LinkInfo_GetLinkID_mCC9D9E783D606660A4D15E0E746E1E27AD9C2425((&V_7), NULL);
 		V_9 = L_76;
@@ -6934,7 +7174,7 @@ IL_018f:
 
 IL_0202:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:111>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:111>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_81 = __this->___m_TextMeshPro;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
 		L_82 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
@@ -6944,7 +7184,7 @@ IL_0202:
 		int32_t L_84;
 		L_84 = TMP_TextUtilities_FindIntersectingWord_m93E6DBCA2781A67271E7D0F8906CA0488CA08EB2(L_81, L_82, L_83, NULL);
 		V_2 = L_84;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:112>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:112>
 		int32_t L_85 = V_2;
 		if ((((int32_t)L_85) == ((int32_t)(-1))))
 		{
@@ -6960,10 +7200,10 @@ IL_0202:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:114>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:114>
 		int32_t L_88 = V_2;
 		__this->___m_lastWordIndex = L_88;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:116>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:116>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_89 = __this->___m_TextMeshPro;
 		NullCheck(L_89);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_90;
@@ -6975,7 +7215,7 @@ IL_0202:
 		int32_t L_93 = L_92;
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_94 = (L_91)->GetAt(static_cast<il2cpp_array_size_t>(L_93));
 		V_10 = L_94;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:118>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:118>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_95 = __this->___m_TextMeshPro;
 		NullCheck(L_95);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_96;
@@ -6994,7 +7234,7 @@ IL_0202:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103;
 		L_103 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_96, L_102, NULL);
 		V_11 = L_103;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:119>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_104;
 		L_104 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105 = V_11;
@@ -7002,7 +7242,7 @@ IL_0202:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_106;
 		L_106 = Camera_WorldToScreenPoint_m26B4C8945C3B5731F1CC5944CFD96BF17126BAA3(L_104, L_105, NULL);
 		V_11 = L_106;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:123>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:123>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_107 = __this->___m_TextMeshPro;
 		NullCheck(L_107);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_108;
@@ -7012,7 +7252,7 @@ IL_0202:
 		NullCheck(L_109);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_110 = ((L_109)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___colors32;
 		V_12 = L_110;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:125>
 		int32_t L_111;
 		L_111 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
 		int32_t L_112;
@@ -7020,14 +7260,14 @@ IL_0202:
 		int32_t L_113;
 		L_113 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&V_13), (uint8_t)((int32_t)(uint8_t)L_111), (uint8_t)((int32_t)(uint8_t)L_112), (uint8_t)((int32_t)(uint8_t)L_113), (uint8_t)((int32_t)255), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
 		V_14 = 0;
 		goto IL_033b;
 	}
 
 IL_02dd:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:128>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:128>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_114 = __this->___m_TextMeshPro;
 		NullCheck(L_114);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_115;
@@ -7040,38 +7280,38 @@ IL_02dd:
 		NullCheck(L_116);
 		int32_t L_120 = ((L_116)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_118, L_119)))))->___vertexIndex;
 		V_15 = L_120;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:130>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:130>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_121 = V_12;
 		int32_t L_122 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_123 = V_13;
 		NullCheck(L_121);
 		(L_121)->SetAt(static_cast<il2cpp_array_size_t>(L_122), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_123);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:131>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:131>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_124 = V_12;
 		int32_t L_125 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_126 = V_13;
 		NullCheck(L_124);
 		(L_124)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_125, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_126);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:132>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:132>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_127 = V_12;
 		int32_t L_128 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_129 = V_13;
 		NullCheck(L_127);
 		(L_127)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_128, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_129);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:133>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:133>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_130 = V_12;
 		int32_t L_131 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_132 = V_13;
 		NullCheck(L_130);
 		(L_130)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_131, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_132);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
 		int32_t L_133 = V_14;
 		V_14 = ((int32_t)il2cpp_codegen_add(L_133, 1));
 	}
 
 IL_033b:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:126>
 		int32_t L_134 = V_14;
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_135 = V_10;
 		int32_t L_136 = L_135.___characterCount;
@@ -7081,7 +7321,7 @@ IL_033b:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:136>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:136>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_137 = __this->___m_TextMeshPro;
 		NullCheck(L_137);
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_138;
@@ -7093,11 +7333,11 @@ IL_033b:
 
 IL_0358:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:140>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:140>
 		return;
 	}
 }
-// Method Definition Index: 67895
+// Method Definition Index: 67324
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerEnter_m747F05CBEF90BF713BF726E47CA37DC86D9B439A (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7108,16 +7348,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerEnter_m747F0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:145>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:145>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralA2EC275CC698277AF27C3AFD1084563679CC06EB, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:146>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:146>
 		__this->___m_isHoveringObject = (bool)1;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:147>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:147>
 		return;
 	}
 }
-// Method Definition Index: 67896
+// Method Definition Index: 67325
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerExit_m5D7D8A07591506FB7291E84A951AB5C43DAA5503 (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7128,24 +7368,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerExit_m5D7D8A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:152>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:152>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral598081DBD06E8B1A338629AF7933F9131C6D33AB, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:153>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:153>
 		__this->___m_isHoveringObject = (bool)0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:154>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:154>
 		return;
 	}
 }
-// Method Definition Index: 67897
+// Method Definition Index: 67326
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A__ctor_m4C56A438A3140D5CF9C7AFB8466E11142F4FA3BE (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:16>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:16>
 		__this->___m_selectedLink = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:17>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:17>
 		__this->___m_lastCharIndex = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:18>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs:18>
 		__this->___m_lastWordIndex = (-1);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -7159,7 +7399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A__ctor_m4C56A438A3140D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67898
+// Method Definition Index: 67327
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_Awake_m773D4C87E67823272DBF597B9CADE82DD3BFFD87 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7173,7 +7413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_Awake_m773D4C87E67823
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:39>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_0);
@@ -7181,7 +7421,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_Awake_m773D4C87E67823
 		L_1 = GameObject_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_mBDBF977A8C7734F6EDD83FC65C6FDDE74427611E(L_0, GameObject_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_mBDBF977A8C7734F6EDD83FC65C6FDDE74427611E_RuntimeMethod_var);
 		__this->___m_TextMeshPro = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextMeshPro), (void*)L_1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:42>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:42>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_2);
@@ -7189,7 +7429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_Awake_m773D4C87E67823
 		L_3 = GameObject_GetComponentInParent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m0A41CB7A7F9A10FCC98D1C7B5799D57C2724D991(L_2, GameObject_GetComponentInParent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m0A41CB7A7F9A10FCC98D1C7B5799D57C2724D991_RuntimeMethod_var);
 		__this->___m_Canvas = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Canvas), (void*)L_3);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:45>
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_4 = __this->___m_Canvas;
 		NullCheck(L_4);
 		int32_t L_5;
@@ -7200,7 +7440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_Awake_m773D4C87E67823
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:46>
 		__this->___m_Camera = (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Camera), (void*)(Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184*)NULL);
 		goto IL_0049;
@@ -7208,7 +7448,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_Awake_m773D4C87E67823
 
 IL_0038:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:48>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:48>
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_6 = __this->___m_Canvas;
 		NullCheck(L_6);
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_7;
@@ -7219,14 +7459,14 @@ IL_0038:
 
 IL_0049:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:51>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:51>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_8 = __this->___TextPopup_Prefab_01;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_9;
 		L_9 = Object_Instantiate_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m2EBBFED3BA1B67B30F8503C5BD918B4C1745903E(L_8, Object_Instantiate_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m2EBBFED3BA1B67B30F8503C5BD918B4C1745903E_RuntimeMethod_var);
 		__this->___m_TextPopup_RectTransform = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextPopup_RectTransform), (void*)L_9);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:52>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:52>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_10 = __this->___m_TextPopup_RectTransform;
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_11 = __this->___m_Canvas;
 		NullCheck(L_11);
@@ -7234,25 +7474,25 @@ IL_0049:
 		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_11, NULL);
 		NullCheck(L_10);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_10, L_12, (bool)0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:53>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:53>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_13 = __this->___m_TextPopup_RectTransform;
 		NullCheck(L_13);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14;
 		L_14 = Component_GetComponentInChildren_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m60A1B193FDBBFB3719065622DB5E0BB21CA4ABDC(L_13, Component_GetComponentInChildren_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m60A1B193FDBBFB3719065622DB5E0BB21CA4ABDC_RuntimeMethod_var);
 		__this->___m_TextPopup_TMPComponent = L_14;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextPopup_TMPComponent), (void*)L_14);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:54>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:54>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_15 = __this->___m_TextPopup_RectTransform;
 		NullCheck(L_15);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
 		L_16 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_15, NULL);
 		NullCheck(L_16);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:55>
 		return;
 	}
 }
-// Method Definition Index: 67899
+// Method Definition Index: 67328
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnEnable_m8DA695DB0913F7123C4ADAFD5BEAB4424FA5861B (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7265,18 +7505,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnEnable_m8DA695DB091
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:61>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:61>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)TMP_TextSelector_B_ON_TEXT_CHANGED_m5B53EF1608E98B6A56AAA386085A3216B35A51EE_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6(L_0, L_1, FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:62>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:62>
 		return;
 	}
 }
-// Method Definition Index: 67900
+// Method Definition Index: 67329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnDisable_mF2EF7AE0E015218AB77936BD5FD6863F7788F11D (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7289,18 +7529,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnDisable_mF2EF7AE0E0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:67>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:67>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)TMP_TextSelector_B_ON_TEXT_CHANGED_m5B53EF1608E98B6A56AAA386085A3216B35A51EE_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F(L_0, L_1, FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:68>
 		return;
 	}
 }
-// Method Definition Index: 67901
+// Method Definition Index: 67330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_ON_TEXT_CHANGED_m5B53EF1608E98B6A56AAA386085A3216B35A51EE (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7310,7 +7550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_ON_TEXT_CHANGED_m5B53
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:73>
 		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_0 = ___0_obj;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_1 = __this->___m_TextMeshPro;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -7322,7 +7562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_ON_TEXT_CHANGED_m5B53
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:76>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:76>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = __this->___m_TextMeshPro;
 		NullCheck(L_3);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_4;
@@ -7336,11 +7576,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_ON_TEXT_CHANGED_m5B53
 
 IL_0024:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:78>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:78>
 		return;
 	}
 }
-// Method Definition Index: 67902
+// Method Definition Index: 67331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_LateUpdate_mE1B3969D788695E37240927FC6B1827CC6DD5EFF (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7392,7 +7632,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_LateUpdate_mE1B3969D7
 	memset((&V_24), 0, sizeof(V_24));
 	String_t* V_25 = NULL;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:83>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:83>
 		bool L_0 = __this->___isHoveringObject;
 		if (!L_0)
 		{
@@ -7400,7 +7640,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_LateUpdate_mE1B3969D7
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:87>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:87>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_1 = __this->___m_TextMeshPro;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
@@ -7409,7 +7649,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_LateUpdate_mE1B3969D7
 		int32_t L_4;
 		L_4 = TMP_TextUtilities_FindIntersectingCharacter_m89C20D1FB440DECC3C06670B457A707B6DB36453(L_1, L_2, L_3, (bool)1, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:90>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:90>
 		int32_t L_5 = V_0;
 		if ((((int32_t)L_5) == ((int32_t)(-1))))
 		{
@@ -7427,16 +7667,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_LateUpdate_mE1B3969D7
 
 IL_0030:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:92>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:92>
 		int32_t L_8 = __this->___m_lastIndex;
 		TMP_TextSelector_B_RestoreCachedVertexAttributes_m1FD258EC7A53C8E1ECB18EB6FFEFC6239780C398(__this, L_8, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:93>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:93>
 		__this->___m_lastIndex = (-1);
 	}
 
 IL_0043:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:96>
 		int32_t L_9 = V_0;
 		if ((((int32_t)L_9) == ((int32_t)(-1))))
 		{
@@ -7470,10 +7710,10 @@ IL_0043:
 
 IL_0071:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:98>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:98>
 		int32_t L_14 = V_0;
 		__this->___m_lastIndex = L_14;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:101>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:101>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_15 = __this->___m_TextMeshPro;
 		NullCheck(L_15);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_16;
@@ -7484,7 +7724,7 @@ IL_0071:
 		NullCheck(L_17);
 		int32_t L_19 = ((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18)))->___materialReferenceIndex;
 		V_3 = L_19;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:104>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:104>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_20 = __this->___m_TextMeshPro;
 		NullCheck(L_20);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_21;
@@ -7495,7 +7735,7 @@ IL_0071:
 		NullCheck(L_22);
 		int32_t L_24 = ((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)))->___vertexIndex;
 		V_4 = L_24;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:107>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_25 = __this->___m_TextMeshPro;
 		NullCheck(L_25);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_26;
@@ -7506,7 +7746,7 @@ IL_0071:
 		NullCheck(L_27);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_29 = ((L_27)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_28)))->___vertices;
 		V_5 = L_29;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:110>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:110>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_30 = V_5;
 		int32_t L_31 = V_4;
 		NullCheck(L_30);
@@ -7523,11 +7763,11 @@ IL_0071:
 		L_39 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_38, (2.0f), NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_40;
 		L_40 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_39, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:114>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:114>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
 		L_41 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_40, NULL);
 		V_6 = L_41;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:117>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:117>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_42 = V_5;
 		int32_t L_43 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_44 = V_5;
@@ -7540,7 +7780,7 @@ IL_0071:
 		L_49 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_47, L_48, NULL);
 		NullCheck(L_42);
 		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(L_43), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_49);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:118>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:118>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_50 = V_5;
 		int32_t L_51 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_52 = V_5;
@@ -7553,7 +7793,7 @@ IL_0071:
 		L_57 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_55, L_56, NULL);
 		NullCheck(L_50);
 		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_51, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_57);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:119>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_58 = V_5;
 		int32_t L_59 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_60 = V_5;
@@ -7566,7 +7806,7 @@ IL_0071:
 		L_65 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_63, L_64, NULL);
 		NullCheck(L_58);
 		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_59, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_65);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:120>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:120>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_66 = V_5;
 		int32_t L_67 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_68 = V_5;
@@ -7579,9 +7819,9 @@ IL_0071:
 		L_73 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_71, L_72, NULL);
 		NullCheck(L_66);
 		(L_66)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_67, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_73);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:122>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:122>
 		V_7 = (1.5f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:125>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74;
 		L_74 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_75;
@@ -7594,7 +7834,7 @@ IL_0071:
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_79;
 		L_79 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline(L_74, L_75, L_78, NULL);
 		__this->___m_matrix = L_79;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:128>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:128>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_80 = V_5;
 		int32_t L_81 = V_4;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_82 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___m_matrix);
@@ -7607,7 +7847,7 @@ IL_0071:
 		L_87 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline(L_82, L_86, NULL);
 		NullCheck(L_80);
 		(L_80)->SetAt(static_cast<il2cpp_array_size_t>(L_81), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_87);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:129>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:129>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_88 = V_5;
 		int32_t L_89 = V_4;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_90 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___m_matrix);
@@ -7620,7 +7860,7 @@ IL_0071:
 		L_95 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline(L_90, L_94, NULL);
 		NullCheck(L_88);
 		(L_88)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_89, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_95);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:130>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:130>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_96 = V_5;
 		int32_t L_97 = V_4;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_98 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___m_matrix);
@@ -7633,7 +7873,7 @@ IL_0071:
 		L_103 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline(L_98, L_102, NULL);
 		NullCheck(L_96);
 		(L_96)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_97, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_103);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:131>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:131>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_104 = V_5;
 		int32_t L_105 = V_4;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* L_106 = (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6*)(&__this->___m_matrix);
@@ -7646,7 +7886,7 @@ IL_0071:
 		L_111 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline(L_106, L_110, NULL);
 		NullCheck(L_104);
 		(L_104)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_105, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_111);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:134>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:134>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_112 = V_5;
 		int32_t L_113 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_114 = V_5;
@@ -7659,7 +7899,7 @@ IL_0071:
 		L_119 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_117, L_118, NULL);
 		NullCheck(L_112);
 		(L_112)->SetAt(static_cast<il2cpp_array_size_t>(L_113), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_119);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:135>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:135>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_120 = V_5;
 		int32_t L_121 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_122 = V_5;
@@ -7672,7 +7912,7 @@ IL_0071:
 		L_127 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_125, L_126, NULL);
 		NullCheck(L_120);
 		(L_120)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_121, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_127);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:136>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:136>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_128 = V_5;
 		int32_t L_129 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_130 = V_5;
@@ -7685,7 +7925,7 @@ IL_0071:
 		L_135 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_133, L_134, NULL);
 		NullCheck(L_128);
 		(L_128)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_129, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_135);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:137>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:137>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_136 = V_5;
 		int32_t L_137 = V_4;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_138 = V_5;
@@ -7698,9 +7938,9 @@ IL_0071:
 		L_143 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_141, L_142, NULL);
 		NullCheck(L_136);
 		(L_136)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_137, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_143);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:140>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:140>
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&V_8), (uint8_t)((int32_t)255), (uint8_t)((int32_t)255), (uint8_t)((int32_t)192), (uint8_t)((int32_t)255), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:143>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:143>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_144 = __this->___m_TextMeshPro;
 		NullCheck(L_144);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_145;
@@ -7710,30 +7950,30 @@ IL_0071:
 		int32_t L_147 = V_3;
 		NullCheck(L_146);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_148 = ((L_146)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_147)))->___colors32;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:145>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:145>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_149 = L_148;
 		int32_t L_150 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_151 = V_8;
 		NullCheck(L_149);
 		(L_149)->SetAt(static_cast<il2cpp_array_size_t>(L_150), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_151);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:146>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:146>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_152 = L_149;
 		int32_t L_153 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_154 = V_8;
 		NullCheck(L_152);
 		(L_152)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_153, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_154);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:147>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:147>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_155 = L_152;
 		int32_t L_156 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_157 = V_8;
 		NullCheck(L_155);
 		(L_155)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_156, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_157);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:148>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:148>
 		int32_t L_158 = V_4;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_159 = V_8;
 		NullCheck(L_155);
 		(L_155)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_158, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_159);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:152>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:152>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_160 = __this->___m_TextMeshPro;
 		NullCheck(L_160);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_161;
@@ -7745,16 +7985,16 @@ IL_0071:
 		int32_t L_164 = L_163;
 		TMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B L_165 = (L_162)->GetAt(static_cast<il2cpp_array_size_t>(L_164));
 		V_9 = L_165;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:155>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:155>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_166 = V_5;
 		NullCheck(L_166);
 		V_10 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_166)->max_length)), 4));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:159>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:159>
 		int32_t L_167 = V_4;
 		int32_t L_168 = V_10;
 		il2cpp_codegen_runtime_class_init_inline(TMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B_il2cpp_TypeInfo_var);
 		TMP_MeshInfo_SwapVertexData_mBB35F36F8E7E6CF1429B26417140570EE94FE718((&V_9), L_167, L_168, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:162>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:162>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_169 = __this->___m_TextMeshPro;
 		NullCheck(L_169);
 		VirtualActionInvoker1< int32_t >::Invoke(108, L_169, ((int32_t)255));
@@ -7762,7 +8002,7 @@ IL_0071:
 
 IL_0323:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:169>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:169>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_170 = __this->___m_TextMeshPro;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_171;
 		L_171 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
@@ -7771,7 +8011,7 @@ IL_0323:
 		int32_t L_173;
 		L_173 = TMP_TextUtilities_FindIntersectingWord_m93E6DBCA2781A67271E7D0F8906CA0488CA08EB2(L_170, L_171, L_172, NULL);
 		V_1 = L_173;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:172>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:172>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_174 = __this->___m_TextPopup_RectTransform;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_175;
@@ -7806,7 +8046,7 @@ IL_0323:
 
 IL_0367:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:174>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:174>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_180 = __this->___m_TextMeshPro;
 		NullCheck(L_180);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_181;
@@ -7818,19 +8058,19 @@ IL_0367:
 		int32_t L_184 = L_183;
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_185 = (L_182)->GetAt(static_cast<il2cpp_array_size_t>(L_184));
 		V_11 = L_185;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:177>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:177>
 		V_12 = 0;
 		goto IL_0437;
 	}
 
 IL_038c:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:179>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:179>
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_186 = V_11;
 		int32_t L_187 = L_186.___firstCharacterIndex;
 		int32_t L_188 = V_12;
 		V_13 = ((int32_t)il2cpp_codegen_add(L_187, L_188));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:182>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:182>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_189 = __this->___m_TextMeshPro;
 		NullCheck(L_189);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_190;
@@ -7841,7 +8081,7 @@ IL_038c:
 		NullCheck(L_191);
 		int32_t L_193 = ((L_191)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_192)))->___materialReferenceIndex;
 		V_14 = L_193;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:185>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:185>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_194 = __this->___m_TextMeshPro;
 		NullCheck(L_194);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_195;
@@ -7852,7 +8092,7 @@ IL_038c:
 		NullCheck(L_196);
 		int32_t L_198 = ((L_196)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_197)))->___vertexIndex;
 		V_15 = L_198;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:188>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:188>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_199 = __this->___m_TextMeshPro;
 		NullCheck(L_199);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_200;
@@ -7862,7 +8102,7 @@ IL_038c:
 		int32_t L_202 = V_14;
 		NullCheck(L_201);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_203 = ((L_201)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_202)))->___colors32;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:190>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:190>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_204 = L_203;
 		int32_t L_205 = V_15;
 		NullCheck(L_204);
@@ -7871,37 +8111,37 @@ IL_038c:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_208;
 		L_208 = TMPro_ExtensionMethods_Tint_m6B681898DA88005A3CA7B1450849F44AD6991159(L_207, (1.33333004f), NULL);
 		V_16 = L_208;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:192>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:192>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_209 = L_204;
 		int32_t L_210 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_211 = V_16;
 		NullCheck(L_209);
 		(L_209)->SetAt(static_cast<il2cpp_array_size_t>(L_210), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_211);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:193>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:193>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_212 = L_209;
 		int32_t L_213 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_214 = V_16;
 		NullCheck(L_212);
 		(L_212)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_213, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_214);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:194>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:194>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_215 = L_212;
 		int32_t L_216 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_217 = V_16;
 		NullCheck(L_215);
 		(L_215)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_216, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_217);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:195>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:195>
 		int32_t L_218 = V_15;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_219 = V_16;
 		NullCheck(L_215);
 		(L_215)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_218, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_219);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:177>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:177>
 		int32_t L_220 = V_12;
 		V_12 = ((int32_t)il2cpp_codegen_add(L_220, 1));
 	}
 
 IL_0437:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:177>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:177>
 		int32_t L_221 = V_12;
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_222 = V_11;
 		int32_t L_223 = L_222.___characterCount;
@@ -7911,17 +8151,17 @@ IL_0437:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:199>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:199>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_224 = __this->___m_TextMeshPro;
 		NullCheck(L_224);
 		VirtualActionInvoker1< int32_t >::Invoke(108, L_224, ((int32_t)255));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:201>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:201>
 		__this->___m_selectedWord = (-1);
 	}
 
 IL_045c:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:206>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:206>
 		int32_t L_225 = V_1;
 		if ((((int32_t)L_225) == ((int32_t)(-1))))
 		{
@@ -7953,10 +8193,10 @@ IL_045c:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:208>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:208>
 		int32_t L_230 = V_1;
 		__this->___m_selectedWord = L_230;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:210>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:210>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_231 = __this->___m_TextMeshPro;
 		NullCheck(L_231);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_232;
@@ -7968,19 +8208,19 @@ IL_045c:
 		int32_t L_235 = L_234;
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_236 = (L_233)->GetAt(static_cast<il2cpp_array_size_t>(L_235));
 		V_17 = L_236;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:213>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:213>
 		V_18 = 0;
 		goto IL_055f;
 	}
 
 IL_04b4:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:215>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:215>
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_237 = V_17;
 		int32_t L_238 = L_237.___firstCharacterIndex;
 		int32_t L_239 = V_18;
 		V_19 = ((int32_t)il2cpp_codegen_add(L_238, L_239));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:218>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:218>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_240 = __this->___m_TextMeshPro;
 		NullCheck(L_240);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_241;
@@ -7991,7 +8231,7 @@ IL_04b4:
 		NullCheck(L_242);
 		int32_t L_244 = ((L_242)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_243)))->___materialReferenceIndex;
 		V_20 = L_244;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:220>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:220>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_245 = __this->___m_TextMeshPro;
 		NullCheck(L_245);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_246;
@@ -8002,7 +8242,7 @@ IL_04b4:
 		NullCheck(L_247);
 		int32_t L_249 = ((L_247)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_248)))->___vertexIndex;
 		V_21 = L_249;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:223>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:223>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_250 = __this->___m_TextMeshPro;
 		NullCheck(L_250);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_251;
@@ -8012,7 +8252,7 @@ IL_04b4:
 		int32_t L_253 = V_20;
 		NullCheck(L_252);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_254 = ((L_252)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_253)))->___colors32;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:225>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:225>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_255 = L_254;
 		int32_t L_256 = V_21;
 		NullCheck(L_255);
@@ -8021,37 +8261,37 @@ IL_04b4:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_259;
 		L_259 = TMPro_ExtensionMethods_Tint_m6B681898DA88005A3CA7B1450849F44AD6991159(L_258, (0.75f), NULL);
 		V_22 = L_259;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:227>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:227>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_260 = L_255;
 		int32_t L_261 = V_21;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_262 = V_22;
 		NullCheck(L_260);
 		(L_260)->SetAt(static_cast<il2cpp_array_size_t>(L_261), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_262);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:228>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:228>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_263 = L_260;
 		int32_t L_264 = V_21;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_265 = V_22;
 		NullCheck(L_263);
 		(L_263)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_264, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_265);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:229>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:229>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_266 = L_263;
 		int32_t L_267 = V_21;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_268 = V_22;
 		NullCheck(L_266);
 		(L_266)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_267, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_268);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:230>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:230>
 		int32_t L_269 = V_21;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_270 = V_22;
 		NullCheck(L_266);
 		(L_266)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_269, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_270);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:213>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:213>
 		int32_t L_271 = V_18;
 		V_18 = ((int32_t)il2cpp_codegen_add(L_271, 1));
 	}
 
 IL_055f:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:213>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:213>
 		int32_t L_272 = V_18;
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_273 = V_17;
 		int32_t L_274 = L_273.___characterCount;
@@ -8061,7 +8301,7 @@ IL_055f:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:234>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:234>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_275 = __this->___m_TextMeshPro;
 		NullCheck(L_275);
 		VirtualActionInvoker1< int32_t >::Invoke(108, L_275, ((int32_t)255));
@@ -8069,7 +8309,7 @@ IL_055f:
 
 IL_057d:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:242>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:242>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_276 = __this->___m_TextMeshPro;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_277;
 		L_277 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
@@ -8078,7 +8318,7 @@ IL_057d:
 		int32_t L_279;
 		L_279 = TMP_TextUtilities_FindIntersectingLink_mC752442B8650D5146505B5C18C7D92B681D276E9(L_276, L_277, L_278, NULL);
 		V_2 = L_279;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:245>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:245>
 		int32_t L_280 = V_2;
 		if ((!(((uint32_t)L_280) == ((uint32_t)(-1)))))
 		{
@@ -8105,20 +8345,20 @@ IL_05a1:
 
 IL_05aa:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:247>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:247>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_284 = __this->___m_TextPopup_RectTransform;
 		NullCheck(L_284);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_285;
 		L_285 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_284, NULL);
 		NullCheck(L_285);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_285, (bool)0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:248>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:248>
 		__this->___m_selectedLink = (-1);
 	}
 
 IL_05c2:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:252>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:252>
 		int32_t L_286 = V_2;
 		if ((((int32_t)L_286) == ((int32_t)(-1))))
 		{
@@ -8134,10 +8374,10 @@ IL_05c2:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:254>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:254>
 		int32_t L_289 = V_2;
 		__this->___m_selectedLink = L_289;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:256>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:256>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_290 = __this->___m_TextMeshPro;
 		NullCheck(L_290);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_291;
@@ -8149,7 +8389,7 @@ IL_05c2:
 		int32_t L_294 = L_293;
 		TMP_LinkInfo_t9DC08E8BF8C5E8094AFF8C9FB3C251AF88B92DA6 L_295 = (L_292)->GetAt(static_cast<il2cpp_array_size_t>(L_294));
 		V_23 = L_295;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:261>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:261>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_296 = __this->___m_TextMeshPro;
 		NullCheck(L_296);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_297;
@@ -8162,7 +8402,7 @@ IL_05c2:
 		il2cpp_codegen_runtime_class_init_inline(RectTransformUtility_t65C00A84A72F17D78B81F2E7D88C2AA98AB61244_il2cpp_TypeInfo_var);
 		bool L_301;
 		L_301 = RectTransformUtility_ScreenPointToWorldPointInRectangle_mA09F3D77E4731EF789E23E19D5CBA5EE5D1CF745(L_297, L_299, L_300, (&V_24), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:263>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:263>
 		String_t* L_302;
 		L_302 = TMP_LinkInfo_GetLinkID_mCC9D9E783D606660A4D15E0E746E1E27AD9C2425((&V_23), NULL);
 		V_25 = L_302;
@@ -8189,51 +8429,51 @@ IL_05c2:
 
 IL_063d:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:266>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:266>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_307 = __this->___m_TextPopup_RectTransform;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_308 = V_24;
 		NullCheck(L_307);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_307, L_308, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:267>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:267>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_309 = __this->___m_TextPopup_RectTransform;
 		NullCheck(L_309);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_310;
 		L_310 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_309, NULL);
 		NullCheck(L_310);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_310, (bool)1, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:268>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:268>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_311 = __this->___m_TextPopup_TMPComponent;
 		NullCheck(L_311);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_311, _stringLiteralEE3657997C5E6EC82CDE374326A95906F03A3315);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:269>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:269>
 		return;
 	}
 
 IL_066c:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:271>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:271>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_312 = __this->___m_TextPopup_RectTransform;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_313 = V_24;
 		NullCheck(L_312);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_312, L_313, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:272>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:272>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_314 = __this->___m_TextPopup_RectTransform;
 		NullCheck(L_314);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_315;
 		L_315 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_314, NULL);
 		NullCheck(L_315);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_315, (bool)1, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:273>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:273>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_316 = __this->___m_TextPopup_TMPComponent;
 		NullCheck(L_316);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_316, _stringLiteral69CE07E5C7ADCC833DA3E659BC9009F6C3C1346A);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:274>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:274>
 		return;
 	}
 
 IL_069b:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:283>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:283>
 		int32_t L_317 = __this->___m_lastIndex;
 		if ((((int32_t)L_317) == ((int32_t)(-1))))
 		{
@@ -8241,56 +8481,56 @@ IL_069b:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:285>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:285>
 		int32_t L_318 = __this->___m_lastIndex;
 		TMP_TextSelector_B_RestoreCachedVertexAttributes_m1FD258EC7A53C8E1ECB18EB6FFEFC6239780C398(__this, L_318, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:286>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:286>
 		__this->___m_lastIndex = (-1);
 	}
 
 IL_06b7:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:290>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:290>
 		return;
 	}
 }
-// Method Definition Index: 67903
+// Method Definition Index: 67332
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerEnter_mBAF5711E20E579D21258BD4040454A64E1134D98 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:296>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:296>
 		__this->___isHoveringObject = (bool)1;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:297>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:297>
 		return;
 	}
 }
-// Method Definition Index: 67904
+// Method Definition Index: 67333
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerExit_m40ED8F7E47FF6FD8B38BE96B2216267F61509D65 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:303>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:303>
 		__this->___isHoveringObject = (bool)0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:304>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:304>
 		return;
 	}
 }
-// Method Definition Index: 67905
+// Method Definition Index: 67334
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerClick_m773B56D918B1D0F73C5ABC0EB22FD34D39AFBB97 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:447>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:447>
 		return;
 	}
 }
-// Method Definition Index: 67906
+// Method Definition Index: 67335
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerUp_mF409D728900872CC323B18DDA7F91265058BE772 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:453>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:453>
 		return;
 	}
 }
-// Method Definition Index: 67907
+// Method Definition Index: 67336
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_RestoreCachedVertexAttributes_m1FD258EC7A53C8E1ECB18EB6FFEFC6239780C398 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -8301,7 +8541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_RestoreCachedVertexAt
 	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* V_5 = NULL;
 	int32_t V_6 = 0;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:458>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:458>
 		int32_t L_0 = ___0_index;
 		if ((((int32_t)L_0) == ((int32_t)(-1))))
 		{
@@ -8324,13 +8564,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_RestoreCachedVertexAt
 
 IL_0019:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:458>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:458>
 		return;
 	}
 
 IL_001a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:461>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:461>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___m_TextMeshPro;
 		NullCheck(L_5);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_6;
@@ -8341,7 +8581,7 @@ IL_001a:
 		NullCheck(L_7);
 		int32_t L_9 = ((L_7)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_8)))->___materialReferenceIndex;
 		V_0 = L_9;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:464>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:464>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_10 = __this->___m_TextMeshPro;
 		NullCheck(L_10);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_11;
@@ -8352,13 +8592,13 @@ IL_001a:
 		NullCheck(L_12);
 		int32_t L_14 = ((L_12)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_13)))->___vertexIndex;
 		V_1 = L_14;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:468>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:468>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_15 = __this->___m_cachedMeshInfoVertexData;
 		int32_t L_16 = V_0;
 		NullCheck(L_15);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_17 = ((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_16)))->___vertices;
 		V_2 = L_17;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:471>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:471>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_18 = __this->___m_TextMeshPro;
 		NullCheck(L_18);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_19;
@@ -8368,7 +8608,7 @@ IL_001a:
 		int32_t L_21 = V_0;
 		NullCheck(L_20);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_22 = ((L_20)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_21)))->___vertices;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:474>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:474>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_23 = L_22;
 		int32_t L_24 = V_1;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_25 = V_2;
@@ -8378,7 +8618,7 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
 		NullCheck(L_23);
 		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(L_24), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_28);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:475>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:475>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_29 = L_23;
 		int32_t L_30 = V_1;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_31 = V_2;
@@ -8388,7 +8628,7 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
 		NullCheck(L_29);
 		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_30, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_34);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:476>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:476>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_35 = L_29;
 		int32_t L_36 = V_1;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_37 = V_2;
@@ -8398,7 +8638,7 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
 		NullCheck(L_35);
 		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_36, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_40);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:477>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:477>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_41 = L_35;
 		int32_t L_42 = V_1;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_43 = V_2;
@@ -8408,7 +8648,7 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = (L_43)->GetAt(static_cast<il2cpp_array_size_t>(L_45));
 		NullCheck(L_41);
 		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_42, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_46);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:481>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:481>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_47 = __this->___m_TextMeshPro;
 		NullCheck(L_47);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_48;
@@ -8418,13 +8658,13 @@ IL_001a:
 		int32_t L_50 = V_0;
 		NullCheck(L_49);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_51 = ((L_49)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_50)))->___colors32;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:484>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:484>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_52 = __this->___m_cachedMeshInfoVertexData;
 		int32_t L_53 = V_0;
 		NullCheck(L_52);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_54 = ((L_52)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_53)))->___colors32;
 		V_3 = L_54;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:487>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:487>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_55 = L_51;
 		int32_t L_56 = V_1;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_57 = V_3;
@@ -8434,7 +8674,7 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_60 = (L_57)->GetAt(static_cast<il2cpp_array_size_t>(L_59));
 		NullCheck(L_55);
 		(L_55)->SetAt(static_cast<il2cpp_array_size_t>(L_56), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_60);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:488>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:488>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_61 = L_55;
 		int32_t L_62 = V_1;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_63 = V_3;
@@ -8444,7 +8684,7 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 		NullCheck(L_61);
 		(L_61)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_62, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_66);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:489>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:489>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_67 = L_61;
 		int32_t L_68 = V_1;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_69 = V_3;
@@ -8454,7 +8694,7 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_72 = (L_69)->GetAt(static_cast<il2cpp_array_size_t>(L_71));
 		NullCheck(L_67);
 		(L_67)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_68, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_72);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:490>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:490>
 		int32_t L_73 = V_1;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_74 = V_3;
 		int32_t L_75 = V_1;
@@ -8463,13 +8703,13 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_77 = (L_74)->GetAt(static_cast<il2cpp_array_size_t>(L_76));
 		NullCheck(L_67);
 		(L_67)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_73, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_77);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:494>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:494>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_78 = __this->___m_cachedMeshInfoVertexData;
 		int32_t L_79 = V_0;
 		NullCheck(L_78);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_80 = ((L_78)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_79)))->___uvs0;
 		V_4 = L_80;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:495>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:495>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_81 = __this->___m_TextMeshPro;
 		NullCheck(L_81);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_82;
@@ -8479,7 +8719,7 @@ IL_001a:
 		int32_t L_84 = V_0;
 		NullCheck(L_83);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_85 = ((L_83)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_84)))->___uvs0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:496>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:496>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_86 = L_85;
 		int32_t L_87 = V_1;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_88 = V_4;
@@ -8489,7 +8729,7 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_91 = (L_88)->GetAt(static_cast<il2cpp_array_size_t>(L_90));
 		NullCheck(L_86);
 		(L_86)->SetAt(static_cast<il2cpp_array_size_t>(L_87), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_91);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:497>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:497>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_92 = L_86;
 		int32_t L_93 = V_1;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_94 = V_4;
@@ -8499,7 +8739,7 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_97 = (L_94)->GetAt(static_cast<il2cpp_array_size_t>(L_96));
 		NullCheck(L_92);
 		(L_92)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_93, 1))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_97);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:498>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:498>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_98 = L_92;
 		int32_t L_99 = V_1;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_100 = V_4;
@@ -8509,7 +8749,7 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_103 = (L_100)->GetAt(static_cast<il2cpp_array_size_t>(L_102));
 		NullCheck(L_98);
 		(L_98)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_99, 2))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_103);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:499>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:499>
 		int32_t L_104 = V_1;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_105 = V_4;
 		int32_t L_106 = V_1;
@@ -8518,13 +8758,13 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_108 = (L_105)->GetAt(static_cast<il2cpp_array_size_t>(L_107));
 		NullCheck(L_98);
 		(L_98)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_104, 3))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_108);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:502>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:502>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_109 = __this->___m_cachedMeshInfoVertexData;
 		int32_t L_110 = V_0;
 		NullCheck(L_109);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_111 = ((L_109)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_110)))->___uvs2;
 		V_5 = L_111;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:503>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:503>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_112 = __this->___m_TextMeshPro;
 		NullCheck(L_112);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_113;
@@ -8534,7 +8774,7 @@ IL_001a:
 		int32_t L_115 = V_0;
 		NullCheck(L_114);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_116 = ((L_114)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_115)))->___uvs2;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:504>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:504>
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_117 = L_116;
 		int32_t L_118 = V_1;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_119 = V_5;
@@ -8544,7 +8784,7 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_122 = (L_119)->GetAt(static_cast<il2cpp_array_size_t>(L_121));
 		NullCheck(L_117);
 		(L_117)->SetAt(static_cast<il2cpp_array_size_t>(L_118), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_122);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:505>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:505>
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_123 = L_117;
 		int32_t L_124 = V_1;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_125 = V_5;
@@ -8554,7 +8794,7 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_128 = (L_125)->GetAt(static_cast<il2cpp_array_size_t>(L_127));
 		NullCheck(L_123);
 		(L_123)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_124, 1))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_128);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:506>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:506>
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_129 = L_123;
 		int32_t L_130 = V_1;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_131 = V_5;
@@ -8564,7 +8804,7 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_134 = (L_131)->GetAt(static_cast<il2cpp_array_size_t>(L_133));
 		NullCheck(L_129);
 		(L_129)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_130, 2))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_134);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:507>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:507>
 		int32_t L_135 = V_1;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_136 = V_5;
 		int32_t L_137 = V_1;
@@ -8573,11 +8813,11 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_139 = (L_136)->GetAt(static_cast<il2cpp_array_size_t>(L_138));
 		NullCheck(L_129);
 		(L_129)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_135, 3))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_139);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:511>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:511>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_140 = V_2;
 		NullCheck(L_140);
 		V_6 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(((int32_t)(((int32_t)(((RuntimeArray*)L_140)->max_length))/4)), 1)), 4));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:514>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:514>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_141 = L_41;
 		int32_t L_142 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_143 = V_2;
@@ -8587,7 +8827,7 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_146 = (L_143)->GetAt(static_cast<il2cpp_array_size_t>(L_145));
 		NullCheck(L_141);
 		(L_141)->SetAt(static_cast<il2cpp_array_size_t>(L_142), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_146);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:515>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:515>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_147 = L_141;
 		int32_t L_148 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_149 = V_2;
@@ -8597,7 +8837,7 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_152 = (L_149)->GetAt(static_cast<il2cpp_array_size_t>(L_151));
 		NullCheck(L_147);
 		(L_147)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_148, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_152);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:516>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:516>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_153 = L_147;
 		int32_t L_154 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_155 = V_2;
@@ -8607,7 +8847,7 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_158 = (L_155)->GetAt(static_cast<il2cpp_array_size_t>(L_157));
 		NullCheck(L_153);
 		(L_153)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_154, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_158);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:517>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:517>
 		int32_t L_159 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_160 = V_2;
 		int32_t L_161 = V_6;
@@ -8616,13 +8856,13 @@ IL_001a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_163 = (L_160)->GetAt(static_cast<il2cpp_array_size_t>(L_162));
 		NullCheck(L_153);
 		(L_153)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_159, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_163);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:520>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:520>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_164 = __this->___m_cachedMeshInfoVertexData;
 		int32_t L_165 = V_0;
 		NullCheck(L_164);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_166 = ((L_164)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_165)))->___colors32;
 		V_3 = L_166;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:521>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:521>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_167 = __this->___m_TextMeshPro;
 		NullCheck(L_167);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_168;
@@ -8632,7 +8872,7 @@ IL_001a:
 		int32_t L_170 = V_0;
 		NullCheck(L_169);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_171 = ((L_169)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_170)))->___colors32;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:522>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:522>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_172 = L_171;
 		int32_t L_173 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_174 = V_3;
@@ -8642,7 +8882,7 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_177 = (L_174)->GetAt(static_cast<il2cpp_array_size_t>(L_176));
 		NullCheck(L_172);
 		(L_172)->SetAt(static_cast<il2cpp_array_size_t>(L_173), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_177);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:523>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:523>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_178 = L_172;
 		int32_t L_179 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_180 = V_3;
@@ -8652,7 +8892,7 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_183 = (L_180)->GetAt(static_cast<il2cpp_array_size_t>(L_182));
 		NullCheck(L_178);
 		(L_178)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_179, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_183);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:524>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:524>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_184 = L_178;
 		int32_t L_185 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_186 = V_3;
@@ -8662,7 +8902,7 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_189 = (L_186)->GetAt(static_cast<il2cpp_array_size_t>(L_188));
 		NullCheck(L_184);
 		(L_184)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_185, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_189);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:525>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:525>
 		int32_t L_190 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_191 = V_3;
 		int32_t L_192 = V_6;
@@ -8671,13 +8911,13 @@ IL_001a:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_194 = (L_191)->GetAt(static_cast<il2cpp_array_size_t>(L_193));
 		NullCheck(L_184);
 		(L_184)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_190, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_194);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:528>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:528>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_195 = __this->___m_cachedMeshInfoVertexData;
 		int32_t L_196 = V_0;
 		NullCheck(L_195);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_197 = ((L_195)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_196)))->___uvs0;
 		V_4 = L_197;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:529>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:529>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_198 = __this->___m_TextMeshPro;
 		NullCheck(L_198);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_199;
@@ -8687,7 +8927,7 @@ IL_001a:
 		int32_t L_201 = V_0;
 		NullCheck(L_200);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_202 = ((L_200)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_201)))->___uvs0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:530>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:530>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_203 = L_202;
 		int32_t L_204 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_205 = V_4;
@@ -8697,7 +8937,7 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_208 = (L_205)->GetAt(static_cast<il2cpp_array_size_t>(L_207));
 		NullCheck(L_203);
 		(L_203)->SetAt(static_cast<il2cpp_array_size_t>(L_204), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_208);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:531>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:531>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_209 = L_203;
 		int32_t L_210 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_211 = V_4;
@@ -8707,7 +8947,7 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_214 = (L_211)->GetAt(static_cast<il2cpp_array_size_t>(L_213));
 		NullCheck(L_209);
 		(L_209)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_210, 1))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_214);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:532>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:532>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_215 = L_209;
 		int32_t L_216 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_217 = V_4;
@@ -8717,7 +8957,7 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_220 = (L_217)->GetAt(static_cast<il2cpp_array_size_t>(L_219));
 		NullCheck(L_215);
 		(L_215)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_216, 2))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_220);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:533>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:533>
 		int32_t L_221 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_222 = V_4;
 		int32_t L_223 = V_6;
@@ -8726,13 +8966,13 @@ IL_001a:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_225 = (L_222)->GetAt(static_cast<il2cpp_array_size_t>(L_224));
 		NullCheck(L_215);
 		(L_215)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_221, 3))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_225);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:536>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:536>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_226 = __this->___m_cachedMeshInfoVertexData;
 		int32_t L_227 = V_0;
 		NullCheck(L_226);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_228 = ((L_226)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_227)))->___uvs2;
 		V_5 = L_228;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:537>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:537>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_229 = __this->___m_TextMeshPro;
 		NullCheck(L_229);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_230;
@@ -8742,7 +8982,7 @@ IL_001a:
 		int32_t L_232 = V_0;
 		NullCheck(L_231);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_233 = ((L_231)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_232)))->___uvs2;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:538>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:538>
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_234 = L_233;
 		int32_t L_235 = V_6;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_236 = V_5;
@@ -8752,7 +8992,7 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_239 = (L_236)->GetAt(static_cast<il2cpp_array_size_t>(L_238));
 		NullCheck(L_234);
 		(L_234)->SetAt(static_cast<il2cpp_array_size_t>(L_235), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_239);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:539>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:539>
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_240 = L_234;
 		int32_t L_241 = V_6;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_242 = V_5;
@@ -8762,7 +9002,7 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_245 = (L_242)->GetAt(static_cast<il2cpp_array_size_t>(L_244));
 		NullCheck(L_240);
 		(L_240)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_241, 1))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_245);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:540>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:540>
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_246 = L_240;
 		int32_t L_247 = V_6;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_248 = V_5;
@@ -8772,7 +9012,7 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_251 = (L_248)->GetAt(static_cast<il2cpp_array_size_t>(L_250));
 		NullCheck(L_246);
 		(L_246)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_247, 2))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_251);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:541>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:541>
 		int32_t L_252 = V_6;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_253 = V_5;
 		int32_t L_254 = V_6;
@@ -8781,23 +9021,23 @@ IL_001a:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_256 = (L_253)->GetAt(static_cast<il2cpp_array_size_t>(L_255));
 		NullCheck(L_246);
 		(L_246)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_252, 3))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_256);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:544>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:544>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_257 = __this->___m_TextMeshPro;
 		NullCheck(L_257);
 		VirtualActionInvoker1< int32_t >::Invoke(108, L_257, ((int32_t)255));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:545>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:545>
 		return;
 	}
 }
-// Method Definition Index: 67908
+// Method Definition Index: 67337
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B__ctor_mB45DD6360094ADBEF5E8020E8C62404B7E45E301 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:29>
 		__this->___m_selectedWord = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:30>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:30>
 		__this->___m_selectedLink = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:31>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs:31>
 		__this->___m_lastIndex = (-1);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -8811,7 +9051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B__ctor_mB45DD6360094AD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67909
+// Method Definition Index: 67338
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Awake_m3E0ECAD08FA25B61DD75F4D36EC3F1DE5A22A491 (TMP_UiFrameRateCounter_t3CB67462256A3570DFD0BD10261E7CABB11AFC0E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8830,7 +9070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Awake_m3E0ECAD08F
 	}
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:28>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:28>
 		bool L_0;
 		L_0 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1(__this, NULL);
 		if (L_0)
@@ -8839,88 +9079,88 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Awake_m3E0ECAD08F
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:29>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:31>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:31>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_set_targetFrameRate_mB90EEA60DAE55CD71C38D4B7DFDBE2B34EA6B46F(((int32_t)1000), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:33>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_1, _stringLiteralA6107EE62A5874EF8D2DEAC7D3C0A9F07B89E096, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:34>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = V_0;
 		NullCheck(L_2);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_3;
 		L_3 = GameObject_AddComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m771EB78FF8813B5AFF21AC0D252E5461943E6388(L_2, GameObject_AddComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m771EB78FF8813B5AFF21AC0D252E5461943E6388_RuntimeMethod_var);
 		__this->___m_frameCounter_transform = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_frameCounter_transform), (void*)L_3);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:36>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:36>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_4 = __this->___m_frameCounter_transform;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
 		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_4);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_4, L_5, (bool)0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:38>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:38>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = V_0;
 		NullCheck(L_6);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7;
 		L_7 = GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB(L_6, GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB_RuntimeMethod_var);
 		__this->___m_TextMeshPro = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextMeshPro), (void*)L_7);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:39>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___m_TextMeshPro;
 		TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* L_9;
 		L_9 = Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3(_stringLiteralAB3448E21FA53C63C06270903A13B17D02935BE0, Resources_Load_TisTMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_m5F15FBF7AC2FCDC8C169ED260201B75AB8CB50F3_RuntimeMethod_var);
 		NullCheck(L_8);
 		TMP_Text_set_font_mC55E4A8C1C09595031384B35F2C2FB2FC3479E83(L_8, L_9, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:40>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:40>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_10 = __this->___m_TextMeshPro;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_11;
 		L_11 = Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E(_stringLiteral9ECD13393A1BC799BB4763A4E4CD5B53E220C53A, Resources_Load_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_mC909CC888641BC8E1E29C8AB1C790C637C9B390E_RuntimeMethod_var);
 		NullCheck(L_10);
 		VirtualActionInvoker1< Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* >::Invoke(68, L_10, L_11);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:42>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:42>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_12 = __this->___m_TextMeshPro;
 		NullCheck(L_12);
 		TMP_Text_set_textWrappingMode_mBD3A313CC85C9BB85F924D589A33A500E21DCA3D(L_12, 0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:43>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:43>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_13 = __this->___m_TextMeshPro;
 		NullCheck(L_13);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_13, (36.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:45>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___m_TextMeshPro;
 		NullCheck(L_14);
 		TMP_Text_set_isOverlay_m0DA2AC113AE402CA25097641AD38D0822C6D5561(L_14, (bool)1, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:47>
 		int32_t L_15 = __this->___AnchorPosition;
 		TMP_UiFrameRateCounter_Set_FrameCounter_Position_mAF25D6E90A6CB17EE041885B32579A2AEDBFCC36(__this, L_15, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:48>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:48>
 		int32_t L_16 = __this->___AnchorPosition;
 		__this->___last_AnchorPosition = L_16;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:49>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:49>
 		return;
 	}
 }
-// Method Definition Index: 67910
+// Method Definition Index: 67339
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Start_m11EF02C330E5D834C41F009CF088A3150352567F (TMP_UiFrameRateCounter_t3CB67462256A3570DFD0BD10261E7CABB11AFC0E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:54>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:54>
 		float L_0;
 		L_0 = Time_get_realtimeSinceStartup_m73B3CB73175D79A44333D59BB70F9EDE55EC9510(NULL);
 		__this->___m_LastInterval = L_0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:55>
 		__this->___m_Frames = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:56>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:56>
 		return;
 	}
 }
-// Method Definition Index: 67911
+// Method Definition Index: 67340
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Update_m568E467033B0FF7C67251895A0772CFA197789A3 (TMP_UiFrameRateCounter_t3CB67462256A3570DFD0BD10261E7CABB11AFC0E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8936,7 +9176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Update_m568E46703
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:61>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:61>
 		int32_t L_0 = __this->___AnchorPosition;
 		int32_t L_1 = __this->___last_AnchorPosition;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
@@ -8945,24 +9185,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Update_m568E46703
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:62>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:62>
 		int32_t L_2 = __this->___AnchorPosition;
 		TMP_UiFrameRateCounter_Set_FrameCounter_Position_mAF25D6E90A6CB17EE041885B32579A2AEDBFCC36(__this, L_2, NULL);
 	}
 
 IL_001a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:64>
 		int32_t L_3 = __this->___AnchorPosition;
 		__this->___last_AnchorPosition = L_3;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:66>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:66>
 		int32_t L_4 = __this->___m_Frames;
 		__this->___m_Frames = ((int32_t)il2cpp_codegen_add(L_4, 1));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:67>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:67>
 		float L_5;
 		L_5 = Time_get_realtimeSinceStartup_m73B3CB73175D79A44333D59BB70F9EDE55EC9510(NULL);
 		V_0 = L_5;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:69>
 		float L_6 = V_0;
 		float L_7 = __this->___m_LastInterval;
 		float L_8 = __this->___UpdateInterval;
@@ -8972,17 +9212,17 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:72>
 		int32_t L_9 = __this->___m_Frames;
 		float L_10 = V_0;
 		float L_11 = __this->___m_LastInterval;
 		V_1 = ((float)(((float)L_9)/((float)il2cpp_codegen_subtract(L_10, L_11))));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:73>
 		float L_12 = V_1;
 		float L_13;
 		L_13 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_12, (9.99999975E-06f), NULL);
 		V_2 = ((float)((1000.0f)/L_13));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:75>
 		float L_14 = V_1;
 		if ((!(((float)L_14) < ((float)(30.0f)))))
 		{
@@ -8990,7 +9230,7 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:76>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:76>
 		__this->___htmlColorTag = _stringLiteralA87D266F5AAE1AF5998468D25833A8C6AD50D4FD;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___htmlColorTag), (void*)_stringLiteralA87D266F5AAE1AF5998468D25833A8C6AD50D4FD);
 		goto IL_00a5;
@@ -8998,7 +9238,7 @@ IL_001a:
 
 IL_0085:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:77>
 		float L_15 = V_1;
 		if ((!(((float)L_15) < ((float)(10.0f)))))
 		{
@@ -9006,7 +9246,7 @@ IL_0085:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:78>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:78>
 		__this->___htmlColorTag = _stringLiteral8ACAA4E0B28437F5FD1A41CE6591A16813F05377;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___htmlColorTag), (void*)_stringLiteral8ACAA4E0B28437F5FD1A41CE6591A16813F05377);
 		goto IL_00a5;
@@ -9014,14 +9254,14 @@ IL_0085:
 
 IL_009a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:80>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:80>
 		__this->___htmlColorTag = _stringLiteral7F85A2723BB62FEF95DD6F8C5F0FF606EA62246A;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___htmlColorTag), (void*)_stringLiteral7F85A2723BB62FEF95DD6F8C5F0FF606EA62246A);
 	}
 
 IL_00a5:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:82>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:82>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_16 = __this->___m_TextMeshPro;
 		String_t* L_17 = __this->___htmlColorTag;
 		String_t* L_18;
@@ -9030,20 +9270,20 @@ IL_00a5:
 		float L_20 = V_2;
 		NullCheck(L_16);
 		TMP_Text_SetText_m033947AEEEBDA12707E4B0535B4CCD7EB28B5F31(L_16, L_18, L_19, L_20, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:84>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:84>
 		__this->___m_Frames = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:85>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:85>
 		float L_21 = V_0;
 		__this->___m_LastInterval = L_21;
 	}
 
 IL_00d0:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:87>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:87>
 		return;
 	}
 }
-// Method Definition Index: 67912
+// Method Definition Index: 67341
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Set_FrameCounter_Position_mAF25D6E90A6CB17EE041885B32579A2AEDBFCC36 (TMP_UiFrameRateCounter_t3CB67462256A3570DFD0BD10261E7CABB11AFC0E* __this, int32_t ___0_anchor_position, const RuntimeMethod* method) 
 {
 	{
@@ -9074,163 +9314,163 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter_Set_FrameCounter_
 
 IL_0017:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:95>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:95>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_1 = __this->___m_TextMeshPro;
 		NullCheck(L_1);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_1, ((int32_t)257), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:96>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_2 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3;
 		memset((&L_3), 0, sizeof(L_3));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_3), (0.0f), (1.0f), NULL);
 		NullCheck(L_2);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_2, L_3, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:97>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:97>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_4 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
 		memset((&L_5), 0, sizeof(L_5));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_5), (0.00999999978f), (0.99000001f), NULL);
 		NullCheck(L_4);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_4, L_5, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:98>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:98>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_6 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7;
 		memset((&L_7), 0, sizeof(L_7));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_7), (0.00999999978f), (0.99000001f), NULL);
 		NullCheck(L_6);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_6, L_7, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:99>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:99>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_8 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
 		memset((&L_9), 0, sizeof(L_9));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_9), (0.0f), (1.0f), NULL);
 		NullCheck(L_8);
 		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_8, L_9, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:100>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:100>
 		return;
 	}
 
 IL_0090:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:102>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:102>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_10 = __this->___m_TextMeshPro;
 		NullCheck(L_10);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_10, ((int32_t)1025), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:103>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:103>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_11 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12;
 		memset((&L_12), 0, sizeof(L_12));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_12), (0.0f), (0.0f), NULL);
 		NullCheck(L_11);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_11, L_12, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:104>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:104>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_13 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_14;
 		memset((&L_14), 0, sizeof(L_14));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_14), (0.00999999978f), (0.00999999978f), NULL);
 		NullCheck(L_13);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_13, L_14, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:105>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:105>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_15 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16;
 		memset((&L_16), 0, sizeof(L_16));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_16), (0.00999999978f), (0.00999999978f), NULL);
 		NullCheck(L_15);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_15, L_16, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:106>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:106>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_17 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_18;
 		memset((&L_18), 0, sizeof(L_18));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_18), (0.0f), (0.0f), NULL);
 		NullCheck(L_17);
 		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_17, L_18, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:107>
 		return;
 	}
 
 IL_0109:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:109>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:109>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_19 = __this->___m_TextMeshPro;
 		NullCheck(L_19);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_19, ((int32_t)260), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:110>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:110>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_20 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21;
 		memset((&L_21), 0, sizeof(L_21));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_21), (1.0f), (1.0f), NULL);
 		NullCheck(L_20);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_20, L_21, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:111>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:111>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_22 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_23;
 		memset((&L_23), 0, sizeof(L_23));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_23), (0.99000001f), (0.99000001f), NULL);
 		NullCheck(L_22);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_22, L_23, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:112>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:112>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_24 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_25;
 		memset((&L_25), 0, sizeof(L_25));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_25), (0.99000001f), (0.99000001f), NULL);
 		NullCheck(L_24);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_24, L_25, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:113>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:113>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_26 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27;
 		memset((&L_27), 0, sizeof(L_27));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_27), (1.0f), (1.0f), NULL);
 		NullCheck(L_26);
 		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_26, L_27, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:114>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:114>
 		return;
 	}
 
 IL_0182:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:116>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:116>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_28 = __this->___m_TextMeshPro;
 		NullCheck(L_28);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_28, ((int32_t)1028), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:117>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:117>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_29 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30;
 		memset((&L_30), 0, sizeof(L_30));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_30), (1.0f), (0.0f), NULL);
 		NullCheck(L_29);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_29, L_30, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:118>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:118>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_31 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_32;
 		memset((&L_32), 0, sizeof(L_32));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_32), (0.99000001f), (0.00999999978f), NULL);
 		NullCheck(L_31);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_31, L_32, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:119>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_33 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_34;
 		memset((&L_34), 0, sizeof(L_34));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_34), (0.99000001f), (0.00999999978f), NULL);
 		NullCheck(L_33);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_33, L_34, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:120>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:120>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_35 = __this->___m_frameCounter_transform;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_36;
 		memset((&L_36), 0, sizeof(L_36));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_36), (1.0f), (0.0f), NULL);
 		NullCheck(L_35);
 		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_35, L_36, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:123>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:123>
 		return;
 	}
 }
-// Method Definition Index: 67913
+// Method Definition Index: 67342
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter__ctor_mBF5305427799EBC515580C2747FE604A6DFEC848 (TMP_UiFrameRateCounter_t3CB67462256A3570DFD0BD10261E7CABB11AFC0E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:10>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:10>
 		__this->___UpdateInterval = (5.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:16>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs:16>
 		__this->___AnchorPosition = 2;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -9252,7 +9492,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_UiFrameRateCounter__ctor_mBF53054277
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67914
+// Method Definition Index: 67343
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexColorCycler_Awake_m8895A9C06DB3EC4379334601DC726F1AFAF543C1 (VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9262,29 +9502,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexColorCycler_Awake_m8895A9C06DB3EC4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:15>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:15>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0;
 		L_0 = Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5(__this, Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5_RuntimeMethod_var);
 		__this->___m_TextComponent = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:16>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:16>
 		return;
 	}
 }
-// Method Definition Index: 67915
+// Method Definition Index: 67344
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexColorCycler_Start_m36846DA72BFC7FDFA944A368C9DB62D17A15917B (VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:21>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:21>
 		RuntimeObject* L_0;
 		L_0 = VertexColorCycler_AnimateVertexColors_m16733B3DFF4C0F625AA66B5DF9D3B04D723E49CC(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:22>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:22>
 		return;
 	}
 }
-// Method Definition Index: 67916
+// Method Definition Index: 67345
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexColorCycler_AnimateVertexColors_m16733B3DFF4C0F625AA66B5DF9D3B04D723E49CC (VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9303,7 +9543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexColorCycler_AnimateVerte
 		return L_1;
 	}
 }
-// Method Definition Index: 67917
+// Method Definition Index: 67346
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexColorCycler__ctor_m673CA077DC5E935BABCEA79E5E70116E9934F4C1 (VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9319,7 +9559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexColorCycler__ctor_m673CA077DC5E935
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67918
+// Method Definition Index: 67347
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__3__ctor_m0245999D5FAAF8855583609DB16CAF48E9450262 (U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -9329,14 +9569,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__3__ctor_m024
 		return;
 	}
 }
-// Method Definition Index: 67919
+// Method Definition Index: 67348
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__3_System_IDisposable_Dispose_mF965F484C619EFA1359F7DB6495C1C79A89001BF (U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67920
+// Method Definition Index: 67349
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__3_MoveNext_m5C44B8CC0AB09A205BB1649931D2AC7C6F016E60 (U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9382,13 +9622,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__3_MoveNext_m
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:32>
 		VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* L_3 = V_1;
 		NullCheck(L_3);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = L_3->___m_TextComponent;
 		NullCheck(L_4);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_4, (bool)0, (bool)0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:34>
 		VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* L_5 = V_1;
 		NullCheck(L_5);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___m_TextComponent;
@@ -9397,9 +9637,9 @@ IL_0022:
 		L_7 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_6, NULL);
 		__this->___U3CtextInfoU3E5__2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__2), (void*)L_7);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:35>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:35>
 		__this->___U3CcurrentCharacterU3E5__3 = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:38>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:38>
 		VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* L_8 = V_1;
 		NullCheck(L_8);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = L_8->___m_TextComponent;
@@ -9413,12 +9653,12 @@ IL_0022:
 
 IL_005f:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:42>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:42>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_12 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->___characterCount;
 		V_4 = L_13;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:45>
 		int32_t L_14 = V_4;
 		if (L_14)
 		{
@@ -9426,7 +9666,7 @@ IL_005f:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:47>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_15 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_15, (0.25f), NULL);
 		__this->___U3CU3E2__current = L_15;
@@ -9438,13 +9678,13 @@ IL_005f:
 IL_0089:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:48>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:48>
 		goto IL_005f;
 	}
 
 IL_0092:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:52>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:52>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_16 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_16);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_17 = L_16->___characterInfo;
@@ -9452,7 +9692,7 @@ IL_0092:
 		NullCheck(L_17);
 		int32_t L_19 = ((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18)))->___materialReferenceIndex;
 		V_5 = L_19;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:55>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_20 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_20);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_21 = L_20->___meshInfo;
@@ -9460,7 +9700,7 @@ IL_0092:
 		NullCheck(L_21);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_23 = ((L_21)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_22)))->___colors32;
 		V_2 = L_23;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:58>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_24 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_24);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_25 = L_24->___characterInfo;
@@ -9468,7 +9708,7 @@ IL_0092:
 		NullCheck(L_25);
 		int32_t L_27 = ((L_25)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_26)))->___vertexIndex;
 		V_6 = L_27;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:61>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:61>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_28 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_28);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_29 = L_28->___characterInfo;
@@ -9481,7 +9721,7 @@ IL_0092:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:63>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:63>
 		int32_t L_32;
 		L_32 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
 		int32_t L_33;
@@ -9489,31 +9729,31 @@ IL_0092:
 		int32_t L_34;
 		L_34 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)255), NULL);
 		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&V_3), (uint8_t)((int32_t)(uint8_t)L_32), (uint8_t)((int32_t)(uint8_t)L_33), (uint8_t)((int32_t)(uint8_t)L_34), (uint8_t)((int32_t)255), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:65>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:65>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_35 = V_2;
 		int32_t L_36 = V_6;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_37 = V_3;
 		NullCheck(L_35);
 		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(L_36), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_37);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:66>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:66>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_38 = V_2;
 		int32_t L_39 = V_6;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_40 = V_3;
 		NullCheck(L_38);
 		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_39, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_40);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:67>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:67>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_41 = V_2;
 		int32_t L_42 = V_6;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_43 = V_3;
 		NullCheck(L_41);
 		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_42, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_43);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:68>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_44 = V_2;
 		int32_t L_45 = V_6;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_46 = V_3;
 		NullCheck(L_44);
 		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_45, 3))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_46);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:71>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:71>
 		VertexColorCycler_t527535DC3F38CBB70E8A4B35907DA8EC4FC62C8D* L_47 = V_1;
 		NullCheck(L_47);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_48 = L_47->___m_TextComponent;
@@ -9523,11 +9763,11 @@ IL_0092:
 
 IL_0168:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:77>
 		int32_t L_49 = __this->___U3CcurrentCharacterU3E5__3;
 		int32_t L_50 = V_4;
 		__this->___U3CcurrentCharacterU3E5__3 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_49, 1))%L_50));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:79>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:79>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_51 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_51, (0.0500000007f), NULL);
 		__this->___U3CU3E2__current = L_51;
@@ -9539,11 +9779,11 @@ IL_0168:
 IL_0192:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:40>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs:40>
 		goto IL_005f;
 	}
 }
-// Method Definition Index: 67921
+// Method Definition Index: 67350
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF9600944C968C16121129C479F8B25D8E8B7FDD1 (U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9551,7 +9791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__3_
 		return L_0;
 	}
 }
-// Method Definition Index: 67922
+// Method Definition Index: 67351
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__3_System_Collections_IEnumerator_Reset_m319AC50F2DE1572FB7D7AF4F5F65958D01477899 (U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9560,7 +9800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__3_System_Col
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateVertexColorsU3Ed__3_System_Collections_IEnumerator_Reset_m319AC50F2DE1572FB7D7AF4F5F65958D01477899_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67923
+// Method Definition Index: 67352
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__3_System_Collections_IEnumerator_get_Current_mC19EC9CE0C245B49D987C18357571FF3462F1D2C (U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9576,7 +9816,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__3_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67924
+// Method Definition Index: 67353
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_Awake_m0DF2AC9C728A15EEB427F1FE2426E3C31FBA544C (VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9586,16 +9826,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_Awake_m0DF2AC9C728A15EEB427
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:30>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:30>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0;
 		L_0 = Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5(__this, Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5_RuntimeMethod_var);
 		__this->___m_TextComponent = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:31>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:31>
 		return;
 	}
 }
-// Method Definition Index: 67925
+// Method Definition Index: 67354
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_OnEnable_mCD5C1FDDBA809B04AC6F6CB00562D0AA45BC4354 (VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9608,18 +9848,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_OnEnable_mCD5C1FDDBA809B04A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:36>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:36>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexJitter_ON_TEXT_CHANGED_m0CF9C49A1033B4475C04A417440F39490FED64A8_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6(L_0, L_1, FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:37>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:37>
 		return;
 	}
 }
-// Method Definition Index: 67926
+// Method Definition Index: 67355
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_OnDisable_mB670406B3982BFC44CB6BB05A73F1BE877FDFAF2 (VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9632,31 +9872,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_OnDisable_mB670406B3982BFC4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:41>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:41>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexJitter_ON_TEXT_CHANGED_m0CF9C49A1033B4475C04A417440F39490FED64A8_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F(L_0, L_1, FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:42>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:42>
 		return;
 	}
 }
-// Method Definition Index: 67927
+// Method Definition Index: 67356
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_Start_mDE6155803CF2B1E6CE0EBAE8DF7DB93601E1DD76 (VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:47>
 		RuntimeObject* L_0;
 		L_0 = VertexJitter_AnimateVertexColors_m2A69F06CF58FA46B689BD4166DEF5AD15FA2FA88(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:48>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:48>
 		return;
 	}
 }
-// Method Definition Index: 67928
+// Method Definition Index: 67357
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_ON_TEXT_CHANGED_m0CF9C49A1033B4475C04A417440F39490FED64A8 (VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9666,7 +9906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_ON_TEXT_CHANGED_m0CF9C49A10
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:53>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:53>
 		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_0 = ___0_obj;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___m_TextComponent;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -9678,17 +9918,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter_ON_TEXT_CHANGED_m0CF9C49A10
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:54>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:54>
 		__this->___hasTextChanged = (bool)1;
 	}
 
 IL_0015:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:55>
 		return;
 	}
 }
-// Method Definition Index: 67929
+// Method Definition Index: 67358
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexJitter_AnimateVertexColors_m2A69F06CF58FA46B689BD4166DEF5AD15FA2FA88 (VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9707,15 +9947,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexJitter_AnimateVertexColo
 		return L_1;
 	}
 }
-// Method Definition Index: 67930
+// Method Definition Index: 67359
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter__ctor_m41E4682405B3C0B19779BA8CB77156D65D64716D (VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:11>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:11>
 		__this->___AngleMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:12>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:12>
 		__this->___SpeedMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:13>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:13>
 		__this->___CurveScale = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -9737,7 +9977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexJitter__ctor_m41E4682405B3C0B19779
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67931
+// Method Definition Index: 67360
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11__ctor_m10C4D98A634474BAA883419ED308835B7D91C01A (U3CAnimateVertexColorsU3Ed__11_t2EF4BA1F3569F2C4ECDD4AD4980AAC251CD1D956* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -9747,14 +9987,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11__ctor_m10
 		return;
 	}
 }
-// Method Definition Index: 67932
+// Method Definition Index: 67361
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11_System_IDisposable_Dispose_mB3756FBFDD731F3CC1EFF9AB132FF5075C8411F8 (U3CAnimateVertexColorsU3Ed__11_t2EF4BA1F3569F2C4ECDD4AD4980AAC251CD1D956* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67933
+// Method Definition Index: 67362
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__11_MoveNext_mD694A3145B54B9C5EB351853752B9292DBFF0273 (U3CAnimateVertexColorsU3Ed__11_t2EF4BA1F3569F2C4ECDD4AD4980AAC251CD1D956* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9809,13 +10049,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__11_MoveNext_
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:66>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:66>
 		VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* L_3 = V_1;
 		NullCheck(L_3);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = L_3->___m_TextComponent;
 		NullCheck(L_4);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_4, (bool)0, (bool)0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:68>
 		VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* L_5 = V_1;
 		NullCheck(L_5);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___m_TextComponent;
@@ -9824,45 +10064,45 @@ IL_0022:
 		L_7 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_6, NULL);
 		__this->___U3CtextInfoU3E5__2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__2), (void*)L_7);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:72>
 		__this->___U3CloopCountU3E5__3 = 0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:73>
 		VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* L_8 = V_1;
 		NullCheck(L_8);
 		L_8->___hasTextChanged = (bool)1;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:76>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:76>
 		VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38* L_9 = (VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38*)(VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38*)SZArrayNew(VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1024));
 		__this->___U3CvertexAnimU3E5__4 = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CvertexAnimU3E5__4), (void*)L_9);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:77>
 		V_3 = 0;
 		goto IL_00ad;
 	}
 
 IL_0069:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:79>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:79>
 		VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38* L_10 = __this->___U3CvertexAnimU3E5__4;
 		int32_t L_11 = V_3;
 		NullCheck(L_10);
 		float L_12;
 		L_12 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((10.0f), (25.0f), NULL);
 		((L_10)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_11)))->___angleRange = L_12;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:80>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:80>
 		VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38* L_13 = __this->___U3CvertexAnimU3E5__4;
 		int32_t L_14 = V_3;
 		NullCheck(L_13);
 		float L_15;
 		L_15 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((1.0f), (3.0f), NULL);
 		((L_13)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_14)))->___speed = L_15;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:77>
 		int32_t L_16 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_16, 1));
 	}
 
 IL_00ad:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:77>
 		int32_t L_17 = V_3;
 		if ((((int32_t)L_17) < ((int32_t)((int32_t)1024))))
 		{
@@ -9870,7 +10110,7 @@ IL_00ad:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:84>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:84>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_18 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_18);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_19;
@@ -9881,7 +10121,7 @@ IL_00ad:
 
 IL_00c6:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:89>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:89>
 		VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* L_20 = V_1;
 		NullCheck(L_20);
 		bool L_21 = L_20->___hasTextChanged;
@@ -9891,14 +10131,14 @@ IL_00c6:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:92>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:92>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_22 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_22);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_23;
 		L_23 = TMP_TextInfo_CopyMeshInfoVertexData_mF66E2F8821470E68D95FEB53D456CFA86241C0CA(L_22, NULL);
 		__this->___U3CcachedMeshInfoU3E5__5 = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcachedMeshInfoU3E5__5), (void*)L_23);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:94>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:94>
 		VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* L_24 = V_1;
 		NullCheck(L_24);
 		L_24->___hasTextChanged = (bool)0;
@@ -9906,12 +10146,12 @@ IL_00c6:
 
 IL_00e6:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:97>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:97>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_25 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_25);
 		int32_t L_26 = L_25->___characterCount;
 		V_4 = L_26;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:100>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:100>
 		int32_t L_27 = V_4;
 		if (L_27)
 		{
@@ -9919,7 +10159,7 @@ IL_00e6:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:102>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:102>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_28 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_28, (0.25f), NULL);
 		__this->___U3CU3E2__current = L_28;
@@ -9931,20 +10171,20 @@ IL_00e6:
 IL_0110:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:103>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:103>
 		goto IL_00c6;
 	}
 
 IL_0119:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:107>
 		V_5 = 0;
 		goto IL_03de;
 	}
 
 IL_0121:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:109>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:109>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_29 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_29);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_30 = L_29->___characterInfo;
@@ -9952,7 +10192,7 @@ IL_0121:
 		NullCheck(L_30);
 		int32_t L_32 = L_31;
 		TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8 L_33 = (L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_32));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:112>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:112>
 		bool L_34 = L_33.___isVisible;
 		if (!L_34)
 		{
@@ -9960,14 +10200,14 @@ IL_0121:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:116>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:116>
 		VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38* L_35 = __this->___U3CvertexAnimU3E5__4;
 		int32_t L_36 = V_5;
 		NullCheck(L_35);
 		int32_t L_37 = L_36;
 		VertexAnim_tFF5399F548EE5426E46DEB662F561DDE129E20D7 L_38 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_37));
 		V_6 = L_38;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:119>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_39 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_39);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_40 = L_39->___characterInfo;
@@ -9975,7 +10215,7 @@ IL_0121:
 		NullCheck(L_40);
 		int32_t L_42 = ((L_40)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_41)))->___materialReferenceIndex;
 		V_7 = L_42;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:122>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:122>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_43 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_43);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_44 = L_43->___characterInfo;
@@ -9983,13 +10223,13 @@ IL_0121:
 		NullCheck(L_44);
 		int32_t L_46 = ((L_44)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_45)))->___vertexIndex;
 		V_8 = L_46;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:125>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_47 = __this->___U3CcachedMeshInfoU3E5__5;
 		int32_t L_48 = V_7;
 		NullCheck(L_47);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_49 = ((L_47)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_48)))->___vertices;
 		V_9 = L_49;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:130>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:130>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_50 = V_9;
 		int32_t L_51 = V_8;
 		NullCheck(L_50);
@@ -10006,11 +10246,11 @@ IL_0121:
 		L_59 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_58, (2.0f), NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_60;
 		L_60 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_59, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:134>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:134>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
 		L_61 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_60, NULL);
 		V_10 = L_61;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:136>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:136>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_62 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_62);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_63 = L_62->___meshInfo;
@@ -10018,7 +10258,7 @@ IL_0121:
 		NullCheck(L_63);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_65 = ((L_63)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_64)))->___vertices;
 		V_11 = L_65;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:138>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:138>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_66 = V_11;
 		int32_t L_67 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_68 = V_9;
@@ -10031,7 +10271,7 @@ IL_0121:
 		L_73 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_71, L_72, NULL);
 		NullCheck(L_66);
 		(L_66)->SetAt(static_cast<il2cpp_array_size_t>(L_67), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_73);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:139>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:139>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_74 = V_11;
 		int32_t L_75 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_76 = V_9;
@@ -10044,7 +10284,7 @@ IL_0121:
 		L_81 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_79, L_80, NULL);
 		NullCheck(L_74);
 		(L_74)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_75, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_81);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:140>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:140>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_82 = V_11;
 		int32_t L_83 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_84 = V_9;
@@ -10057,7 +10297,7 @@ IL_0121:
 		L_89 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_87, L_88, NULL);
 		NullCheck(L_82);
 		(L_82)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_83, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_89);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:141>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:141>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_90 = V_11;
 		int32_t L_91 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_92 = V_9;
@@ -10070,7 +10310,7 @@ IL_0121:
 		L_97 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_95, L_96, NULL);
 		NullCheck(L_90);
 		(L_90)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_91, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_97);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:143>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:143>
 		VertexAnim_tFF5399F548EE5426E46DEB662F561DDE129E20D7 L_98 = V_6;
 		float L_99 = L_98.___angleRange;
 		VertexAnim_tFF5399F548EE5426E46DEB662F561DDE129E20D7 L_100 = V_6;
@@ -10083,7 +10323,7 @@ IL_0121:
 		float L_106;
 		L_106 = Mathf_SmoothStep_mEFDC738EB0AA162D71013BDBBDD157B080A8E524_inline(((-L_99)), L_101, L_105, NULL);
 		(&V_6)->___angle = L_106;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:144>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:144>
 		float L_107;
 		L_107 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-0.25f), (0.25f), NULL);
 		float L_108;
@@ -10091,7 +10331,7 @@ IL_0121:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_109;
 		memset((&L_109), 0, sizeof(L_109));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_109), L_107, L_108, (0.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:146>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:146>
 		VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* L_110 = V_1;
 		NullCheck(L_110);
 		float L_111 = L_110->___CurveScale;
@@ -10109,7 +10349,7 @@ IL_0121:
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_118;
 		L_118 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline(L_112, L_116, L_117, NULL);
 		V_2 = L_118;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:148>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:148>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_119 = V_11;
 		int32_t L_120 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_121 = V_11;
@@ -10121,7 +10361,7 @@ IL_0121:
 		L_125 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_124, NULL);
 		NullCheck(L_119);
 		(L_119)->SetAt(static_cast<il2cpp_array_size_t>(L_120), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_125);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:149>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:149>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_126 = V_11;
 		int32_t L_127 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_128 = V_11;
@@ -10133,7 +10373,7 @@ IL_0121:
 		L_132 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_131, NULL);
 		NullCheck(L_126);
 		(L_126)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_127, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_132);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:150>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:150>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_133 = V_11;
 		int32_t L_134 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_135 = V_11;
@@ -10145,7 +10385,7 @@ IL_0121:
 		L_139 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_138, NULL);
 		NullCheck(L_133);
 		(L_133)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_134, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_139);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:151>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:151>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_140 = V_11;
 		int32_t L_141 = V_8;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_142 = V_11;
@@ -10157,7 +10397,7 @@ IL_0121:
 		L_146 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_145, NULL);
 		NullCheck(L_140);
 		(L_140)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_141, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_146);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:153>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:153>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_147 = V_11;
 		int32_t L_148 = V_8;
 		NullCheck(L_147);
@@ -10167,7 +10407,7 @@ IL_0121:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_152;
 		L_152 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_150, L_151, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_149 = L_152;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:154>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:154>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_153 = V_11;
 		int32_t L_154 = V_8;
 		NullCheck(L_153);
@@ -10177,7 +10417,7 @@ IL_0121:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_158;
 		L_158 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_156, L_157, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_155 = L_158;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:155>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:155>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_159 = V_11;
 		int32_t L_160 = V_8;
 		NullCheck(L_159);
@@ -10187,7 +10427,7 @@ IL_0121:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_164;
 		L_164 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_162, L_163, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_161 = L_164;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:156>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:156>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_165 = V_11;
 		int32_t L_166 = V_8;
 		NullCheck(L_165);
@@ -10197,7 +10437,7 @@ IL_0121:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_170;
 		L_170 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_168, L_169, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_167 = L_170;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:158>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:158>
 		VertexAnimU5BU5D_tC74236D4EB454A8EF2CE1E6145CE5F78E1D5CF38* L_171 = __this->___U3CvertexAnimU3E5__4;
 		int32_t L_172 = V_5;
 		VertexAnim_tFF5399F548EE5426E46DEB662F561DDE129E20D7 L_173 = V_6;
@@ -10207,14 +10447,14 @@ IL_0121:
 
 IL_03d8:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:107>
 		int32_t L_174 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_174, 1));
 	}
 
 IL_03de:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:107>
 		int32_t L_175 = V_5;
 		int32_t L_176 = V_4;
 		if ((((int32_t)L_175) < ((int32_t)L_176)))
@@ -10223,14 +10463,14 @@ IL_03de:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:162>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:162>
 		V_12 = 0;
 		goto IL_0449;
 	}
 
 IL_03ec:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:164>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:164>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_177 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_177);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_178 = L_177->___meshInfo;
@@ -10245,7 +10485,7 @@ IL_03ec:
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_184 = ((L_182)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_183)))->___vertices;
 		NullCheck(L_180);
 		Mesh_set_vertices_m5BB814D89E9ACA00DBF19F7D8E22CB73AC73FE5C(L_180, L_184, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:165>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:165>
 		VertexJitter_t5D8689E23D1DD2CCF81ACE6FFC9E34797E8AE4C7* L_185 = V_1;
 		NullCheck(L_185);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_186 = L_185->___m_TextComponent;
@@ -10258,14 +10498,14 @@ IL_03ec:
 		int32_t L_191 = V_12;
 		NullCheck(L_186);
 		VirtualActionInvoker2< Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4*, int32_t >::Invoke(107, L_186, L_190, L_191);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:162>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:162>
 		int32_t L_192 = V_12;
 		V_12 = ((int32_t)il2cpp_codegen_add(L_192, 1));
 	}
 
 IL_0449:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:162>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:162>
 		int32_t L_193 = V_12;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_194 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_194);
@@ -10277,10 +10517,10 @@ IL_0449:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:168>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:168>
 		int32_t L_196 = __this->___U3CloopCountU3E5__3;
 		__this->___U3CloopCountU3E5__3 = ((int32_t)il2cpp_codegen_add(L_196, 1));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:170>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:170>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_197 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_197, (0.100000001f), NULL);
 		__this->___U3CU3E2__current = L_197;
@@ -10292,11 +10532,11 @@ IL_0449:
 IL_0481:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:86>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs:86>
 		goto IL_00c6;
 	}
 }
-// Method Definition Index: 67934
+// Method Definition Index: 67363
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m79C3A529011A51B9A994106D3C1271548B02D405 (U3CAnimateVertexColorsU3Ed__11_t2EF4BA1F3569F2C4ECDD4AD4980AAC251CD1D956* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10304,7 +10544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11
 		return L_0;
 	}
 }
-// Method Definition Index: 67935
+// Method Definition Index: 67364
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11_System_Collections_IEnumerator_Reset_m15291DCCCEC264095634B26DD6F24D52360BDAF0 (U3CAnimateVertexColorsU3Ed__11_t2EF4BA1F3569F2C4ECDD4AD4980AAC251CD1D956* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10313,7 +10553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11_System_Co
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateVertexColorsU3Ed__11_System_Collections_IEnumerator_Reset_m15291DCCCEC264095634B26DD6F24D52360BDAF0_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67936
+// Method Definition Index: 67365
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11_System_Collections_IEnumerator_get_Current_m0B8F21A4589C68BA16A8340938BB44C980260CC9 (U3CAnimateVertexColorsU3Ed__11_t2EF4BA1F3569F2C4ECDD4AD4980AAC251CD1D956* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10329,7 +10569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67937
+// Method Definition Index: 67366
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_Awake_m092957B0A67A153E7CD56A75A438087DE4806867 (VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10339,16 +10579,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_Awake_m092957B0A67A153E7CD5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:22>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:22>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0;
 		L_0 = Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5(__this, Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5_RuntimeMethod_var);
 		__this->___m_TextComponent = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:23>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:23>
 		return;
 	}
 }
-// Method Definition Index: 67938
+// Method Definition Index: 67367
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_OnEnable_m52E2A036C9EB2C1D633BA7F43E31C36983972304 (VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10361,18 +10601,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_OnEnable_m52E2A036C9EB2C1D6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:28>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:28>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexShakeA_ON_TEXT_CHANGED_mE7A41CEFDB0008A1CD15F156EFEE1C895A92EE77_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6(L_0, L_1, FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:29>
 		return;
 	}
 }
-// Method Definition Index: 67939
+// Method Definition Index: 67368
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_OnDisable_m52F58AF9438377D222543AA67CFF7B30FCCB0F23 (VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10385,31 +10625,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_OnDisable_m52F58AF9438377D2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:33>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexShakeA_ON_TEXT_CHANGED_mE7A41CEFDB0008A1CD15F156EFEE1C895A92EE77_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F(L_0, L_1, FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:34>
 		return;
 	}
 }
-// Method Definition Index: 67940
+// Method Definition Index: 67369
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_Start_mDD8B5538BDFBC2BA242B997B879E7ED64ACAFC5E (VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:39>
 		RuntimeObject* L_0;
 		L_0 = VertexShakeA_AnimateVertexColors_m5FD933D6BF976B64FC0B80614DE5112377D1DC38(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:40>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:40>
 		return;
 	}
 }
-// Method Definition Index: 67941
+// Method Definition Index: 67370
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_ON_TEXT_CHANGED_mE7A41CEFDB0008A1CD15F156EFEE1C895A92EE77 (VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10419,7 +10659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_ON_TEXT_CHANGED_mE7A41CEFDB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:45>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___m_TextComponent;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = L_0;
 		___0_obj = L_1;
@@ -10432,17 +10672,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA_ON_TEXT_CHANGED_mE7A41CEFDB
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:46>
 		__this->___hasTextChanged = (bool)1;
 	}
 
 IL_0017:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:47>
 		return;
 	}
 }
-// Method Definition Index: 67942
+// Method Definition Index: 67371
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexShakeA_AnimateVertexColors_m5FD933D6BF976B64FC0B80614DE5112377D1DC38 (VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10461,17 +10701,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexShakeA_AnimateVertexColo
 		return L_1;
 	}
 }
-// Method Definition Index: 67943
+// Method Definition Index: 67372
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA__ctor_m63ED483A292CA310B90144E0779C0472AAC22CBB (VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:11>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:11>
 		__this->___AngleMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:12>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:12>
 		__this->___SpeedMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:13>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:13>
 		__this->___ScaleMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:14>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:14>
 		__this->___RotationMultiplier = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -10485,7 +10725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeA__ctor_m63ED483A292CA310B901
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67944
+// Method Definition Index: 67373
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11__ctor_m440985E6DF2F1B461E2964101EA242FFD472A25A (U3CAnimateVertexColorsU3Ed__11_t2E62EF65D8AE7185E18D8711E582A76E45AC843E* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -10495,14 +10735,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11__ctor_m44
 		return;
 	}
 }
-// Method Definition Index: 67945
+// Method Definition Index: 67374
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11_System_IDisposable_Dispose_m74112773E1FD645722BC221FA5256331C068EAE7 (U3CAnimateVertexColorsU3Ed__11_t2E62EF65D8AE7185E18D8711E582A76E45AC843E* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67946
+// Method Definition Index: 67375
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__11_MoveNext_mA6858F6CA14AAE3DFB7EA13748E10E063BBAB934 (U3CAnimateVertexColorsU3Ed__11_t2E62EF65D8AE7185E18D8711E582A76E45AC843E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10562,13 +10802,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__11_MoveNext_
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:58>
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_3 = V_1;
 		NullCheck(L_3);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = L_3->___m_TextComponent;
 		NullCheck(L_4);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_4, (bool)0, (bool)0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:60>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:60>
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_5 = V_1;
 		NullCheck(L_5);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___m_TextComponent;
@@ -10577,11 +10817,11 @@ IL_0022:
 		L_7 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_6, NULL);
 		__this->___U3CtextInfoU3E5__2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__2), (void*)L_7);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:63>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:63>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_8 = (Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D*)(Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D*)SZArrayNew(Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D_il2cpp_TypeInfo_var, (uint32_t)0);
 		__this->___U3CcopyOfVerticesU3E5__3 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcopyOfVerticesU3E5__3), (void*)L_8);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:65>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:65>
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_9 = V_1;
 		NullCheck(L_9);
 		L_9->___hasTextChanged = (bool)1;
@@ -10589,7 +10829,7 @@ IL_0022:
 
 IL_005a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:70>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:70>
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_10 = V_1;
 		NullCheck(L_10);
 		bool L_11 = L_10->___hasTextChanged;
@@ -10599,7 +10839,7 @@ IL_005a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:72>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_12 = __this->___U3CcopyOfVerticesU3E5__3;
 		NullCheck(L_12);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_13 = __this->___U3CtextInfoU3E5__2;
@@ -10612,7 +10852,7 @@ IL_005a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:73>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_15 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_15);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_16 = L_15->___meshInfo;
@@ -10624,14 +10864,14 @@ IL_005a:
 
 IL_0091:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:75>
 		V_4 = 0;
 		goto IL_00c7;
 	}
 
 IL_0096:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:77>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_18 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_18);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_19 = L_18->___meshInfo;
@@ -10640,21 +10880,21 @@ IL_0096:
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_21 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)))->___vertices;
 		NullCheck(L_21);
 		V_5 = ((int32_t)(((RuntimeArray*)L_21)->max_length));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:78>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:78>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_22 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_23 = V_4;
 		int32_t L_24 = V_5;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_25 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_24);
 		NullCheck(L_22);
 		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(L_23), (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)L_25);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:75>
 		int32_t L_26 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
 IL_00c7:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:75>
 		int32_t L_27 = V_4;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_28 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_28);
@@ -10666,7 +10906,7 @@ IL_00c7:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:81>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:81>
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_30 = V_1;
 		NullCheck(L_30);
 		L_30->___hasTextChanged = (bool)0;
@@ -10674,18 +10914,18 @@ IL_00c7:
 
 IL_00df:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:84>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:84>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_31 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_31);
 		int32_t L_32 = L_31->___characterCount;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:87>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:87>
 		if (L_32)
 		{
 			goto IL_0111;
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:89>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:89>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_33 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_33, (0.25f), NULL);
 		__this->___U3CU3E2__current = L_33;
@@ -10697,25 +10937,25 @@ IL_00df:
 IL_0105:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:90>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:90>
 		goto IL_005a;
 	}
 
 IL_0111:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:93>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:93>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_34 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_34);
 		int32_t L_35 = L_34->___lineCount;
 		V_3 = L_35;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:96>
 		V_6 = 0;
 		goto IL_0448;
 	}
 
 IL_0125:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:99>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:99>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_36 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_36);
 		TMP_LineInfoU5BU5D_tE485ECF6A7A96441C72B53D75E7A5A5461A2CA0E* L_37 = L_36->___lineInfo;
@@ -10723,7 +10963,7 @@ IL_0125:
 		NullCheck(L_37);
 		int32_t L_39 = ((L_37)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_38)))->___firstCharacterIndex;
 		V_7 = L_39;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:100>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:100>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_40 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_40);
 		TMP_LineInfoU5BU5D_tE485ECF6A7A96441C72B53D75E7A5A5461A2CA0E* L_41 = L_40->___lineInfo;
@@ -10731,7 +10971,7 @@ IL_0125:
 		NullCheck(L_41);
 		int32_t L_43 = ((L_41)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_42)))->___lastCharacterIndex;
 		V_8 = L_43;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:103>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:103>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_44 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_44);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_45 = L_44->___characterInfo;
@@ -10749,7 +10989,7 @@ IL_0125:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
 		L_53 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_52, (2.0f), NULL);
 		V_9 = L_53;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:104>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:104>
 		float L_54;
 		L_54 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-0.25f), (0.25f), NULL);
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_55 = V_1;
@@ -10758,7 +10998,7 @@ IL_0125:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_57;
 		L_57 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), ((float)il2cpp_codegen_multiply(L_54, L_56)), NULL);
 		V_10 = L_57;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:107>
 		int32_t L_58 = V_7;
 		V_11 = L_58;
 		goto IL_0439;
@@ -10766,7 +11006,7 @@ IL_0125:
 
 IL_01c6:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:110>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:110>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_59 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_59);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_60 = L_59->___characterInfo;
@@ -10779,7 +11019,7 @@ IL_01c6:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:114>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:114>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_63 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_63);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_64 = L_63->___characterInfo;
@@ -10787,7 +11027,7 @@ IL_01c6:
 		NullCheck(L_64);
 		int32_t L_66 = ((L_64)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_65)))->___materialReferenceIndex;
 		V_12 = L_66;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:117>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:117>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_67 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_67);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_68 = L_67->___characterInfo;
@@ -10795,7 +11035,7 @@ IL_01c6:
 		NullCheck(L_68);
 		int32_t L_70 = ((L_68)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_69)))->___vertexIndex;
 		V_13 = L_70;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:120>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:120>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_71 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_71);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_72 = L_71->___meshInfo;
@@ -10803,7 +11043,7 @@ IL_01c6:
 		NullCheck(L_72);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_74 = ((L_72)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_73)))->___vertices;
 		V_14 = L_74;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:124>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:124>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_75 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_76 = V_12;
 		NullCheck(L_75);
@@ -10820,7 +11060,7 @@ IL_01c6:
 		L_85 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_83, L_84, NULL);
 		NullCheck(L_78);
 		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(L_79), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_85);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:125>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_86 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_87 = V_12;
 		NullCheck(L_86);
@@ -10837,7 +11077,7 @@ IL_01c6:
 		L_96 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_94, L_95, NULL);
 		NullCheck(L_89);
 		(L_89)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_90, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_96);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:126>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:126>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_97 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_98 = V_12;
 		NullCheck(L_97);
@@ -10854,7 +11094,7 @@ IL_01c6:
 		L_107 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_105, L_106, NULL);
 		NullCheck(L_100);
 		(L_100)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_101, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_107);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:127>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:127>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_108 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_109 = V_12;
 		NullCheck(L_108);
@@ -10871,7 +11111,7 @@ IL_01c6:
 		L_118 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_116, L_117, NULL);
 		NullCheck(L_111);
 		(L_111)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_112, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_118);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:130>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:130>
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_119 = V_1;
 		NullCheck(L_119);
 		float L_120 = L_119->___ScaleMultiplier;
@@ -10881,7 +11121,7 @@ IL_01c6:
 		float L_123;
 		L_123 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((float)il2cpp_codegen_subtract((0.995000005f), ((float)il2cpp_codegen_multiply((0.00100000005f), L_120)))), ((float)il2cpp_codegen_add((1.005f), ((float)il2cpp_codegen_multiply((0.00100000005f), L_122)))), NULL);
 		V_15 = L_123;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:133>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:133>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_124;
 		L_124 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_125 = V_10;
@@ -10893,7 +11133,7 @@ IL_01c6:
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_129;
 		L_129 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline(L_124, L_125, L_128, NULL);
 		V_2 = L_129;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:136>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:136>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_130 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_131 = V_12;
 		NullCheck(L_130);
@@ -10913,7 +11153,7 @@ IL_01c6:
 		L_142 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_141, NULL);
 		NullCheck(L_133);
 		(L_133)->SetAt(static_cast<il2cpp_array_size_t>(L_134), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_142);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:137>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:137>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_143 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_144 = V_12;
 		NullCheck(L_143);
@@ -10933,7 +11173,7 @@ IL_01c6:
 		L_155 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_154, NULL);
 		NullCheck(L_146);
 		(L_146)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_147, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_155);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:138>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:138>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_156 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_157 = V_12;
 		NullCheck(L_156);
@@ -10953,7 +11193,7 @@ IL_01c6:
 		L_168 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_167, NULL);
 		NullCheck(L_159);
 		(L_159)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_160, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_168);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:139>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:139>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_169 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_170 = V_12;
 		NullCheck(L_169);
@@ -10973,7 +11213,7 @@ IL_01c6:
 		L_181 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_180, NULL);
 		NullCheck(L_172);
 		(L_172)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_173, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_181);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:142>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:142>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_182 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_183 = V_12;
 		NullCheck(L_182);
@@ -10987,7 +11227,7 @@ IL_01c6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_190;
 		L_190 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_188, L_189, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_187 = L_190;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:143>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:143>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_191 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_192 = V_12;
 		NullCheck(L_191);
@@ -11001,7 +11241,7 @@ IL_01c6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_199;
 		L_199 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_197, L_198, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_196 = L_199;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:144>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:144>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_200 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_201 = V_12;
 		NullCheck(L_200);
@@ -11015,7 +11255,7 @@ IL_01c6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_208;
 		L_208 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_206, L_207, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_205 = L_208;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:145>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:145>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_209 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_210 = V_12;
 		NullCheck(L_209);
@@ -11033,14 +11273,14 @@ IL_01c6:
 
 IL_0433:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:107>
 		int32_t L_218 = V_11;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_218, 1));
 	}
 
 IL_0439:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:107>
 		int32_t L_219 = V_11;
 		int32_t L_220 = V_8;
 		if ((((int32_t)L_219) <= ((int32_t)L_220)))
@@ -11049,14 +11289,14 @@ IL_0439:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:96>
 		int32_t L_221 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_221, 1));
 	}
 
 IL_0448:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:96>
 		int32_t L_222 = V_6;
 		int32_t L_223 = V_3;
 		if ((((int32_t)L_222) < ((int32_t)L_223)))
@@ -11065,14 +11305,14 @@ IL_0448:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:150>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:150>
 		V_16 = 0;
 		goto IL_04a4;
 	}
 
 IL_0455:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:152>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:152>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_224 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_224);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_225 = L_224->___meshInfo;
@@ -11086,7 +11326,7 @@ IL_0455:
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_231 = (L_228)->GetAt(static_cast<il2cpp_array_size_t>(L_230));
 		NullCheck(L_227);
 		Mesh_set_vertices_m5BB814D89E9ACA00DBF19F7D8E22CB73AC73FE5C(L_227, L_231, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:153>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:153>
 		VertexShakeA_t0915AA60878050D69BA28697506CF5CF6F789E8F* L_232 = V_1;
 		NullCheck(L_232);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_233 = L_232->___m_TextComponent;
@@ -11099,14 +11339,14 @@ IL_0455:
 		int32_t L_238 = V_16;
 		NullCheck(L_233);
 		VirtualActionInvoker2< Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4*, int32_t >::Invoke(107, L_233, L_237, L_238);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:150>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:150>
 		int32_t L_239 = V_16;
 		V_16 = ((int32_t)il2cpp_codegen_add(L_239, 1));
 	}
 
 IL_04a4:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:150>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:150>
 		int32_t L_240 = V_16;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_241 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_241);
@@ -11118,7 +11358,7 @@ IL_04a4:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:156>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:156>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_243 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_243, (0.100000001f), NULL);
 		__this->___U3CU3E2__current = L_243;
@@ -11130,11 +11370,11 @@ IL_04a4:
 IL_04ce:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:67>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs:67>
 		goto IL_005a;
 	}
 }
-// Method Definition Index: 67947
+// Method Definition Index: 67376
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8DD4F3768C9025EFAC0BFDBB942FEF7953FB20BE (U3CAnimateVertexColorsU3Ed__11_t2E62EF65D8AE7185E18D8711E582A76E45AC843E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11142,7 +11382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11
 		return L_0;
 	}
 }
-// Method Definition Index: 67948
+// Method Definition Index: 67377
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11_System_Collections_IEnumerator_Reset_m2F84864A089CBA0B878B7AC1EA39A49B82682A90 (U3CAnimateVertexColorsU3Ed__11_t2E62EF65D8AE7185E18D8711E582A76E45AC843E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11151,7 +11391,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__11_System_Co
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateVertexColorsU3Ed__11_System_Collections_IEnumerator_Reset_m2F84864A089CBA0B878B7AC1EA39A49B82682A90_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67949
+// Method Definition Index: 67378
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11_System_Collections_IEnumerator_get_Current_m3106DAC17EF56701CBC9812DD031932B04BB730B (U3CAnimateVertexColorsU3Ed__11_t2E62EF65D8AE7185E18D8711E582A76E45AC843E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11167,7 +11407,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__11
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67950
+// Method Definition Index: 67379
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_Awake_mFA9A180BD1769CC79E6325314B5652D605ABE58E (VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11177,16 +11417,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_Awake_mFA9A180BD1769CC79E63
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:21>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:21>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0;
 		L_0 = Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5(__this, Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5_RuntimeMethod_var);
 		__this->___m_TextComponent = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:22>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:22>
 		return;
 	}
 }
-// Method Definition Index: 67951
+// Method Definition Index: 67380
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_OnEnable_m4999DF4598174EDA2A47F4F667B5CE061DF97C21 (VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11199,18 +11439,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_OnEnable_m4999DF4598174EDA2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:27>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:27>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexShakeB_ON_TEXT_CHANGED_mF8641640C828A9664AE03AF01CB4832E14EF436D_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6(L_0, L_1, FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:28>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:28>
 		return;
 	}
 }
-// Method Definition Index: 67952
+// Method Definition Index: 67381
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_OnDisable_m2FB32CBD277A271400BF8AF2A35294C09FE9B8E5 (VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11223,31 +11463,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_OnDisable_m2FB32CBD277A2714
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:32>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexShakeB_ON_TEXT_CHANGED_mF8641640C828A9664AE03AF01CB4832E14EF436D_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F(L_0, L_1, FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:33>
 		return;
 	}
 }
-// Method Definition Index: 67953
+// Method Definition Index: 67382
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_Start_m58786A0944340EF16E024ADB596C9AB5686C2AF1 (VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:38>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:38>
 		RuntimeObject* L_0;
 		L_0 = VertexShakeB_AnimateVertexColors_m06D25FE7F9F3EFF693DDC889BF725F01D0CF2A6F(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:39>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:39>
 		return;
 	}
 }
-// Method Definition Index: 67954
+// Method Definition Index: 67383
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_ON_TEXT_CHANGED_mF8641640C828A9664AE03AF01CB4832E14EF436D (VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11257,7 +11497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_ON_TEXT_CHANGED_mF8641640C8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:44>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:44>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___m_TextComponent;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = L_0;
 		___0_obj = L_1;
@@ -11270,17 +11510,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB_ON_TEXT_CHANGED_mF8641640C8
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:45>
 		__this->___hasTextChanged = (bool)1;
 	}
 
 IL_0017:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:46>
 		return;
 	}
 }
-// Method Definition Index: 67955
+// Method Definition Index: 67384
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexShakeB_AnimateVertexColors_m06D25FE7F9F3EFF693DDC889BF725F01D0CF2A6F (VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11299,15 +11539,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexShakeB_AnimateVertexColo
 		return L_1;
 	}
 }
-// Method Definition Index: 67956
+// Method Definition Index: 67385
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB__ctor_m9D068774503CF8642CC0BAC0E909ECE91E4E2198 (VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:11>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:11>
 		__this->___AngleMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:12>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:12>
 		__this->___SpeedMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:13>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:13>
 		__this->___CurveScale = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -11321,7 +11561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexShakeB__ctor_m9D068774503CF8642CC0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67957
+// Method Definition Index: 67386
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10__ctor_mBE5C0E4A0F65F07A7510D171683AD319F76E6C6D (U3CAnimateVertexColorsU3Ed__10_tD6C6C3147726423C8C82952A638432E12AA2C91E* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -11331,14 +11571,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10__ctor_mBE
 		return;
 	}
 }
-// Method Definition Index: 67958
+// Method Definition Index: 67387
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_IDisposable_Dispose_m4DD41FA568ABBC327FA38C0E345EFB6F1A71C2C8 (U3CAnimateVertexColorsU3Ed__10_tD6C6C3147726423C8C82952A638432E12AA2C91E* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67959
+// Method Definition Index: 67388
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__10_MoveNext_mDD84A4116FCAAF920F86BA72F890CE0BE76AF348 (U3CAnimateVertexColorsU3Ed__10_tD6C6C3147726423C8C82952A638432E12AA2C91E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11400,13 +11640,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__10_MoveNext_
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:57>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:57>
 		VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* L_3 = V_1;
 		NullCheck(L_3);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = L_3->___m_TextComponent;
 		NullCheck(L_4);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_4, (bool)0, (bool)0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:59>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:59>
 		VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* L_5 = V_1;
 		NullCheck(L_5);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___m_TextComponent;
@@ -11415,11 +11655,11 @@ IL_0022:
 		L_7 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_6, NULL);
 		__this->___U3CtextInfoU3E5__2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__2), (void*)L_7);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:62>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:62>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_8 = (Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D*)(Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D*)SZArrayNew(Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D_il2cpp_TypeInfo_var, (uint32_t)0);
 		__this->___U3CcopyOfVerticesU3E5__3 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcopyOfVerticesU3E5__3), (void*)L_8);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:64>
 		VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* L_9 = V_1;
 		NullCheck(L_9);
 		L_9->___hasTextChanged = (bool)1;
@@ -11427,7 +11667,7 @@ IL_0022:
 
 IL_005a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:69>
 		VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* L_10 = V_1;
 		NullCheck(L_10);
 		bool L_11 = L_10->___hasTextChanged;
@@ -11437,7 +11677,7 @@ IL_005a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:71>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:71>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_12 = __this->___U3CcopyOfVerticesU3E5__3;
 		NullCheck(L_12);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_13 = __this->___U3CtextInfoU3E5__2;
@@ -11450,7 +11690,7 @@ IL_005a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:72>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_15 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_15);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_16 = L_15->___meshInfo;
@@ -11462,14 +11702,14 @@ IL_005a:
 
 IL_0091:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:74>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:74>
 		V_4 = 0;
 		goto IL_00c7;
 	}
 
 IL_0096:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:76>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:76>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_18 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_18);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_19 = L_18->___meshInfo;
@@ -11478,21 +11718,21 @@ IL_0096:
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_21 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_20)))->___vertices;
 		NullCheck(L_21);
 		V_5 = ((int32_t)(((RuntimeArray*)L_21)->max_length));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:77>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_22 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_23 = V_4;
 		int32_t L_24 = V_5;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_25 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_24);
 		NullCheck(L_22);
 		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(L_23), (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)L_25);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:74>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:74>
 		int32_t L_26 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
 IL_00c7:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:74>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:74>
 		int32_t L_27 = V_4;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_28 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_28);
@@ -11504,7 +11744,7 @@ IL_00c7:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:80>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:80>
 		VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* L_30 = V_1;
 		NullCheck(L_30);
 		L_30->___hasTextChanged = (bool)0;
@@ -11512,18 +11752,18 @@ IL_00c7:
 
 IL_00df:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:83>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:83>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_31 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_31);
 		int32_t L_32 = L_31->___characterCount;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:86>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:86>
 		if (L_32)
 		{
 			goto IL_0111;
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:88>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:88>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_33 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_33, (0.25f), NULL);
 		__this->___U3CU3E2__current = L_33;
@@ -11535,25 +11775,25 @@ IL_00df:
 IL_0105:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:89>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:89>
 		goto IL_005a;
 	}
 
 IL_0111:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:92>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:92>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_34 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_34);
 		int32_t L_35 = L_34->___lineCount;
 		V_3 = L_35;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:95>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:95>
 		V_6 = 0;
 		goto IL_0625;
 	}
 
 IL_0125:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:98>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:98>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_36 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_36);
 		TMP_LineInfoU5BU5D_tE485ECF6A7A96441C72B53D75E7A5A5461A2CA0E* L_37 = L_36->___lineInfo;
@@ -11561,7 +11801,7 @@ IL_0125:
 		NullCheck(L_37);
 		int32_t L_39 = ((L_37)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_38)))->___firstCharacterIndex;
 		V_7 = L_39;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:99>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:99>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_40 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_40);
 		TMP_LineInfoU5BU5D_tE485ECF6A7A96441C72B53D75E7A5A5461A2CA0E* L_41 = L_40->___lineInfo;
@@ -11569,7 +11809,7 @@ IL_0125:
 		NullCheck(L_41);
 		int32_t L_43 = ((L_41)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_42)))->___lastCharacterIndex;
 		V_8 = L_43;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:102>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:102>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_44 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_44);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_45 = L_44->___characterInfo;
@@ -11587,13 +11827,13 @@ IL_0125:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
 		L_53 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_52, (2.0f), NULL);
 		V_9 = L_53;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:103>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:103>
 		float L_54;
 		L_54 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-0.25f), (0.25f), NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_55;
 		L_55 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), L_54, NULL);
 		V_10 = L_55;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:106>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:106>
 		int32_t L_56 = V_7;
 		V_11 = L_56;
 		goto IL_0616;
@@ -11601,7 +11841,7 @@ IL_0125:
 
 IL_01bf:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:109>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:109>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_57 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_57);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_58 = L_57->___characterInfo;
@@ -11614,7 +11854,7 @@ IL_01bf:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:113>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:113>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_61 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_61);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_62 = L_61->___characterInfo;
@@ -11622,7 +11862,7 @@ IL_01bf:
 		NullCheck(L_62);
 		int32_t L_64 = ((L_62)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_63)))->___materialReferenceIndex;
 		V_12 = L_64;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:116>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:116>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_65 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_65);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_66 = L_65->___characterInfo;
@@ -11630,7 +11870,7 @@ IL_01bf:
 		NullCheck(L_66);
 		int32_t L_68 = ((L_66)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_67)))->___vertexIndex;
 		V_13 = L_68;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:119>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_69 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_69);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_70 = L_69->___meshInfo;
@@ -11638,7 +11878,7 @@ IL_01bf:
 		NullCheck(L_70);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_72 = ((L_70)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_71)))->___vertices;
 		V_14 = L_72;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:122>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:122>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_73 = V_14;
 		int32_t L_74 = V_13;
 		NullCheck(L_73);
@@ -11654,7 +11894,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
 		L_82 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_81, (2.0f), NULL);
 		V_15 = L_82;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:126>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:126>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_83 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_84 = V_12;
 		NullCheck(L_83);
@@ -11671,7 +11911,7 @@ IL_01bf:
 		L_93 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_91, L_92, NULL);
 		NullCheck(L_86);
 		(L_86)->SetAt(static_cast<il2cpp_array_size_t>(L_87), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_93);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:127>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:127>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_94 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_95 = V_12;
 		NullCheck(L_94);
@@ -11688,7 +11928,7 @@ IL_01bf:
 		L_104 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_102, L_103, NULL);
 		NullCheck(L_97);
 		(L_97)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_98, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_104);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:128>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:128>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_105 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_106 = V_12;
 		NullCheck(L_105);
@@ -11705,7 +11945,7 @@ IL_01bf:
 		L_115 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_113, L_114, NULL);
 		NullCheck(L_108);
 		(L_108)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_109, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_115);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:129>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:129>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_116 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_117 = V_12;
 		NullCheck(L_116);
@@ -11722,11 +11962,11 @@ IL_01bf:
 		L_126 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_124, L_125, NULL);
 		NullCheck(L_119);
 		(L_119)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_120, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_126);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:132>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:132>
 		float L_127;
 		L_127 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((0.949999988f), (1.04999995f), NULL);
 		V_16 = L_127;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:135>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:135>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_128;
 		L_128 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_129;
@@ -11739,7 +11979,7 @@ IL_01bf:
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_133;
 		L_133 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline(L_128, L_129, L_132, NULL);
 		V_2 = L_133;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:138>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:138>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_134 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_135 = V_12;
 		NullCheck(L_134);
@@ -11759,7 +11999,7 @@ IL_01bf:
 		L_146 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_145, NULL);
 		NullCheck(L_137);
 		(L_137)->SetAt(static_cast<il2cpp_array_size_t>(L_138), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_146);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:139>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:139>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_147 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_148 = V_12;
 		NullCheck(L_147);
@@ -11779,7 +12019,7 @@ IL_01bf:
 		L_159 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_158, NULL);
 		NullCheck(L_150);
 		(L_150)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_151, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_159);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:140>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:140>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_160 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_161 = V_12;
 		NullCheck(L_160);
@@ -11799,7 +12039,7 @@ IL_01bf:
 		L_172 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_171, NULL);
 		NullCheck(L_163);
 		(L_163)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_164, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_172);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:141>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:141>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_173 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_174 = V_12;
 		NullCheck(L_173);
@@ -11819,7 +12059,7 @@ IL_01bf:
 		L_185 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_184, NULL);
 		NullCheck(L_176);
 		(L_176)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_177, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_185);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:144>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:144>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_186 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_187 = V_12;
 		NullCheck(L_186);
@@ -11833,7 +12073,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_194;
 		L_194 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_192, L_193, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_191 = L_194;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:145>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:145>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_195 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_196 = V_12;
 		NullCheck(L_195);
@@ -11847,7 +12087,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_203;
 		L_203 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_201, L_202, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_200 = L_203;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:146>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:146>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_204 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_205 = V_12;
 		NullCheck(L_204);
@@ -11861,7 +12101,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_212;
 		L_212 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_210, L_211, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_209 = L_212;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:147>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:147>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_213 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_214 = V_12;
 		NullCheck(L_213);
@@ -11875,7 +12115,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_221;
 		L_221 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_219, L_220, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_218 = L_221;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:151>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:151>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_222 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_223 = V_12;
 		NullCheck(L_222);
@@ -11889,7 +12129,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_230;
 		L_230 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_228, L_229, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_227 = L_230;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:152>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:152>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_231 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_232 = V_12;
 		NullCheck(L_231);
@@ -11903,7 +12143,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_239;
 		L_239 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_237, L_238, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_236 = L_239;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:153>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:153>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_240 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_241 = V_12;
 		NullCheck(L_240);
@@ -11917,7 +12157,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_248;
 		L_248 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_246, L_247, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_245 = L_248;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:154>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:154>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_249 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_250 = V_12;
 		NullCheck(L_249);
@@ -11931,7 +12171,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_257;
 		L_257 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_255, L_256, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_254 = L_257;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:157>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:157>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_258;
 		L_258 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_259 = V_10;
@@ -11940,7 +12180,7 @@ IL_01bf:
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_261;
 		L_261 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline(L_258, L_259, L_260, NULL);
 		V_2 = L_261;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:160>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:160>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_262 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_263 = V_12;
 		NullCheck(L_262);
@@ -11960,7 +12200,7 @@ IL_01bf:
 		L_274 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_273, NULL);
 		NullCheck(L_265);
 		(L_265)->SetAt(static_cast<il2cpp_array_size_t>(L_266), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_274);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:161>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:161>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_275 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_276 = V_12;
 		NullCheck(L_275);
@@ -11980,7 +12220,7 @@ IL_01bf:
 		L_287 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_286, NULL);
 		NullCheck(L_278);
 		(L_278)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_279, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_287);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:162>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:162>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_288 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_289 = V_12;
 		NullCheck(L_288);
@@ -12000,7 +12240,7 @@ IL_01bf:
 		L_300 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_299, NULL);
 		NullCheck(L_291);
 		(L_291)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_292, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_300);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:163>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:163>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_301 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_302 = V_12;
 		NullCheck(L_301);
@@ -12020,7 +12260,7 @@ IL_01bf:
 		L_313 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_312, NULL);
 		NullCheck(L_304);
 		(L_304)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_305, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_313);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:166>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:166>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_314 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_315 = V_12;
 		NullCheck(L_314);
@@ -12034,7 +12274,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_322;
 		L_322 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_320, L_321, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_319 = L_322;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:167>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:167>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_323 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_324 = V_12;
 		NullCheck(L_323);
@@ -12048,7 +12288,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_331;
 		L_331 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_329, L_330, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_328 = L_331;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:168>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:168>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_332 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_333 = V_12;
 		NullCheck(L_332);
@@ -12062,7 +12302,7 @@ IL_01bf:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_340;
 		L_340 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_338, L_339, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_337 = L_340;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:169>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:169>
 		Vector3U5BU5DU5BU5D_t9E2E40AB6AB9079C8F16A0B6410FF6CF2EE8B53D* L_341 = __this->___U3CcopyOfVerticesU3E5__3;
 		int32_t L_342 = V_12;
 		NullCheck(L_341);
@@ -12080,14 +12320,14 @@ IL_01bf:
 
 IL_0610:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:106>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:106>
 		int32_t L_350 = V_11;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_350, 1));
 	}
 
 IL_0616:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:106>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:106>
 		int32_t L_351 = V_11;
 		int32_t L_352 = V_8;
 		if ((((int32_t)L_351) <= ((int32_t)L_352)))
@@ -12096,14 +12336,14 @@ IL_0616:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:95>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:95>
 		int32_t L_353 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_353, 1));
 	}
 
 IL_0625:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:95>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:95>
 		int32_t L_354 = V_6;
 		int32_t L_355 = V_3;
 		if ((((int32_t)L_354) < ((int32_t)L_355)))
@@ -12112,14 +12352,14 @@ IL_0625:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:174>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:174>
 		V_17 = 0;
 		goto IL_0681;
 	}
 
 IL_0632:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:176>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:176>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_356 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_356);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_357 = L_356->___meshInfo;
@@ -12133,7 +12373,7 @@ IL_0632:
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_363 = (L_360)->GetAt(static_cast<il2cpp_array_size_t>(L_362));
 		NullCheck(L_359);
 		Mesh_set_vertices_m5BB814D89E9ACA00DBF19F7D8E22CB73AC73FE5C(L_359, L_363, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:177>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:177>
 		VertexShakeB_tA3849618A1BE8DCE150A615F38CE2E247FC6F6C8* L_364 = V_1;
 		NullCheck(L_364);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_365 = L_364->___m_TextComponent;
@@ -12146,14 +12386,14 @@ IL_0632:
 		int32_t L_370 = V_17;
 		NullCheck(L_365);
 		VirtualActionInvoker2< Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4*, int32_t >::Invoke(107, L_365, L_369, L_370);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:174>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:174>
 		int32_t L_371 = V_17;
 		V_17 = ((int32_t)il2cpp_codegen_add(L_371, 1));
 	}
 
 IL_0681:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:174>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:174>
 		int32_t L_372 = V_17;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_373 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_373);
@@ -12165,7 +12405,7 @@ IL_0681:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:180>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:180>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_375 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_375, (0.100000001f), NULL);
 		__this->___U3CU3E2__current = L_375;
@@ -12177,11 +12417,11 @@ IL_0681:
 IL_06ab:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:66>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs:66>
 		goto IL_005a;
 	}
 }
-// Method Definition Index: 67960
+// Method Definition Index: 67389
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m250CC96EC17E74D79536FDA4EB6F5B5F985C0845 (U3CAnimateVertexColorsU3Ed__10_tD6C6C3147726423C8C82952A638432E12AA2C91E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12189,7 +12429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10
 		return L_0;
 	}
 }
-// Method Definition Index: 67961
+// Method Definition Index: 67390
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_Reset_m5A5869FEFA67D5E9659F1145B83581D954550C1A (U3CAnimateVertexColorsU3Ed__10_tD6C6C3147726423C8C82952A638432E12AA2C91E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12198,7 +12438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_Co
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_Reset_m5A5869FEFA67D5E9659F1145B83581D954550C1A_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67962
+// Method Definition Index: 67391
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_get_Current_m496F1BFEADA21FFB684F8C1996EAB707CFA1C5F0 (U3CAnimateVertexColorsU3Ed__10_tD6C6C3147726423C8C82952A638432E12AA2C91E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12214,7 +12454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67963
+// Method Definition Index: 67392
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_Awake_m29C1DE789B968D726EDD69F605321A223D47C1A0 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12224,16 +12464,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_Awake_m29C1DE789B968D726EDD69
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:22>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:22>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0;
 		L_0 = Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5(__this, Component_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_m0C4C5268B54C7097888C6B109527A680772EBCB5_RuntimeMethod_var);
 		__this->___m_TextComponent = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:23>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:23>
 		return;
 	}
 }
-// Method Definition Index: 67964
+// Method Definition Index: 67393
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnEnable_mE3719F01B6A8590066988F425F8A63103B5A7B47 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12246,18 +12486,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnEnable_mE3719F01B6A85900669
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:28>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:28>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7DD19D6BDACBEEB737B4AAE32DDA7_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6(L_0, L_1, FastAction_1_Add_m368726E3508DB2176C4F87A79C0C0CC4816176D6_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:29>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:29>
 		return;
 	}
 }
-// Method Definition Index: 67965
+// Method Definition Index: 67394
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnDisable_mBB91C9EFA049395743D27358A427BB2B05850B47 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12270,31 +12510,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_OnDisable_mBB91C9EFA049395743
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:34>
 		il2cpp_codegen_runtime_class_init_inline(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var);
 		FastAction_1_tE50C6A692DF85AB55BE3160B659FA7DF19DFA005* L_0 = ((TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_StaticFields*)il2cpp_codegen_static_fields_for(TMPro_EventManager_t0234DB5BF625FC164B395C5C3B6F2CB8C89A3BA9_il2cpp_TypeInfo_var))->___TEXT_CHANGED_EVENT;
 		Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A* L_1 = (Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A*)il2cpp_codegen_object_new(Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A_il2cpp_TypeInfo_var);
 		Action_1__ctor_m95478636F075134CA2998E22B214611472600983(L_1, __this, (intptr_t)((void*)VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7DD19D6BDACBEEB737B4AAE32DDA7_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F(L_0, L_1, FastAction_1_Remove_mB29130AC90F5F8967CD89587717469E44E4D186F_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:35>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:35>
 		return;
 	}
 }
-// Method Definition Index: 67966
+// Method Definition Index: 67395
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_Start_mB03D03148C98EBC9117D69510D24F21978546FCB (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:40>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:40>
 		RuntimeObject* L_0;
 		L_0 = VertexZoom_AnimateVertexColors_m632BD9DC8FB193AF2D5B540524B11AF139FDF5F0(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:41>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:41>
 		return;
 	}
 }
-// Method Definition Index: 67967
+// Method Definition Index: 67396
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7DD19D6BDACBEEB737B4AAE32DDA7 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12304,7 +12544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:46>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:46>
 		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_0 = ___0_obj;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___m_TextComponent;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -12316,17 +12556,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom_ON_TEXT_CHANGED_mFF049D0455A7
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:47>
 		__this->___hasTextChanged = (bool)1;
 	}
 
 IL_0015:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:48>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:48>
 		return;
 	}
 }
-// Method Definition Index: 67968
+// Method Definition Index: 67397
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexZoom_AnimateVertexColors_m632BD9DC8FB193AF2D5B540524B11AF139FDF5F0 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12345,15 +12585,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VertexZoom_AnimateVertexColors
 		return L_1;
 	}
 }
-// Method Definition Index: 67969
+// Method Definition Index: 67398
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom__ctor_m454AF80ACB5C555BCB4B5E658A22B5A4FCC39422 (VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:12>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:12>
 		__this->___AngleMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:13>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:13>
 		__this->___SpeedMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:14>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:14>
 		__this->___CurveScale = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -12367,7 +12607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexZoom__ctor_m454AF80ACB5C555BCB4B5E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67970
+// Method Definition Index: 67399
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m8C69A89B34AA3D16243E69F1E0015856C791CC8A (U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12375,7 +12615,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m8C69A89
 		return;
 	}
 }
-// Method Definition Index: 67971
+// Method Definition Index: 67400
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass10_0_U3CAnimateVertexColorsU3Eb__0_m8E51A05E012CCFA439DCF10A8B5C4FA196E4344A (U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* __this, int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12386,7 +12626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass10_0_U3CAnimateV
 	}
 	float V_0 = 0.0f;
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:175>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:175>
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_0 = __this->___modifiedCharScale;
 		int32_t L_1 = ___0_a;
 		NullCheck(L_0);
@@ -12411,7 +12651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass10_0_U3CAnimateV
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67972
+// Method Definition Index: 67401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10__ctor_m7A5B8E07B89E628DB7119F7F61311165A2DBC4D6 (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -12421,14 +12661,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10__ctor_m7A
 		return;
 	}
 }
-// Method Definition Index: 67973
+// Method Definition Index: 67402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_IDisposable_Dispose_m974E92A444C6343E94C76BB6CC6508F7AE4FD36E (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67974
+// Method Definition Index: 67403
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateVertexColorsU3Ed__10_MoveNext_m6DBC52A95A92A54A1801DC4CEE548FA568251D5E (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12505,13 +12745,13 @@ IL_0022:
 		U3CU3Ec__DisplayClass10_0__ctor_m8C69A89B34AA3D16243E69F1E0015856C791CC8A(L_3, NULL);
 		__this->___U3CU3E8__1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__1), (void*)L_3);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:59>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:59>
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_4 = V_1;
 		NullCheck(L_4);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = L_4->___m_TextComponent;
 		NullCheck(L_5);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_5, (bool)0, (bool)0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:61>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:61>
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_6 = V_1;
 		NullCheck(L_6);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = L_6->___m_TextComponent;
@@ -12520,26 +12760,26 @@ IL_0022:
 		L_8 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_7, NULL);
 		__this->___U3CtextInfoU3E5__2 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtextInfoU3E5__2), (void*)L_8);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:64>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_9 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_9);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_10;
 		L_10 = TMP_TextInfo_CopyMeshInfoVertexData_mF66E2F8821470E68D95FEB53D456CFA86241C0CA(L_9, NULL);
 		__this->___U3CcachedMeshInfoVertexDataU3E5__3 = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcachedMeshInfoVertexDataU3E5__3), (void*)L_10);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:67>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:67>
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_11 = __this->___U3CU3E8__1;
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_12 = (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918*)il2cpp_codegen_object_new(List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918_il2cpp_TypeInfo_var);
 		List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802(L_12, List_1__ctor_mC29D3D824786832A31096310B3B3016B8B42B802_RuntimeMethod_var);
 		NullCheck(L_11);
 		L_11->___modifiedCharScale = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___modifiedCharScale), (void*)L_12);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:68>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_13 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_13, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		__this->___U3CscaleSortingOrderU3E5__4 = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CscaleSortingOrderU3E5__4), (void*)L_13);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:70>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:70>
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_14 = V_1;
 		NullCheck(L_14);
 		L_14->___hasTextChanged = (bool)1;
@@ -12547,7 +12787,7 @@ IL_0022:
 
 IL_0085:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:75>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:75>
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_15 = V_1;
 		NullCheck(L_15);
 		bool L_16 = L_15->___hasTextChanged;
@@ -12557,14 +12797,14 @@ IL_0085:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:78>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:78>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_17 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_17);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_18;
 		L_18 = TMP_TextInfo_CopyMeshInfoVertexData_mF66E2F8821470E68D95FEB53D456CFA86241C0CA(L_17, NULL);
 		__this->___U3CcachedMeshInfoVertexDataU3E5__3 = L_18;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcachedMeshInfoVertexDataU3E5__3), (void*)L_18);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:80>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:80>
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_19 = V_1;
 		NullCheck(L_19);
 		L_19->___hasTextChanged = (bool)0;
@@ -12572,12 +12812,12 @@ IL_0085:
 
 IL_00a5:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:83>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:83>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_20 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_20);
 		int32_t L_21 = L_20->___characterCount;
 		V_3 = L_21;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:86>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:86>
 		int32_t L_22 = V_3;
 		if (L_22)
 		{
@@ -12585,7 +12825,7 @@ IL_00a5:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:88>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:88>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_23 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_23, (0.25f), NULL);
 		__this->___U3CU3E2__current = L_23;
@@ -12597,30 +12837,30 @@ IL_00a5:
 IL_00cd:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:89>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:89>
 		goto IL_0085;
 	}
 
 IL_00d6:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:93>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:93>
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_24 = __this->___U3CU3E8__1;
 		NullCheck(L_24);
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_25 = L_24->___modifiedCharScale;
 		NullCheck(L_25);
 		List_1_Clear_m6CD2E5AAE6552A27AECCC57936767B4DCFC902B1_inline(L_25, List_1_Clear_m6CD2E5AAE6552A27AECCC57936767B4DCFC902B1_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:94>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:94>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_26 = __this->___U3CscaleSortingOrderU3E5__4;
 		NullCheck(L_26);
 		List_1_Clear_mF6795DE5F49C1D0B91D6A0955F448B22970D67A9_inline(L_26, List_1_Clear_mF6795DE5F49C1D0B91D6A0955F448B22970D67A9_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
 		V_4 = 0;
 		goto IL_045a;
 	}
 
 IL_00f9:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:98>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:98>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_27 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_27);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_28 = L_27->___characterInfo;
@@ -12628,7 +12868,7 @@ IL_00f9:
 		NullCheck(L_28);
 		int32_t L_30 = L_29;
 		TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8 L_31 = (L_28)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:101>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:101>
 		bool L_32 = L_31.___isVisible;
 		if (!L_32)
 		{
@@ -12636,7 +12876,7 @@ IL_00f9:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:105>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:105>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_33 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_33);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_34 = L_33->___characterInfo;
@@ -12644,7 +12884,7 @@ IL_00f9:
 		NullCheck(L_34);
 		int32_t L_36 = ((L_34)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_35)))->___materialReferenceIndex;
 		V_5 = L_36;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:108>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:108>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_37 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_37);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_38 = L_37->___characterInfo;
@@ -12652,13 +12892,13 @@ IL_00f9:
 		NullCheck(L_38);
 		int32_t L_40 = ((L_38)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_39)))->___vertexIndex;
 		V_6 = L_40;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:111>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:111>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_41 = __this->___U3CcachedMeshInfoVertexDataU3E5__3;
 		int32_t L_42 = V_5;
 		NullCheck(L_41);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_43 = ((L_41)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_42)))->___vertices;
 		V_7 = L_43;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:116>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:116>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_44 = V_7;
 		int32_t L_45 = V_6;
 		NullCheck(L_44);
@@ -12675,11 +12915,11 @@ IL_00f9:
 		L_53 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_52, (2.0f), NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_54;
 		L_54 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_53, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:120>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:120>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55;
 		L_55 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_54, NULL);
 		V_8 = L_55;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:122>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:122>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_56 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_56);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_57 = L_56->___meshInfo;
@@ -12687,7 +12927,7 @@ IL_00f9:
 		NullCheck(L_57);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_59 = ((L_57)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_58)))->___vertices;
 		V_9 = L_59;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:124>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:124>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_60 = V_9;
 		int32_t L_61 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_62 = V_7;
@@ -12700,7 +12940,7 @@ IL_00f9:
 		L_67 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_65, L_66, NULL);
 		NullCheck(L_60);
 		(L_60)->SetAt(static_cast<il2cpp_array_size_t>(L_61), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_67);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:125>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_68 = V_9;
 		int32_t L_69 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_70 = V_7;
@@ -12713,7 +12953,7 @@ IL_00f9:
 		L_75 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_73, L_74, NULL);
 		NullCheck(L_68);
 		(L_68)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_69, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_75);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:126>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:126>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_76 = V_9;
 		int32_t L_77 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_78 = V_7;
@@ -12726,7 +12966,7 @@ IL_00f9:
 		L_83 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_81, L_82, NULL);
 		NullCheck(L_76);
 		(L_76)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_77, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_83);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:127>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:127>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_84 = V_9;
 		int32_t L_85 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_86 = V_7;
@@ -12739,18 +12979,18 @@ IL_00f9:
 		L_91 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_89, L_90, NULL);
 		NullCheck(L_84);
 		(L_84)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_85, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_91);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:132>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:132>
 		float L_92;
 		L_92 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((1.0f), (1.5f), NULL);
 		V_10 = L_92;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:135>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:135>
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_93 = __this->___U3CU3E8__1;
 		NullCheck(L_93);
 		List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* L_94 = L_93->___modifiedCharScale;
 		float L_95 = V_10;
 		NullCheck(L_94);
 		List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_inline(L_94, L_95, List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:136>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:136>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_96 = __this->___U3CscaleSortingOrderU3E5__4;
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_97 = __this->___U3CU3E8__1;
 		NullCheck(L_97);
@@ -12760,7 +13000,7 @@ IL_00f9:
 		L_99 = List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_inline(L_98, List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_RuntimeMethod_var);
 		NullCheck(L_96);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_96, ((int32_t)il2cpp_codegen_subtract(L_99, 1)), List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:140>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:140>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100;
 		memset((&L_100), 0, sizeof(L_100));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_100), (0.0f), (0.0f), (0.0f), NULL);
@@ -12774,7 +13014,7 @@ IL_00f9:
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_105;
 		L_105 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline(L_100, L_101, L_104, NULL);
 		V_2 = L_105;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:142>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:142>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_106 = V_9;
 		int32_t L_107 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_108 = V_9;
@@ -12786,7 +13026,7 @@ IL_00f9:
 		L_112 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_111, NULL);
 		NullCheck(L_106);
 		(L_106)->SetAt(static_cast<il2cpp_array_size_t>(L_107), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_112);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:143>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:143>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_113 = V_9;
 		int32_t L_114 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_115 = V_9;
@@ -12798,7 +13038,7 @@ IL_00f9:
 		L_119 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_118, NULL);
 		NullCheck(L_113);
 		(L_113)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_114, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_119);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:144>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:144>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_120 = V_9;
 		int32_t L_121 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_122 = V_9;
@@ -12810,7 +13050,7 @@ IL_00f9:
 		L_126 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_125, NULL);
 		NullCheck(L_120);
 		(L_120)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_121, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_126);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:145>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:145>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_127 = V_9;
 		int32_t L_128 = V_6;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_129 = V_9;
@@ -12822,7 +13062,7 @@ IL_00f9:
 		L_133 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_2), L_132, NULL);
 		NullCheck(L_127);
 		(L_127)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_128, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_133);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:147>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:147>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_134 = V_9;
 		int32_t L_135 = V_6;
 		NullCheck(L_134);
@@ -12832,7 +13072,7 @@ IL_00f9:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_139;
 		L_139 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_137, L_138, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_136 = L_139;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:148>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:148>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_140 = V_9;
 		int32_t L_141 = V_6;
 		NullCheck(L_140);
@@ -12842,7 +13082,7 @@ IL_00f9:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_145;
 		L_145 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_143, L_144, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_142 = L_145;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:149>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:149>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_146 = V_9;
 		int32_t L_147 = V_6;
 		NullCheck(L_146);
@@ -12852,7 +13092,7 @@ IL_00f9:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_151;
 		L_151 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_149, L_150, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_148 = L_151;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:150>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:150>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_152 = V_9;
 		int32_t L_153 = V_6;
 		NullCheck(L_152);
@@ -12862,20 +13102,20 @@ IL_00f9:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_157;
 		L_157 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_155, L_156, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_154 = L_157;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:153>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:153>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_158 = __this->___U3CcachedMeshInfoVertexDataU3E5__3;
 		int32_t L_159 = V_5;
 		NullCheck(L_158);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_160 = ((L_158)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_159)))->___uvs0;
 		V_11 = L_160;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:154>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:154>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_161 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_161);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_162 = L_161->___meshInfo;
 		int32_t L_163 = V_5;
 		NullCheck(L_162);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_164 = ((L_162)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_163)))->___uvs0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:156>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:156>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_165 = L_164;
 		int32_t L_166 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_167 = V_11;
@@ -12885,7 +13125,7 @@ IL_00f9:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_170 = (L_167)->GetAt(static_cast<il2cpp_array_size_t>(L_169));
 		NullCheck(L_165);
 		(L_165)->SetAt(static_cast<il2cpp_array_size_t>(L_166), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_170);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:157>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:157>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_171 = L_165;
 		int32_t L_172 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_173 = V_11;
@@ -12895,7 +13135,7 @@ IL_00f9:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_176 = (L_173)->GetAt(static_cast<il2cpp_array_size_t>(L_175));
 		NullCheck(L_171);
 		(L_171)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_172, 1))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_176);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:158>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:158>
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_177 = L_171;
 		int32_t L_178 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_179 = V_11;
@@ -12905,7 +13145,7 @@ IL_00f9:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_182 = (L_179)->GetAt(static_cast<il2cpp_array_size_t>(L_181));
 		NullCheck(L_177);
 		(L_177)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_178, 2))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_182);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:159>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:159>
 		int32_t L_183 = V_6;
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_184 = V_11;
 		int32_t L_185 = V_6;
@@ -12914,20 +13154,20 @@ IL_00f9:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_187 = (L_184)->GetAt(static_cast<il2cpp_array_size_t>(L_186));
 		NullCheck(L_177);
 		(L_177)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_183, 3))), (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3)L_187);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:162>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:162>
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_188 = __this->___U3CcachedMeshInfoVertexDataU3E5__3;
 		int32_t L_189 = V_5;
 		NullCheck(L_188);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_190 = ((L_188)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_189)))->___colors32;
 		V_12 = L_190;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:163>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:163>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_191 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_191);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_192 = L_191->___meshInfo;
 		int32_t L_193 = V_5;
 		NullCheck(L_192);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_194 = ((L_192)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_193)))->___colors32;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:165>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:165>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_195 = L_194;
 		int32_t L_196 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_197 = V_12;
@@ -12937,7 +13177,7 @@ IL_00f9:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_200 = (L_197)->GetAt(static_cast<il2cpp_array_size_t>(L_199));
 		NullCheck(L_195);
 		(L_195)->SetAt(static_cast<il2cpp_array_size_t>(L_196), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_200);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:166>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:166>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_201 = L_195;
 		int32_t L_202 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_203 = V_12;
@@ -12947,7 +13187,7 @@ IL_00f9:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_206 = (L_203)->GetAt(static_cast<il2cpp_array_size_t>(L_205));
 		NullCheck(L_201);
 		(L_201)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_202, 1))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_206);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:167>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:167>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_207 = L_201;
 		int32_t L_208 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_209 = V_12;
@@ -12957,7 +13197,7 @@ IL_00f9:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_212 = (L_209)->GetAt(static_cast<il2cpp_array_size_t>(L_211));
 		NullCheck(L_207);
 		(L_207)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_208, 2))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_212);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:168>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:168>
 		int32_t L_213 = V_6;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_214 = V_12;
 		int32_t L_215 = V_6;
@@ -12970,14 +13210,14 @@ IL_00f9:
 
 IL_0454:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
 		int32_t L_218 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_218, 1));
 	}
 
 IL_045a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:96>
 		int32_t L_219 = V_4;
 		int32_t L_220 = V_3;
 		if ((((int32_t)L_219) < ((int32_t)L_220)))
@@ -12986,14 +13226,14 @@ IL_045a:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
 		V_13 = 0;
 		goto IL_0586;
 	}
 
 IL_046a:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:175>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:175>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_221 = __this->___U3CscaleSortingOrderU3E5__4;
 		U3CU3Ec__DisplayClass10_0_t62C0E1CEED92DDFC3DD4C58EC8806FC7D82A7FB7* L_222 = __this->___U3CU3E8__1;
 		NullCheck(L_222);
@@ -13027,7 +13267,7 @@ IL_04a0:
 	{
 		NullCheck(G_B16_1);
 		List_1_Sort_m90CDC07AEBE737318A490F4C2BC6F2955443EDA4(G_B16_1, G_B16_0, List_1_Sort_m90CDC07AEBE737318A490F4C2BC6F2955443EDA4_RuntimeMethod_var);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:177>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:177>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_230 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_230);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_231 = L_230->___meshInfo;
@@ -13036,7 +13276,7 @@ IL_04a0:
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_233 = __this->___U3CscaleSortingOrderU3E5__4;
 		il2cpp_codegen_runtime_class_init_inline(TMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B_il2cpp_TypeInfo_var);
 		TMP_MeshInfo_SortGeometry_m74ED0FE2065414A659EE9A9C809E1B0B4A8A7734(((L_231)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_232))), L_233, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:180>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:180>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_234 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_234);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_235 = L_234->___meshInfo;
@@ -13051,7 +13291,7 @@ IL_04a0:
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_241 = ((L_239)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_240)))->___vertices;
 		NullCheck(L_237);
 		Mesh_set_vertices_m5BB814D89E9ACA00DBF19F7D8E22CB73AC73FE5C(L_237, L_241, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:181>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:181>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_242 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_242);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_243 = L_242->___meshInfo;
@@ -13066,7 +13306,7 @@ IL_04a0:
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_249 = ((L_247)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_248)))->___uvs0;
 		NullCheck(L_245);
 		Mesh_SetUVs_mDFA98E5557AB6585FE0F8AB5C9286D1C69A53324(L_245, 0, L_249, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:182>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:182>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_250 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_250);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_251 = L_250->___meshInfo;
@@ -13081,7 +13321,7 @@ IL_04a0:
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_257 = ((L_255)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_256)))->___colors32;
 		NullCheck(L_253);
 		Mesh_set_colors32_m0E4462B7A1D613E6FB15DD7584BCE5491C17820F(L_253, L_257, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:184>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:184>
 		VertexZoom_t51F05EB153497034D27896F07590D790A73981A6* L_258 = V_1;
 		NullCheck(L_258);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_259 = L_258->___m_TextComponent;
@@ -13094,14 +13334,14 @@ IL_04a0:
 		int32_t L_264 = V_13;
 		NullCheck(L_259);
 		VirtualActionInvoker2< Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4*, int32_t >::Invoke(107, L_259, L_263, L_264);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
 		int32_t L_265 = V_13;
 		V_13 = ((int32_t)il2cpp_codegen_add(L_265, 1));
 	}
 
 IL_0586:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:172>
 		int32_t L_266 = V_13;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_267 = __this->___U3CtextInfoU3E5__2;
 		NullCheck(L_267);
@@ -13113,7 +13353,7 @@ IL_0586:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:187>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:187>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_269 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_269, (0.100000001f), NULL);
 		__this->___U3CU3E2__current = L_269;
@@ -13125,11 +13365,11 @@ IL_0586:
 IL_05b3:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:72>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs:72>
 		goto IL_0085;
 	}
 }
-// Method Definition Index: 67975
+// Method Definition Index: 67404
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m110CD16E89E725B1484D24FFB1753768F78A988B (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13137,7 +13377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10
 		return L_0;
 	}
 }
-// Method Definition Index: 67976
+// Method Definition Index: 67405
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_Reset_mDE5E71C88F5096FD70EB061287ADF0B847732821 (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13146,7 +13386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVertexColorsU3Ed__10_System_Co
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_Reset_mDE5E71C88F5096FD70EB061287ADF0B847732821_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67977
+// Method Definition Index: 67406
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10_System_Collections_IEnumerator_get_Current_m14B89756695EE73AEBB6F3A613F65E1343A8CC2C (U3CAnimateVertexColorsU3Ed__10_t2EB585545BBB614E711BE1D5C7BF139053486123* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13162,7 +13402,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVertexColorsU3Ed__10
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67978
+// Method Definition Index: 67407
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Awake_m92842E51B4DBB2E4341ACB179468049FAB23949F (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13172,7 +13412,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Awake_m92842E51B4DBB2E43
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:20>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:20>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_0);
@@ -13180,24 +13420,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Awake_m92842E51B4DBB2E43
 		L_1 = GameObject_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA59A63181077B821132B53D44724D7F86C6FECB3(L_0, GameObject_GetComponent_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA59A63181077B821132B53D44724D7F86C6FECB3_RuntimeMethod_var);
 		__this->___m_TextComponent = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_TextComponent), (void*)L_1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:21>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:21>
 		return;
 	}
 }
-// Method Definition Index: 67979
+// Method Definition Index: 67408
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample_Start_m3339EDC03B6FC498916520CBCCDB5F9FA090F809 (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:26>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:26>
 		RuntimeObject* L_0;
 		L_0 = WarpTextExample_WarpText_mBE4B6E5B6D8AAE9340CD59B1FA9DFE9A34665E98(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:27>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:27>
 		return;
 	}
 }
-// Method Definition Index: 67980
+// Method Definition Index: 67409
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* WarpTextExample_CopyAnimationCurve_m65A93388CC2CF58CD2E08CC8EF682A2C97C558FF (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___0_curve, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13207,10 +13447,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD9991
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:32>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:32>
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_0 = (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354*)il2cpp_codegen_object_new(AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_il2cpp_TypeInfo_var);
 		AnimationCurve__ctor_m0D976567166F92383307DC8EB8D7082CD34E226F(L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:34>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:34>
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_1 = L_0;
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_2 = ___0_curve;
 		NullCheck(L_2);
@@ -13218,11 +13458,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD9991
 		L_3 = AnimationCurve_get_keys_m34452C69464AB459C04BFFEA4F541F06B419AC4E(L_2, NULL);
 		NullCheck(L_1);
 		AnimationCurve_set_keys_mBE1284B44CDBB1D8381177A3D581A6E71467F95C(L_1, L_3, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:36>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:36>
 		return L_1;
 	}
 }
-// Method Definition Index: 67981
+// Method Definition Index: 67410
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WarpTextExample_WarpText_mBE4B6E5B6D8AAE9340CD59B1FA9DFE9A34665E98 (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13241,7 +13481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WarpTextExample_WarpText_mBE4B
 		return L_1;
 	}
 }
-// Method Definition Index: 67982
+// Method Definition Index: 67411
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample__ctor_mBD48A5403123F25C45B5E60C19E1EA397FBA1795 (WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13252,7 +13492,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample__ctor_mBD48A5403123F25C4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:13>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:13>
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_0 = (KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3*)(KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3*)SZArrayNew(KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3_il2cpp_TypeInfo_var, (uint32_t)5);
 		KeyframeU5BU5D_t63250A46914A6A07B2A6689850D47D7D19D80BA3* L_1 = L_0;
 		Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 L_2;
@@ -13288,11 +13528,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample__ctor_mBD48A5403123F25C4
 		AnimationCurve__ctor_mEABC98C03805713354D61E50D9340766BD5B717E(L_11, L_9, NULL);
 		__this->___VertexCurve = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___VertexCurve), (void*)L_11);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:14>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:14>
 		__this->___AngleMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:15>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:15>
 		__this->___SpeedMultiplier = (1.0f);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:16>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:16>
 		__this->___CurveScale = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -13306,7 +13546,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WarpTextExample__ctor_mBD48A5403123F25C4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 67983
+// Method Definition Index: 67412
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8__ctor_m1943C34BBEAF121203BA8C5D725E991283A4A3BB (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -13316,14 +13556,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8__ctor_m1943C34BBEAF12
 		return;
 	}
 }
-// Method Definition Index: 67984
+// Method Definition Index: 67413
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8_System_IDisposable_Dispose_m145D2DA1026419984AD79D5D62FBC38C9441AB53 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 67985
+// Method Definition Index: 67414
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B02 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13386,37 +13626,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:47>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:47>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_3 = V_1;
 		NullCheck(L_3);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_4 = L_3->___VertexCurve;
 		NullCheck(L_4);
 		AnimationCurve_set_preWrapMode_mA618E67F536483FA5F3507A2D97C045E089D1B2D(L_4, 1, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:48>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:48>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_5 = V_1;
 		NullCheck(L_5);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_6 = L_5->___VertexCurve;
 		NullCheck(L_6);
 		AnimationCurve_set_postWrapMode_m39A4758ABD5D2AEE475940829352792FE7E9CBA9(L_6, 1, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:55>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:55>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_7 = V_1;
 		NullCheck(L_7);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = L_7->___m_TextComponent;
 		NullCheck(L_8);
 		TMP_Text_set_havePropertiesChanged_mA38D7BC9E260BF29450738B827F2220A05662B31(L_8, (bool)1, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:56>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:56>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_9 = V_1;
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_10 = V_1;
 		NullCheck(L_10);
 		float L_11 = L_10->___CurveScale;
 		NullCheck(L_9);
 		L_9->___CurveScale = ((float)il2cpp_codegen_multiply(L_11, (10.0f)));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:57>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:57>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_12 = V_1;
 		NullCheck(L_12);
 		float L_13 = L_12->___CurveScale;
 		__this->___U3Cold_CurveScaleU3E5__2 = L_13;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:58>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:58>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_14 = V_1;
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_15 = V_1;
 		NullCheck(L_15);
@@ -13430,7 +13670,7 @@ IL_0022:
 
 IL_007d:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:62>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:62>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_18 = V_1;
 		NullCheck(L_18);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_19 = L_18->___m_TextComponent;
@@ -13475,7 +13715,7 @@ IL_007d:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:64>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:64>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
@@ -13485,18 +13725,18 @@ IL_007d:
 IL_00d6:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:65>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:65>
 		goto IL_007d;
 	}
 
 IL_00df:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:68>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:68>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_31 = V_1;
 		NullCheck(L_31);
 		float L_32 = L_31->___CurveScale;
 		__this->___U3Cold_CurveScaleU3E5__2 = L_32;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:69>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_33 = V_1;
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_34 = V_1;
 		NullCheck(L_34);
@@ -13506,13 +13746,13 @@ IL_00df:
 		L_36 = WarpTextExample_CopyAnimationCurve_m65A93388CC2CF58CD2E08CC8EF682A2C97C558FF(L_33, L_35, NULL);
 		__this->___U3Cold_curveU3E5__3 = L_36;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3Cold_curveU3E5__3), (void*)L_36);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:71>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:71>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_37 = V_1;
 		NullCheck(L_37);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_38 = L_37->___m_TextComponent;
 		NullCheck(L_38);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_38, (bool)0, (bool)0);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:73>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:73>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_39 = V_1;
 		NullCheck(L_39);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_40 = L_39->___m_TextComponent;
@@ -13520,12 +13760,12 @@ IL_00df:
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_41;
 		L_41 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E(L_40, NULL);
 		V_4 = L_41;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:74>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:74>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_42 = V_4;
 		NullCheck(L_42);
 		int32_t L_43 = L_42->___characterCount;
 		V_5 = L_43;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:77>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:77>
 		int32_t L_44 = V_5;
 		if (!L_44)
 		{
@@ -13533,7 +13773,7 @@ IL_00df:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:82>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:82>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_45 = V_1;
 		NullCheck(L_45);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_46 = L_45->___m_TextComponent;
@@ -13545,7 +13785,7 @@ IL_00df:
 		L_48 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline((&V_8), NULL);
 		float L_49 = L_48.___x;
 		V_6 = L_49;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:83>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:83>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_50 = V_1;
 		NullCheck(L_50);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_51 = L_50->___m_TextComponent;
@@ -13557,14 +13797,14 @@ IL_00df:
 		L_53 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline((&V_8), NULL);
 		float L_54 = L_53.___x;
 		V_7 = L_54;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
 		V_9 = 0;
 		goto IL_0446;
 	}
 
 IL_0165:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:89>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:89>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_55 = V_4;
 		NullCheck(L_55);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_56 = L_55->___characterInfo;
@@ -13577,7 +13817,7 @@ IL_0165:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:92>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:92>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_59 = V_4;
 		NullCheck(L_59);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_60 = L_59->___characterInfo;
@@ -13585,7 +13825,7 @@ IL_0165:
 		NullCheck(L_60);
 		int32_t L_62 = ((L_60)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_61)))->___vertexIndex;
 		V_10 = L_62;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:95>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:95>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_63 = V_4;
 		NullCheck(L_63);
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_64 = L_63->___characterInfo;
@@ -13593,7 +13833,7 @@ IL_0165:
 		NullCheck(L_64);
 		int32_t L_66 = ((L_64)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_65)))->___materialReferenceIndex;
 		V_11 = L_66;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:97>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:97>
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_67 = V_4;
 		NullCheck(L_67);
 		TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7* L_68 = L_67->___meshInfo;
@@ -13601,7 +13841,7 @@ IL_0165:
 		NullCheck(L_68);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_70 = ((L_68)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_69)))->___vertices;
 		V_2 = L_70;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:100>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:100>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_71 = V_2;
 		int32_t L_72 = V_10;
 		NullCheck(L_71);
@@ -13622,7 +13862,7 @@ IL_0165:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
 		L_82 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_81, NULL);
 		V_12 = L_82;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:104>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:104>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_83 = V_2;
 		int32_t L_84 = V_10;
 		NullCheck(L_83);
@@ -13634,7 +13874,7 @@ IL_0165:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89;
 		L_89 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_86, L_88, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_85 = L_89;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:105>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:105>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_90 = V_2;
 		int32_t L_91 = V_10;
 		NullCheck(L_90);
@@ -13646,7 +13886,7 @@ IL_0165:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96;
 		L_96 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_93, L_95, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_92 = L_96;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:106>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:106>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_97 = V_2;
 		int32_t L_98 = V_10;
 		NullCheck(L_97);
@@ -13658,7 +13898,7 @@ IL_0165:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103;
 		L_103 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_100, L_102, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_99 = L_103;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:107>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:107>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_104 = V_2;
 		int32_t L_105 = V_10;
 		NullCheck(L_104);
@@ -13670,17 +13910,17 @@ IL_0165:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_110;
 		L_110 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_107, L_109, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_106 = L_110;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:110>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:110>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_111 = V_12;
 		float L_112 = L_111.___x;
 		float L_113 = V_6;
 		float L_114 = V_7;
 		float L_115 = V_6;
 		V_13 = ((float)(((float)il2cpp_codegen_subtract(L_112, L_113))/((float)il2cpp_codegen_subtract(L_114, L_115))));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:111>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:111>
 		float L_116 = V_13;
 		V_14 = ((float)il2cpp_codegen_add(L_116, (9.99999975E-05f)));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:112>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:112>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_117 = V_1;
 		NullCheck(L_117);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_118 = L_117->___VertexCurve;
@@ -13692,7 +13932,7 @@ IL_0165:
 		NullCheck(L_121);
 		float L_122 = L_121->___CurveScale;
 		V_15 = ((float)il2cpp_codegen_multiply(L_120, L_122));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:113>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:113>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_123 = V_1;
 		NullCheck(L_123);
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_124 = L_123->___VertexCurve;
@@ -13704,11 +13944,11 @@ IL_0165:
 		NullCheck(L_127);
 		float L_128 = L_127->___CurveScale;
 		V_16 = ((float)il2cpp_codegen_multiply(L_126, L_128));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:115>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:115>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_129;
 		memset((&L_129), 0, sizeof(L_129));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_129), (1.0f), (0.0f), (0.0f), NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:117>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:117>
 		float L_130 = V_14;
 		float L_131 = V_7;
 		float L_132 = V_6;
@@ -13726,7 +13966,7 @@ IL_0165:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_140;
 		L_140 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_135, L_139, NULL);
 		V_17 = L_140;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:119>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:119>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_141 = L_129;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_142;
 		L_142 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_17), NULL);
@@ -13735,11 +13975,11 @@ IL_0165:
 		float L_144;
 		L_144 = acosf(L_143);
 		V_18 = ((float)il2cpp_codegen_multiply(L_144, (57.2957802f)));
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:120>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:120>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_145 = V_17;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_146;
 		L_146 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_141, L_145, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:121>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:121>
 		float L_147 = L_146.___z;
 		if ((((float)L_147) > ((float)(0.0f))))
 		{
@@ -13761,7 +14001,7 @@ IL_0339:
 IL_033b:
 	{
 		V_19 = G_B14_0;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:123>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:123>
 		float L_150 = V_15;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_151;
 		memset((&L_151), 0, sizeof(L_151));
@@ -13774,7 +14014,7 @@ IL_033b:
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_155;
 		L_155 = Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline(L_151, L_153, L_154, NULL);
 		V_3 = L_155;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:125>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:125>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_156 = V_2;
 		int32_t L_157 = V_10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_158 = V_2;
@@ -13786,7 +14026,7 @@ IL_033b:
 		L_162 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_3), L_161, NULL);
 		NullCheck(L_156);
 		(L_156)->SetAt(static_cast<il2cpp_array_size_t>(L_157), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_162);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:126>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:126>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_163 = V_2;
 		int32_t L_164 = V_10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_165 = V_2;
@@ -13798,7 +14038,7 @@ IL_033b:
 		L_169 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_3), L_168, NULL);
 		NullCheck(L_163);
 		(L_163)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_164, 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_169);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:127>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:127>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_170 = V_2;
 		int32_t L_171 = V_10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_172 = V_2;
@@ -13810,7 +14050,7 @@ IL_033b:
 		L_176 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_3), L_175, NULL);
 		NullCheck(L_170);
 		(L_170)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_171, 2))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_176);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:128>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:128>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_177 = V_2;
 		int32_t L_178 = V_10;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_179 = V_2;
@@ -13822,7 +14062,7 @@ IL_033b:
 		L_183 = Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline((&V_3), L_182, NULL);
 		NullCheck(L_177);
 		(L_177)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_178, 3))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_183);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:130>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:130>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_184 = V_2;
 		int32_t L_185 = V_10;
 		NullCheck(L_184);
@@ -13832,7 +14072,7 @@ IL_033b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_189;
 		L_189 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_187, L_188, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_186 = L_189;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:131>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:131>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_190 = V_2;
 		int32_t L_191 = V_10;
 		NullCheck(L_190);
@@ -13842,7 +14082,7 @@ IL_033b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_195;
 		L_195 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_193, L_194, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_192 = L_195;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:132>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:132>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_196 = V_2;
 		int32_t L_197 = V_10;
 		NullCheck(L_196);
@@ -13852,7 +14092,7 @@ IL_033b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_201;
 		L_201 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_199, L_200, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_198 = L_201;
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:133>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:133>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_202 = V_2;
 		int32_t L_203 = V_10;
 		NullCheck(L_202);
@@ -13866,14 +14106,14 @@ IL_033b:
 
 IL_0440:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
 		int32_t L_208 = V_9;
 		V_9 = ((int32_t)il2cpp_codegen_add(L_208, 1));
 	}
 
 IL_0446:
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:87>
 		int32_t L_209 = V_9;
 		int32_t L_210 = V_5;
 		if ((((int32_t)L_209) < ((int32_t)L_210)))
@@ -13882,13 +14122,13 @@ IL_0446:
 		}
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:138>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:138>
 		WarpTextExample_tB54C406E58B9D90FC49CD73B5FBF7FAFCCD3CD7E* L_211 = V_1;
 		NullCheck(L_211);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_212 = L_211->___m_TextComponent;
 		NullCheck(L_212);
 		VirtualActionInvoker0::Invoke(109, L_212);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:140>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:140>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_213 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_213, (0.0250000004f), NULL);
 		__this->___U3CU3E2__current = L_213;
@@ -13900,11 +14140,11 @@ IL_0446:
 IL_0473:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:60>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs:60>
 		goto IL_007d;
 	}
 }
-// Method Definition Index: 67986
+// Method Definition Index: 67415
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13912,7 +14152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Coll
 		return L_0;
 	}
 }
-// Method Definition Index: 67987
+// Method Definition Index: 67416
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13921,7 +14161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__8_System_Collections_IE
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 67988
+// Method Definition Index: 67417
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (U3CWarpTextU3Ed__8_tF1A14DF86D48AE9144155D4BF8E31E63471F358E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13956,7 +14196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__8_System_Coll
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 35257
+// Method Definition Index: 35268
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -13967,7 +14207,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 35112
+// Method Definition Index: 35123
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -13980,7 +14220,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		return;
 	}
 }
-// Method Definition Index: 35147
+// Method Definition Index: 35158
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14006,7 +14246,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 34997
+// Method Definition Index: 35008
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* __this, uint8_t ___0_r, uint8_t ___1_g, uint8_t ___2_b, uint8_t ___3_a, const RuntimeMethod* method) 
 {
 	{
@@ -14022,7 +14262,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7C
 		return;
 	}
 }
-// Method Definition Index: 34999
+// Method Definition Index: 35010
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___0_c, const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -14045,7 +14285,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_8;
 	}
 }
-// Method Definition Index: 55743
+// Method Definition Index: 55754
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607* TMP_Text_get_fontFeatures_mB68611B8CC517E049004F25EB9966F1CC3830499_inline (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14054,7 +14294,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t3A076A19AF26E22A128C32B5C
 		return L_0;
 	}
 }
-// Method Definition Index: 35139
+// Method Definition Index: 35150
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14068,7 +14308,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 35175
+// Method Definition Index: 35186
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14082,7 +14322,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_0;
 	}
 }
-// Method Definition Index: 34998
+// Method Definition Index: 35009
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B Color32_op_Implicit_m79AF5E0BDE9CE041CAC4D89CBFA66E71C6DD1B70_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_c, const RuntimeMethod* method) 
 {
 	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B V_0;
@@ -14121,7 +14361,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color32_t73C5004937BF5BB8AD55323D
 		return L_16;
 	}
 }
-// Method Definition Index: 35234
+// Method Definition Index: 35245
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -14172,7 +14412,7 @@ IL_001d:
 		return L_9;
 	}
 }
-// Method Definition Index: 35148
+// Method Definition Index: 35159
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14198,7 +14438,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 35220
+// Method Definition Index: 35231
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -14235,7 +14475,7 @@ IL_000c:
 		return L_4;
 	}
 }
-// Method Definition Index: 35347
+// Method Definition Index: 35358
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, float ___0_x, float ___1_y, float ___2_z, float ___3_w, const RuntimeMethod* method) 
 {
 	{
@@ -14250,52 +14490,52 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B2
 		return;
 	}
 }
-// Method Definition Index: 67743
+// Method Definition Index: 67172
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* TMP_TextEventHandler_get_onCharacterSelection_mA62049738125E3C48405E6DFF09E2D42300BE8C3_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:33>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:33>
 		CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* L_0 = __this->___m_OnCharacterSelection;
 		return L_0;
 	}
 }
-// Method Definition Index: 67745
+// Method Definition Index: 67174
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* TMP_TextEventHandler_get_onSpriteSelection_m95CDEB7394FFF38F310717EEEFDCD481D96A5E82_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:45>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:45>
 		SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* L_0 = __this->___m_OnSpriteSelection;
 		return L_0;
 	}
 }
-// Method Definition Index: 67747
+// Method Definition Index: 67176
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* TMP_TextEventHandler_get_onWordSelection_mF22771B4213EEB3AEFCDA390A4FF28FED5D9184C_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:57>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:57>
 		WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* L_0 = __this->___m_OnWordSelection;
 		return L_0;
 	}
 }
-// Method Definition Index: 67749
+// Method Definition Index: 67178
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* TMP_TextEventHandler_get_onLineSelection_mDDF07E7000993FCD6EAF2FBD2D2226EB66273908_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:69>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:69>
 		LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* L_0 = __this->___m_OnLineSelection;
 		return L_0;
 	}
 }
-// Method Definition Index: 67751
+// Method Definition Index: 67180
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* TMP_TextEventHandler_get_onLinkSelection_m87FB9EABE7F917B2F910A18A3B5F1AE3020D976D_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:81>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs:81>
 		LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* L_0 = __this->___m_OnLinkSelection;
 		return L_0;
 	}
 }
-// Method Definition Index: 35287
+// Method Definition Index: 35298
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -14312,7 +14552,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_4;
 	}
 }
-// Method Definition Index: 35152
+// Method Definition Index: 35163
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14335,7 +14575,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_9;
 	}
 }
-// Method Definition Index: 35288
+// Method Definition Index: 35299
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14353,7 +14593,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_4;
 	}
 }
-// Method Definition Index: 35140
+// Method Definition Index: 35151
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14367,7 +14607,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 35150
+// Method Definition Index: 35161
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14390,7 +14630,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_9;
 	}
 }
-// Method Definition Index: 35051
+// Method Definition Index: 35062
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_TRS_mCC04FD47347234B451ACC6CCD2CE6D02E1E0E1E3_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_pos, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_q, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_s, const RuntimeMethod* method) 
 {
 	{
@@ -14399,7 +14639,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59
 		return L_0;
 	}
 }
-// Method Definition Index: 35086
+// Method Definition Index: 35097
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Matrix4x4_MultiplyPoint3x4_mACCBD70AFA82C63DA88555780B7B6B01281AB814_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14443,7 +14683,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_30;
 	}
 }
-// Method Definition Index: 35243
+// Method Definition Index: 35254
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_PingPong_mB1D6A10F386CE1EEA99DB69486DDA6DA531D799D_inline (float ___0_t, float ___1_length, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -14468,7 +14708,7 @@ IL_001d:
 		return L_7;
 	}
 }
-// Method Definition Index: 35239
+// Method Definition Index: 35250
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_SmoothStep_mEFDC738EB0AA162D71013BDBBDD157B080A8E524_inline (float ___0_from, float ___1_to, float ___2_t, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -14497,7 +14737,7 @@ IL_0030:
 		return L_11;
 	}
 }
-// Method Definition Index: 35184
+// Method Definition Index: 35195
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14515,7 +14755,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_3;
 	}
 }
-// Method Definition Index: 55790
+// Method Definition Index: 55801
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TMP_Text_get_havePropertiesChanged_m42ECC7D1CA0DF6E59ACF761EB20635E81FCB8EFF_inline (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14524,7 +14764,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TMP_Text_get_havePropertiesC
 		return L_0;
 	}
 }
-// Method Definition Index: 33598
+// Method Definition Index: 33607
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14550,7 +14790,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 33600
+// Method Definition Index: 33609
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14576,7 +14816,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 35149
+// Method Definition Index: 35160
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14596,7 +14836,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_6;
 	}
 }
-// Method Definition Index: 35113
+// Method Definition Index: 35124
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m5F87930F9B0828E5652E2D9D01ED907C01122C86_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -14608,7 +14848,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m5F87930F9B082
 		return;
 	}
 }
-// Method Definition Index: 35124
+// Method Definition Index: 35135
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14617,7 +14857,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 35125
+// Method Definition Index: 35136
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -14636,7 +14876,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A3
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
 	}
 }
-// Method Definition Index: 35115
+// Method Definition Index: 35126
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14674,7 +14914,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_24;
 	}
 }
-// Method Definition Index: 20774
+// Method Definition Index: 20776
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_mFC867868ADBBCFB53B69A0F294ADBEB9856E4D6C_gshared_inline (List_1_tE3A859FDD017A2D25E8161269BA1167C22EC7EB9* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -14694,7 +14934,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 20774
+// Method Definition Index: 20776
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m6CD2E5AAE6552A27AECCC57936767B4DCFC902B1_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -14714,7 +14954,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 20774
+// Method Definition Index: 20776
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_mF6795DE5F49C1D0B91D6A0955F448B22970D67A9_gshared_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -14734,7 +14974,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 20766
+// Method Definition Index: 20768
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m2F86E252D086E288E02FA1C830B7E86C0A431E51_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, float ___0_item, const RuntimeMethod* method) 
 {
 	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
@@ -14772,7 +15012,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 20756
+// Method Definition Index: 20758
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m545762F67009314D9C63DD209B42FFF950569B05_gshared_inline (List_1_t0D1C46FD8DDDE974D93CA4F3474EEC05AF950918* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14780,7 +15020,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m545762F
 		return L_0;
 	}
 }
-// Method Definition Index: 20766
+// Method Definition Index: 20768
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_gshared_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___0_item, const RuntimeMethod* method) 
 {
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_0 = NULL;
@@ -14818,7 +15058,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 35236
+// Method Definition Index: 35247
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -14866,7 +15106,7 @@ IL_002d:
 		return L_5;
 	}
 }
-// Method Definition Index: 35242
+// Method Definition Index: 35253
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline (float ___0_t, float ___1_length, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -14890,7 +15130,7 @@ IL_001b:
 		return L_7;
 	}
 }
-// Method Definition Index: 35122
+// Method Definition Index: 35133
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14954,7 +15194,7 @@ IL_0050:
 		return L_14;
 	}
 }
-// Method Definition Index: 35132
+// Method Definition Index: 35143
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

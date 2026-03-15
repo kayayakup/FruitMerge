@@ -118,7 +118,7 @@ public class UIManager : MonoBehaviour
         var scRt = (RectTransform)scoreCard.transform;
         scRt.anchorMin = scRt.anchorMax = new Vector2(1, 1);
         scRt.pivot     = new Vector2(1, 1);
-        scRt.anchoredPosition = new Vector2(-12, -12);
+        scRt.anchoredPosition = new Vector2(-12, -65);
         scRt.sizeDelta = new Vector2(130, 65);
         // Card background
         var scBg = scoreCard.AddComponent<Image>();
@@ -149,7 +149,7 @@ public class UIManager : MonoBehaviour
         var bcRt = (RectTransform)bestCard.transform;
         bcRt.anchorMin = bcRt.anchorMax = new Vector2(1, 1);
         bcRt.pivot     = new Vector2(1, 1);
-        bcRt.anchoredPosition = new Vector2(-12, -85);
+        bcRt.anchoredPosition = new Vector2(-12, -138);
         bcRt.sizeDelta = new Vector2(130, 65);
         var bcBg = bestCard.AddComponent<Image>();
         bcBg.color = new Color(0.28f, 0.18f, 0.35f, 0.85f);
@@ -180,7 +180,7 @@ public class UIManager : MonoBehaviour
         var rt = (RectTransform)container.transform;
         rt.anchorMin = rt.anchorMax = new Vector2(0, 1);
         rt.pivot     = new Vector2(0, 1);
-        rt.anchoredPosition = new Vector2(12, -12);
+        rt.anchoredPosition = new Vector2(12, -65);
         rt.sizeDelta = new Vector2(80, 95);
 
         // Background card
@@ -216,7 +216,7 @@ public class UIManager : MonoBehaviour
 
         var cg = goPanel.AddComponent<CanvasGroup>();
         cg.blocksRaycasts = true;
-        cg.interactable   = true;
+        cg.interactable = true;
 
         // ── Dimmed backdrop ──
         var dim = goPanel.AddComponent<Image>();
@@ -226,21 +226,21 @@ public class UIManager : MonoBehaviour
         var card = MakeRectGO("Card", goPanel.transform);
         var cardRt = (RectTransform)card.transform;
         cardRt.anchorMin = cardRt.anchorMax = new Vector2(0.5f, 0.5f);
-        cardRt.pivot     = new Vector2(0.5f, 0.5f);
+        cardRt.pivot = new Vector2(0.5f, 0.5f);
         cardRt.anchoredPosition = Vector2.zero;
         cardRt.sizeDelta = new Vector2(420, 600);
         var cardImg = card.AddComponent<Image>();
         cardImg.color = new Color(0.14f, 0.12f, 0.22f, 0.95f);
 
-        // ── "GAME OVER" title ──
+        // ── "GAME OVER" title (artık biraz daha aşağıda) ──
         var title = MakeLabel("GOTitle", Vector2.zero, Vector2.zero,
                               TextAnchor.MiddleCenter, 42, card.transform);
-        title.text  = "GAME OVER";
+        title.text = "GAME OVER";
         title.color = new Color(1f, 0.35f, 0.30f);
         title.fontStyle = FontStyles.Bold;
         title.enableWordWrapping = false;
         var tRt = (RectTransform)title.transform;
-        tRt.anchorMin = new Vector2(0, 0.88f); tRt.anchorMax = new Vector2(1, 0.98f);
+        tRt.anchorMin = new Vector2(0, 0.80f); tRt.anchorMax = new Vector2(1, 0.90f); // yukarıdan biraz boşluk bırak
         tRt.offsetMin = tRt.offsetMax = Vector2.zero;
         title.alignment = TextAlignmentOptions.Center;
 
@@ -251,64 +251,80 @@ public class UIManager : MonoBehaviour
         sRt.anchorMin = new Vector2(0.05f, 0.32f);
         sRt.anchorMax = new Vector2(0.95f, 0.86f);
         sRt.offsetMin = sRt.offsetMax = Vector2.zero;
-        // Add AspectRatioFitter to keep screenshot proportions
         var arf = shotGO.AddComponent<AspectRatioFitter>();
-        arf.aspectMode  = AspectRatioFitter.AspectMode.FitInParent;
-        arf.aspectRatio = 9f / 16f; // portrait
+        arf.aspectMode = AspectRatioFitter.AspectMode.FitInParent;
+        arf.aspectRatio = 9f / 16f;
 
-        // ── Score section ──
-        var scoreRow = MakeRectGO("ScoreRow", card.transform);
-        var srRt = (RectTransform)scoreRow.transform;
-        srRt.anchorMin = new Vector2(0.05f, 0.18f); srRt.anchorMax = new Vector2(0.48f, 0.30f);
-        srRt.offsetMin = srRt.offsetMax = Vector2.zero;
-        var srBg = scoreRow.AddComponent<Image>();
-        srBg.color = new Color(0.22f, 0.20f, 0.32f, 0.90f);
+        // ── YENİ: Score değeri (sol üst köşe) ──
+        var scoreCont = MakeRectGO("ScoreContainer", card.transform);
+        var scRt = scoreCont.GetComponent<RectTransform>();
+        scRt.anchorMin = new Vector2(0, 1);          // sol üst
+        scRt.anchorMax = new Vector2(0, 1);
+        scRt.pivot = new Vector2(0, 1);
+        scRt.anchoredPosition = new Vector2(100, -20);
+        scRt.sizeDelta = new Vector2(150, 80);
 
-        var scoreLblGO = MakeLabel("ScLbl", Vector2.zero, Vector2.zero,
-                                    TextAnchor.MiddleCenter, 13, scoreRow.transform);
-        scoreLblGO.text  = "SCORE";
-        scoreLblGO.color = new Color(0.70f, 0.70f, 0.80f);
-        scoreLblGO.fontStyle = FontStyles.Bold;
-        var sclRt = (RectTransform)scoreLblGO.transform;
-        sclRt.anchorMin = new Vector2(0, 0.5f); sclRt.anchorMax = Vector2.one;
-        sclRt.offsetMin = new Vector2(8, 0); sclRt.offsetMax = new Vector2(-8, -2);
+        // Dikey layout – etiket üstte, değer altta
+        var vlg = scoreCont.AddComponent<VerticalLayoutGroup>();
+        vlg.childAlignment = TextAnchor.UpperLeft;
+        vlg.spacing = 5;
+        vlg.childForceExpandWidth = true;
+        vlg.childForceExpandHeight = false;
+
+        var scoreLbl = MakeLabel("ScoreLabel", Vector2.zero, Vector2.zero,
+                                 TextAnchor.MiddleLeft, 18, scoreCont.transform);
+        scoreLbl.text = "SCORE";
+        scoreLbl.color = Color.white;
+        scoreLbl.fontStyle = FontStyles.Bold;
+        var slRt = scoreLbl.GetComponent<RectTransform>();
+        slRt.anchorMin = new Vector2(0, 1); slRt.anchorMax = new Vector2(1, 1);
+        slRt.pivot = new Vector2(0, 1);
+        slRt.sizeDelta = new Vector2(0, 30);   // sabit yükseklik
 
         goScore = MakeLabel("GOScore", Vector2.zero, Vector2.zero,
-                            TextAnchor.MiddleCenter, 28, scoreRow.transform);
+                            TextAnchor.MiddleLeft, 32, scoreCont.transform);
         goScore.color = Color.white;
         goScore.fontStyle = FontStyles.Bold;
-        goScore.alignment = TextAlignmentOptions.Center;
-        var goscRt = (RectTransform)goScore.transform;
-        goscRt.anchorMin = Vector2.zero; goscRt.anchorMax = new Vector2(1, 0.55f);
-        goscRt.offsetMin = new Vector2(8, 2); goscRt.offsetMax = new Vector2(-8, 0);
+        var gsRt = goScore.GetComponent<RectTransform>();
+        gsRt.anchorMin = new Vector2(0, 0); gsRt.anchorMax = new Vector2(1, 0);
+        gsRt.pivot = new Vector2(0, 0);
+        gsRt.sizeDelta = new Vector2(0, 40);   // sabit yükseklik
 
-        // ── Best section ──
-        var bestRow = MakeRectGO("BestRow", card.transform);
-        var brRt = (RectTransform)bestRow.transform;
-        brRt.anchorMin = new Vector2(0.52f, 0.18f); brRt.anchorMax = new Vector2(0.95f, 0.30f);
-        brRt.offsetMin = brRt.offsetMax = Vector2.zero;
-        var brBg = bestRow.AddComponent<Image>();
-        brBg.color = new Color(0.32f, 0.22f, 0.38f, 0.90f);
+        // ── YENİ: Best değeri (sağ üst köşe) ──
+        var bestCont = MakeRectGO("BestContainer", card.transform);
+        var bcRt = bestCont.GetComponent<RectTransform>();
+        bcRt.anchorMin = new Vector2(1, 1);          // sağ üst
+        bcRt.anchorMax = new Vector2(1, 1);
+        bcRt.pivot = new Vector2(1, 1);
+        bcRt.anchoredPosition = new Vector2(-25, -20);
+        bcRt.sizeDelta = new Vector2(150, 80);
 
-        var bestLblGO = MakeLabel("BsLbl", Vector2.zero, Vector2.zero,
-                                   TextAnchor.MiddleCenter, 13, bestRow.transform);
-        bestLblGO.text  = "BEST";
-        bestLblGO.color = new Color(1f, 0.85f, 0.55f);
-        bestLblGO.fontStyle = FontStyles.Bold;
-        var bslRt = (RectTransform)bestLblGO.transform;
-        bslRt.anchorMin = new Vector2(0, 0.5f); bslRt.anchorMax = Vector2.one;
-        bslRt.offsetMin = new Vector2(8, 0); bslRt.offsetMax = new Vector2(-8, -2);
+        var vlgBest = bestCont.AddComponent<VerticalLayoutGroup>();
+        vlgBest.childAlignment = TextAnchor.UpperRight;
+        vlgBest.spacing = 5;
+        vlgBest.childForceExpandWidth = true;
+        vlgBest.childForceExpandHeight = false;
+
+        var bestLbl = MakeLabel("BestLabel", Vector2.zero, Vector2.zero,
+                                TextAnchor.MiddleRight, 18, bestCont.transform);
+        bestLbl.text = "BEST";
+        bestLbl.color = Color.white;
+        bestLbl.fontStyle = FontStyles.Bold;
+        var blRt = bestLbl.GetComponent<RectTransform>();
+        blRt.anchorMin = new Vector2(0, 1); blRt.anchorMax = new Vector2(1, 1);
+        blRt.pivot = new Vector2(1, 1);
+        blRt.sizeDelta = new Vector2(0, 30);
 
         goBest = MakeLabel("GOBest", Vector2.zero, Vector2.zero,
-                           TextAnchor.MiddleCenter, 28, bestRow.transform);
-        goBest.color = new Color(1f, 0.92f, 0.65f);
+                           TextAnchor.MiddleRight, 32, bestCont.transform);
+        goBest.color = Color.white;
         goBest.fontStyle = FontStyles.Bold;
-        goBest.alignment = TextAlignmentOptions.Center;
-        var gobRt = (RectTransform)goBest.transform;
-        gobRt.anchorMin = Vector2.zero; gobRt.anchorMax = new Vector2(1, 0.55f);
-        gobRt.offsetMin = new Vector2(8, 2); gobRt.offsetMax = new Vector2(-8, 0);
+        var gbRt = goBest.GetComponent<RectTransform>();
+        gbRt.anchorMin = new Vector2(0, 0); gbRt.anchorMax = new Vector2(1, 0);
+        gbRt.pivot = new Vector2(1, 0);
+        gbRt.sizeDelta = new Vector2(0, 40);
 
-        // ── Play Again button ──
+        // ── Play Again button (aynı kalır) ──
         var btnGO = MakeRectGO("RestartBtn", card.transform);
         var btnRt = (RectTransform)btnGO.transform;
         btnRt.anchorMin = new Vector2(0.12f, 0.04f); btnRt.anchorMax = new Vector2(0.88f, 0.14f);

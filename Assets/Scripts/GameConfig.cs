@@ -27,7 +27,7 @@ public static class GameConfig
 
     // ── Gameplay ─────────────────────────────────────────────
     public const float GameOverGrace  = 2.0f;    // secs a fruit must be over line → game over
-    public const float SpawnCooldown  = 0.05f;   // secs between drops
+    public const float SpawnCooldown  = 0.5f;   // secs between drops
     public const float MergeImmunity  = 0.40f;   // new fruit is immune to merging this long
     public const float HeldAlpha      = 0.85f;   // transparency of held fruit
 

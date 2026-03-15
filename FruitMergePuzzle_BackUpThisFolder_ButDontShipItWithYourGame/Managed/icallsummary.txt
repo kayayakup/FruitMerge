@@ -313,7 +313,10 @@ UnityEngine.Application::get_runInBackground
 UnityEngine.Application::get_unityVersionMaj
 UnityEngine.Application::get_unityVersionVer
 UnityEngine.Application::OpenURL_Injected
+UnityEngine.Application::get_identifier_Injected
 UnityEngine.Application::get_streamingAssetsPath_Injected
+UnityEngine.Application::get_unityVersion_Injected
+UnityEngine.Application::get_version_Injected
 UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
 UnityEngine.AssetBundle::LoadAsset_Internal_Injected
@@ -762,6 +765,7 @@ UnityEngine.HDROutputSettings::RequestHDRModeChangeInternal
 UnityEngine.HDROutputSettings::SetAutomaticHDRTonemapping
 UnityEngine.HDROutputSettings::GetDisplayColorGamut
 UnityEngine.HDROutputSettings::GetGraphicsFormat
+UnityEngine.ImageConversion::LoadImage_Injected
 UnityEngine.ImageConversion::EncodeToPNG_Injected
 UnityEngine.Input::CheckDisabled
 UnityEngine.Input::GetKeyDownInt
@@ -1740,6 +1744,7 @@ UnityEngine.Texture::set_wrapMode_Injected
 UnityEngine.Texture::get_filterMode_Injected
 UnityEngine.Texture::GetDimension_Injected
 UnityEngine.Texture::get_wrapMode_Injected
+UnityEngine.Texture2D::Internal_CreateEmptyImpl
 UnityEngine.Texture2D::Internal_CreateImpl_Injected
 UnityEngine.Texture2D::ReinitializeImpl_Injected
 UnityEngine.Texture2D::ReinitializeWithTextureFormatImpl_Injected

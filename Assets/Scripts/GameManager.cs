@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
 
     // ── Game-over tracking ───────────────────────────────────
     private readonly List<Fruit> activeFruits = new();
-    private float overTimer;
 
     // ─────────────────────────────────────────────────────────
     public void Initialize(ScoreManager sm, FruitSpawner sp,
@@ -48,7 +47,6 @@ public class GameManager : MonoBehaviour
             }
         }
         activeFruits.Clear();
-        overTimer = 0f;
         scoreMgr.Reset();
         spawner.ResetSpawner();
         uiMgr.HideGameOver();
