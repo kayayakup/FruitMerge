@@ -473,6 +473,7 @@ struct __Il2CppFullySharedGenericStructTypeU5BU5D_tF3B929B6E80D0A8C109178E11CE8F
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263;
 struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
+struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20;
 struct AutoCompletePathVisitor_tF0F2FA82B3F3666F724C75CF0B95E4A420243B15;
 struct BaseVerticalCollectionView_t2BCDC86B9E301E46CFB2500A834D640F0B96ADAE;
 struct BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303;
@@ -6989,6 +6990,13 @@ struct Bootstrap_tFD0C9AACEBCA92486F78F536FC22A3B79BB2166A  : public MonoBehavio
 {
 	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___fruitSprites;
 	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___basketBottomSprite;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clipGameStart;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clipFruitDrop;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clipFruitMerge;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clipFruitCollide;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clipGameOver;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clipButtonClick;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clipBackgroundMusic;
 };
 struct LayoutNode_tADF081B0F16F76B66459DE38F3AD8EC098F22CBE 
 {
@@ -23425,7 +23433,7 @@ IL_00ab:
 		return;
 	}
 }
-// Method Definition Index: 66947
+// Method Definition Index: 66958
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Bootstrap_Spawn_TisRuntimeObject_mD0958CDBEA1A8462114EA42B7FF65CB03D3D012B_gshared (Bootstrap_tFD0C9AACEBCA92486F78F536FC22A3B79BB2166A* __this, String_t* ___0_n, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -23434,11 +23442,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Bootstrap_Spawn_TisRuntimeObje
 		il2cpp_rgctx_method_init(method);
 	}
 	{
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/Scripts/Bootstrap.cs:49>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/Scripts/Bootstrap.cs:61>
 		String_t* L_0 = ___0_n;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_1, L_0, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/Scripts/Bootstrap.cs:50>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/Scripts/Bootstrap.cs:62>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = L_1;
 		NullCheck(L_2);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
@@ -23448,7 +23456,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Bootstrap_Spawn_TisRuntimeObje
 		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)__this, NULL);
 		NullCheck(L_3);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_3, L_4, NULL);
-		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/Scripts/Bootstrap.cs:51>
+		//<source_info:C:/Users/yakup/OneDrive/Belgeler/GitHub/FruitMerge/Assets/Scripts/Bootstrap.cs:63>
 		NullCheck(L_2);
 		RuntimeObject* L_5;
 		L_5 = GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824(L_2, il2cpp_rgctx_method(method->rgctx_data, 0));

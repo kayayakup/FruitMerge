@@ -108,17 +108,25 @@ public class FruitPool : MonoBehaviour
         sr.sprite       = sprites[type];
         sr.sortingOrder = 11;
 
-        // Collider: PolygonCollider2D for custom sprites, CircleCollider2D for procedural
+        // Collider: Always CircleCollider2D as requested. 
+        // For custom sprites, we want the radius to be such that scaleFactor maps sprite diameter to FruitData.radius * 2.
+        // localRadius = 1.0f works because scaleFactor = (d.radius * 2) / spriteWorldSize.
+        var col = go.AddComponent<CircleCollider2D>();
+        col.sharedMaterial = fruitMat;
+
         if (hasCustomSprite[type])
         {
-            var poly = go.AddComponent<PolygonCollider2D>();
-            poly.sharedMaterial = fruitMat;
+            // For custom sprites, the sprite size is determined by its bounds.
+            // If scaleFactor is calculated as desiredDiameter / spriteWorldSize, 
+            // then a local collider radius of spriteWorldSize / 2f will result in 
+            // a world radius of (spriteWorldSize / 2) * (desiredDiameter / spriteWorldSize) = desiredDiameter / 2 = d.radius.
+            col.radius = sprites[type].bounds.size.x * 0.5f;
         }
         else
         {
-            var col = go.AddComponent<CircleCollider2D>();
-            col.radius         = 1f;   // local → world = localScale.x × 1 = scaleFactor ✓
-            col.sharedMaterial = fruitMat;
+            // Procedural circles already have a world-space radius of 1.0f at scale 1.0f.
+            // scaleFactors[type] is set to d.radius for procedural circles.
+            col.radius = 1f; 
         }
 
         var fruit = go.AddComponent<Fruit>();

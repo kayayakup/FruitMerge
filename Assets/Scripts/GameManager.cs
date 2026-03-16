@@ -51,6 +51,9 @@ public class GameManager : MonoBehaviour
         spawner.ResetSpawner();
         uiMgr.HideGameOver();
         SetState(GameState.Playing);
+        
+        AudioManager.Instance?.PlayGameStart();
+        
         spawner.SpawnNextHeld();
     }
 
@@ -89,6 +92,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator GameOverRoutine()
     {
         SetState(GameState.GameOver);
+        AudioManager.Instance?.PlayGameOver();
         yield return new WaitForEndOfFrame();
         var shot = ssMgr.Capture();
         uiMgr.ShowGameOver(shot, scoreMgr.CurrentScore, scoreMgr.BestScore);

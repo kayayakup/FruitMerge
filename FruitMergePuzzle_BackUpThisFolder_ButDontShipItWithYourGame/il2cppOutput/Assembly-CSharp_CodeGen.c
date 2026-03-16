@@ -7,6 +7,17 @@
 
 
 
+extern void AudioManager_get_Instance_mE470515848AEDD204D9C8CF0F50D6A9785890211 (void);
+extern void AudioManager_set_Instance_m6F8BEEDBDA8BADCA733A3B1B697331DCCE5CE33D (void);
+extern void AudioManager_Initialize_mE3147EFEE74CE5A20A1764485A66F1BEDBE640F1 (void);
+extern void AudioManager_PlayGameStart_m99A9D039C7425E64B30B70DE65713BC2585359B7 (void);
+extern void AudioManager_PlayDrop_m3FDE2CD05D2A2C8316E17806855D5CFC7C2F9B08 (void);
+extern void AudioManager_PlayMerge_m283BEBF6D7D71087392E7B260E220015CFD08C30 (void);
+extern void AudioManager_PlayGameOver_m6FA7403934E277ACAB637B732F1F19CBD1E8275F (void);
+extern void AudioManager_PlayButtonClick_m36D006BCEAA939BB9369505F596D1FEA1AAC6578 (void);
+extern void AudioManager_PlayCollide_m1570D0CD31AC8E7430493CDD7589F99BBF10A576 (void);
+extern void AudioManager_PlaySFX_mD776C77BFF5340C1808AC944389FF265CFD3D71C (void);
+extern void AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6 (void);
 extern void Bootstrap_Awake_m3A98E5A3AE6FF9E488B1067D55A598F3351B1DAA (void);
 extern void Bootstrap__ctor_m57BDDC28D7B1631EA0949CBD3E70C24C00B58BDA (void);
 extern void BoundaryManager_Initialize_m92238F2D10A91C0B3CE3BC8F7C877DFC4CF34600 (void);
@@ -478,8 +489,19 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[472] = 
+static Il2CppMethodPointer s_methodPointers[483] = 
 {
+	AudioManager_get_Instance_mE470515848AEDD204D9C8CF0F50D6A9785890211,
+	AudioManager_set_Instance_m6F8BEEDBDA8BADCA733A3B1B697331DCCE5CE33D,
+	AudioManager_Initialize_mE3147EFEE74CE5A20A1764485A66F1BEDBE640F1,
+	AudioManager_PlayGameStart_m99A9D039C7425E64B30B70DE65713BC2585359B7,
+	AudioManager_PlayDrop_m3FDE2CD05D2A2C8316E17806855D5CFC7C2F9B08,
+	AudioManager_PlayMerge_m283BEBF6D7D71087392E7B260E220015CFD08C30,
+	AudioManager_PlayGameOver_m6FA7403934E277ACAB637B732F1F19CBD1E8275F,
+	AudioManager_PlayButtonClick_m36D006BCEAA939BB9369505F596D1FEA1AAC6578,
+	AudioManager_PlayCollide_m1570D0CD31AC8E7430493CDD7589F99BBF10A576,
+	AudioManager_PlaySFX_mD776C77BFF5340C1808AC944389FF265CFD3D71C,
+	AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6,
 	Bootstrap_Awake_m3A98E5A3AE6FF9E488B1067D55A598F3351B1DAA,
 	NULL,
 	Bootstrap__ctor_m57BDDC28D7B1631EA0949CBD3E70C24C00B58BDA,
@@ -953,8 +975,19 @@ static Il2CppMethodPointer s_methodPointers[472] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[472] = 
+static const int32_t s_InvokerIndices[483] = 
 {
+	26829,
+	25630,
+	297,
+	15345,
+	15345,
+	15345,
+	15345,
+	15345,
+	11649,
+	5754,
+	15345,
 	15345,
 	-1,
 	15345,
@@ -972,7 +1005,7 @@ static const int32_t s_InvokerIndices[472] =
 	15345,
 	239,
 	15345,
-	26926,
+	26929,
 	11482,
 	15345,
 	14911,
@@ -1028,14 +1061,14 @@ static const int32_t s_InvokerIndices[472] =
 	15345,
 	15110,
 	429,
-	26807,
-	25223,
-	25223,
-	24881,
-	25223,
-	26926,
-	26826,
-	25627,
+	26810,
+	25226,
+	25226,
+	24884,
+	25226,
+	26929,
+	26829,
+	25630,
 	11549,
 	11549,
 	9841,
@@ -1043,8 +1076,8 @@ static const int32_t s_InvokerIndices[472] =
 	11549,
 	9841,
 	15345,
-	26826,
-	25627,
+	26829,
+	25630,
 	15110,
 	11549,
 	15043,
@@ -1067,8 +1100,8 @@ static const int32_t s_InvokerIndices[472] =
 	15110,
 	15345,
 	15110,
-	26826,
-	25627,
+	26829,
+	25630,
 	15043,
 	11482,
 	11549,
@@ -1098,15 +1131,15 @@ static const int32_t s_InvokerIndices[472] =
 	15345,
 	15345,
 	5738,
-	26926,
+	26929,
 	15345,
 	11549,
 	11549,
 	11549,
 	15345,
 	15345,
-	26826,
-	25627,
+	26829,
+	25630,
 	5738,
 	5738,
 	4291,
@@ -1139,11 +1172,11 @@ static const int32_t s_InvokerIndices[472] =
 	15110,
 	15345,
 	19273,
-	25215,
+	25218,
 	18099,
-	21356,
-	26826,
-	25627,
+	21357,
+	26829,
+	25630,
 	5738,
 	11482,
 	2435,
@@ -1175,7 +1208,7 @@ static const int32_t s_InvokerIndices[472] =
 	15110,
 	15345,
 	15110,
-	26952,
+	26955,
 	15345,
 	2172,
 	15345,
@@ -1295,7 +1328,7 @@ static const int32_t s_InvokerIndices[472] =
 	15110,
 	15110,
 	15345,
-	26926,
+	26929,
 	11482,
 	15345,
 	14911,
@@ -1430,7 +1463,7 @@ static const int32_t s_InvokerIndices[472] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x06000002, { 0, 2 } },
+	{ 0x0600000D, { 0, 2 } },
 };
 extern const uint32_t g_rgctx_GameObject_AddComponent_TisT_t848B2ADF3848F4A7D2A25242E7C88ED354F3BC86_mCEDC43FDB8F40480A09A132084163F73BCE88706;
 extern const uint32_t g_rgctx_T_t848B2ADF3848F4A7D2A25242E7C88ED354F3BC86;
@@ -1443,7 +1476,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	472,
+	483,
 	s_methodPointers,
 	0,
 	NULL,

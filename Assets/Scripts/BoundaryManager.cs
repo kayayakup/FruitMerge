@@ -117,9 +117,32 @@ MakeQuad("BG_Ground", new Vector3(0, -8f, 2f), new Vector2(totalWidth, totalHeig
         go.transform.localScale = new Vector3(size.x, size.y, 1f);
         var sr = go.AddComponent<SpriteRenderer>();
         sr.sprite = SpriteFactory.Rect(col); sr.sortingOrder = sortOrder;
+        
         var bc = go.AddComponent<BoxCollider2D>();
-        bc.size           = Vector2.one;
         bc.sharedMaterial = wallMat;
+
+        // Thicken colliders significantly to prevent tunnelling.
+        // We extend the collider OUTWARDS so it doesn't affect the inner volume.
+        float thickness = 10f; // 10 units of extra thickness
+        if (name.Contains("Left"))
+        {
+            bc.size   = new Vector2(1f + thickness, 1f);
+            bc.offset = new Vector2(-thickness * 0.5f, 0f);
+        }
+        else if (name.Contains("Right"))
+        {
+            bc.size   = new Vector2(1f + thickness, 1f);
+            bc.offset = new Vector2(thickness * 0.5f, 0f);
+        }
+        else if (name.Contains("Bottom"))
+        {
+            bc.size   = new Vector2(1f, 1f + thickness);
+            bc.offset = new Vector2(0f, -thickness * 0.5f);
+        }
+        else
+        {
+            bc.size = Vector2.one;
+        }
     }
 
     // ── Visual-only layer ────────────────────────────────────

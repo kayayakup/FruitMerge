@@ -350,6 +350,7 @@ public class UIManager : MonoBehaviour
 
     private void OnPlayAgainClicked()
     {
+        AudioManager.Instance?.PlayButtonClick();
         // Scene reload — guaranteed clean state
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

@@ -11,7 +11,7 @@ public static class GameConfig
 
     // ── Key y-levels ─────────────────────────────────────────
     public const float GameOverLineY   = 6.87f;   // Lowered (basket top is this + 3)
-    public const float SpawnY          = 14.87f;  // 5 units above wall top (6.87 + 3 + 5)
+    public const float SpawnY          = 15.87f;  // 5 units above wall top (6.87 + 3 + 5)
 
     // ── Camera ───────────────────────────────────────────────
     public const float CamOrthoSize   = 24.0f;    // Increased to show higher spawn
@@ -27,7 +27,7 @@ public static class GameConfig
 
     // ── Gameplay ─────────────────────────────────────────────
     public const float GameOverGrace  = 2.0f;    // secs a fruit must be over line → game over
-    public const float SpawnCooldown  = 0.5f;   // secs between drops
+    public const float SpawnCooldown  = 0.05f;   // secs between drops
     public const float MergeImmunity  = 0.40f;   // new fruit is immune to merging this long
     public const float HeldAlpha      = 0.85f;   // transparency of held fruit
 

@@ -11,12 +11,22 @@ public class Bootstrap : MonoBehaviour
     public Sprite[] fruitSprites = new Sprite[11];
     public Sprite   basketBottomSprite;
 
+    [Tooltip("Audio Clips for Game Events")]
+    public AudioClip clipGameStart;
+    public AudioClip clipFruitDrop;
+    public AudioClip clipFruitMerge;
+    public AudioClip clipFruitCollide;
+    public AudioClip clipGameOver;
+    public AudioClip clipButtonClick;
+    public AudioClip clipBackgroundMusic;
+
     private void Awake()
     {
         Application.targetFrameRate = 60;
         Physics2D.gravity = new Vector2(0f, GameConfig.GravityY);
 
         // ── Phase 1: instantiate all manager MonoBehaviours ──
+        var audioMgr  = Spawn<AudioManager>   ("AudioManager");
         var camSetup  = Spawn<CameraSetup>    ("CameraSetup");
         var scoreMgr  = Spawn<ScoreManager>   ("ScoreManager");
         var boundary  = Spawn<BoundaryManager>("BoundaryManager");
@@ -30,6 +40,8 @@ public class Bootstrap : MonoBehaviour
         var gameMgr   = Spawn<GameManager>    ("GameManager");   // last
 
         // ── Phase 2: initialize in dependency order ───────────
+        audioMgr .Initialize(clipGameStart, clipFruitDrop, clipFruitMerge, 
+                             clipFruitCollide, clipGameOver, clipButtonClick, clipBackgroundMusic);
         camSetup .Initialize();
         scoreMgr .Initialize();
         boundary .Initialize(basketBottomSprite);

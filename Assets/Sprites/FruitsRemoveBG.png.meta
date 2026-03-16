@@ -147,10 +147,10 @@ TextureImporter:
       name: FruitsRemoveBG_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 323
-        width: 143
-        height: 151
+        x: 8
+        y: 322
+        width: 145
+        height: 153
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: FruitsRemoveBG_1
       rect:
         serializedVersion: 2
-        x: 168
-        y: 303
-        width: 165
-        height: 183
+        x: 167
+        y: 302
+        width: 167
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: FruitsRemoveBG_2
       rect:
         serializedVersion: 2
-        x: 341
-        y: 292
-        width: 156
-        height: 193
+        x: 324
+        y: 146
+        width: 142
+        height: 145
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: FruitsRemoveBG_3
       rect:
         serializedVersion: 2
-        x: 35
-        y: 156
-        width: 147
-        height: 156
+        x: 34
+        y: 155
+        width: 150
+        height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +235,10 @@ TextureImporter:
       name: FruitsRemoveBG_4
       rect:
         serializedVersion: 2
-        x: 323
-        y: 145
-        width: 144
-        height: 147
+        x: 52
+        y: 12
+        width: 122
+        height: 131
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: FruitsRemoveBG_5
       rect:
         serializedVersion: 2
-        x: 53
-        y: 13
-        width: 120
-        height: 129
+        x: 194
+        y: 16
+        width: 115
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +279,10 @@ TextureImporter:
       name: FruitsRemoveBG_6
       rect:
         serializedVersion: 2
-        x: 195
-        y: 17
-        width: 113
-        height: 122
+        x: 337
+        y: 7
+        width: 133
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +301,10 @@ TextureImporter:
       name: FruitsRemoveBG_7
       rect:
         serializedVersion: 2
-        x: 339
-        y: 8
-        width: 130
-        height: 134
+        x: 341
+        y: 294
+        width: 159
+        height: 190
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49e89ac6f934319469068a6533673af5
-      internalID: -699938810
+      spriteID: 068ecb41872a05549a1f1569ff2539bf
+      internalID: 409462946
       vertices: []
       indices: 
       edges: []
@@ -323,7 +323,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e5551291568bbb347b0f1aac99132e48
+    spriteID: 4e59cdb03f5826243aeddb477927b725
     internalID: 0
     vertices: []
     indices: 
@@ -331,11 +331,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
-      - key: SpriteEditor.SliceOnImport
-        value: False
+      entries: []
     nameFileIdTable:
       FruitsRemoveBG_0: -490506264718657060
       FruitsRemoveBG_1: 3881237860813900424
@@ -344,7 +340,7 @@ TextureImporter:
       FruitsRemoveBG_4: 8940759120809328287
       FruitsRemoveBG_5: 1480013384041956107
       FruitsRemoveBG_6: -6560054101197293514
-      FruitsRemoveBG_7: -699938810
+      FruitsRemoveBG_7: 409462946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -31,6 +31,8 @@ public class MergeManager : MonoBehaviour
         Vector3 pos = (a.transform.position + b.transform.position) * 0.5f;
         float   dur = GameConfig.MergeAnim;
 
+        AudioManager.Instance?.PlayMerge();
+
         // Scale both out simultaneously
         StartCoroutine(a.ScaleOut(dur));
         yield return StartCoroutine(b.ScaleOut(dur));

@@ -345,18 +345,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bootstrap
   fruitSprites:
+  - {fileID: 8940759120809328287, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
   - {fileID: 1480013384041956107, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
-  - {fileID: -6560054101197293514, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
   - {fileID: -1144694606753143225, guid: 48573e1c64bea354cb753956a2ecf0e4, type: 3}
   - {fileID: -7229780362466440403, guid: fb6336d8778e62e449045a8da49bb8ec, type: 3}
   - {fileID: -490506264718657060, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
-  - {fileID: -699938810, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
+  - {fileID: -6560054101197293514, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
   - {fileID: -4891852733190007889, guid: 478da1ed57acae34bb660320791fce1f, type: 3}
-  - {fileID: 8940759120809328287, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
-  - {fileID: 3881237860813900424, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
   - {fileID: 6729310001388432850, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
+  - {fileID: 3881237860813900424, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
+  - {fileID: 409462946, guid: d3967c06e49b5de4ca3c6066ba0504a8, type: 3}
   - {fileID: 6068268906186913901, guid: 478da1ed57acae34bb660320791fce1f, type: 3}
   basketBottomSprite: {fileID: 0}
+  clipGameStart: {fileID: 8300000, guid: e4f5fcb09172c154a846ea8ddb798089, type: 3}
+  clipFruitDrop: {fileID: 8300000, guid: 6dae7064e55341e48b18d073e3507950, type: 3}
+  clipFruitMerge: {fileID: 8300000, guid: 7396f8cfed9cc294794ed61f5346b1b9, type: 3}
+  clipFruitCollide: {fileID: 8300000, guid: 9c1dcfc3314ec4741bd6dbbdac138997, type: 3}
+  clipGameOver: {fileID: 8300000, guid: 504de2de39665a84799530b2750b14d4, type: 3}
+  clipButtonClick: {fileID: 8300000, guid: 7de5fc1adde3b334ea44c821f278e49f, type: 3}
+  clipBackgroundMusic: {fileID: 8300000, guid: ff806e11fb30a7943b10808eacf5a39a, type: 3}
 --- !u!1 &1546529013
 GameObject:
   m_ObjectHideFlags: 0

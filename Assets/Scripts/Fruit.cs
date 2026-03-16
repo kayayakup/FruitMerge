@@ -67,6 +67,9 @@ public class Fruit : MonoBehaviour
     {
         if (!IsHeld) return;
         ApplyHeldState(false);
+
+        AudioManager.Instance?.PlayDrop();
+
         GameManager.Instance?.RegisterFruit(this);
     }
 
@@ -101,7 +104,23 @@ public class Fruit : MonoBehaviour
     }
 
     // ── Collision → attempt merge ─────────────────────────────
-    private void OnCollisionEnter2D(Collision2D hit) => TryMergeWith(hit);
+    private void OnCollisionEnter2D(Collision2D hit)
+    {
+        TryMergeWith(hit);
+
+        // Play collision sound if impact is strong enough
+        if (!IsHeld && !IsBeingMerged)
+        {
+            float impact = hit.relativeVelocity.magnitude;
+            if (impact > 1.5f) // Threshold to prevent tiny bumps from making sound
+            {
+                // Scale volume based on impact, max out at 1.0f
+                float vol = Mathf.Clamp01(impact / 10f); 
+                AudioManager.Instance?.PlayCollide(vol);
+            }
+        }
+    }
+    
     private void OnCollisionStay2D(Collision2D hit)  => TryMergeWith(hit);
 
     private void TryMergeWith(Collision2D hit)

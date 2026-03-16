@@ -325,6 +325,12 @@ UnityEngine.AsyncOperation::InternalSetManagedObject
 UnityEngine.Audio.ScriptableProcessorBindings::CheckProcessorExistsInternal_Injected
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
+UnityEngine.AudioSource::PlayHelper_Injected
+UnityEngine.AudioSource::PlayOneShotHelper_Injected
+UnityEngine.AudioSource::set_generatorObject_Injected
+UnityEngine.AudioSource::set_loop_Injected
+UnityEngine.AudioSource::set_playOnAwake_Injected
+UnityEngine.AudioSource::set_volume_Injected
 UnityEngine.Awaitable::IsNativeAwaitableCompleted
 UnityEngine.Awaitable::ReleaseNativeAwaitable
 UnityEngine.Behaviour::get_enabled_Injected
@@ -465,6 +471,7 @@ UnityEngine.Collider2D::get_shapeCount_Injected
 UnityEngine.Collider2D::get_attachedRigidbody_Injected
 UnityEngine.Collider2D::GetShapeHash_Injected
 UnityEngine.Collider2D::GetShapeBounds_Injected
+UnityEngine.Collider2D::set_offset_Injected
 UnityEngine.Collider2D::set_sharedMaterial_Injected
 UnityEngine.ColorGamutUtility::GetColorPrimaries
 UnityEngine.ColorGamutUtility::GetTransferFunction
