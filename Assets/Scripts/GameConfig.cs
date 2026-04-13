@@ -11,11 +11,11 @@ public static class GameConfig
 
     // ── Key y-levels ─────────────────────────────────────────
     public const float GameOverLineY   = 6.87f;   // Lowered (basket top is this + 3)
-    public const float SpawnY          = 15.87f;  // 5 units above wall top (6.87 + 3 + 5)
+    public const float SpawnY          = 17.5f;  // Adjusted for 1.35x fruit scaling
 
     // ── Camera ───────────────────────────────────────────────
-    public const float CamOrthoSize   = 24.0f;    // Increased to show higher spawn
-    public const float CamY           = 1.5f;     // Lowered to follow lowered basket
+    public const float CamOrthoSize   = 26.0f;    // Adjusted for 1.35x fruit scaling
+    public const float CamY           = 2.0f;     // Adjusted for 1.35x fruit scaling
 
     // ── Physics ──────────────────────────────────────────────
     public const float GravityY       = -22f;    // applied via Physics2D.gravity

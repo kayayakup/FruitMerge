@@ -77,8 +77,16 @@ public class GameManager : MonoBehaviour
             if (f == null || !f.gameObject.activeSelf) continue;
             if (f.IsHeld) continue;
 
-            // Trigger game over if fruit falls significantly below the basket bottom
+            // 1. Check if fruit fell significantly below the screen (original safety)
             if (f.transform.position.y < GameConfig.BottomCenterY - 10f)
+            {
+                fallenOut = true;
+                break;
+            }
+
+            // 2. Check if fruit is outside basket width and falls 1 unit below the basket top
+            float basketTop = GameConfig.GameOverLineY + 3f;
+            if (Mathf.Abs(f.transform.position.x) > GameConfig.HalfWidth && f.transform.position.y < basketTop - 1f)
             {
                 fallenOut = true;
                 break;
@@ -91,6 +99,7 @@ public class GameManager : MonoBehaviour
     // ── Helpers ───────────────────────────────────────────────
     private IEnumerator GameOverRoutine()
     {
+        GoogleAdMobController.Instance?.ShowInterstitialAd();
         SetState(GameState.GameOver);
         AudioManager.Instance?.PlayGameOver();
         yield return new WaitForEndOfFrame();

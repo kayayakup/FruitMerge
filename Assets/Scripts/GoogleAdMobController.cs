@@ -10,7 +10,10 @@ public class GoogleAdMobController : MonoBehaviour
     private BannerView bannerView;
     private InterstitialAd interstitial;
 
-    // Replace with your real Ad Unit IDs
+    // Reklamın yüklenip yüklenmediğini takip ettiğimiz değişken
+    private bool isBannerLoaded = false;
+
+    // DİKKAT: Geliştirme aşamasında kendi gerçek ID'lerin yerine Google Test ID'lerini kullanmalısın!
     private string bannerID = "ca-app-pub-5398339005079750/5339700667";
     private string interstitialID = "ca-app-pub-5398339005079750/4587924028";
 
@@ -30,22 +33,15 @@ public class GoogleAdMobController : MonoBehaviour
 
     private void Start()
     {
-        // Initialize AdMob
-        MobileAds.Initialize(initStatus => { });
+        // 1. ÇÖZÜM: AdMob'un başlatılması zaman alır. Yükleme komutlarını 
+        // SDK'nın "ben hazırlandım" dediği bu callback bloğunun içine alıyoruz.
+        MobileAds.Initialize(initStatus => 
+        {
+            LoadBanner();
+            LoadInterstitial();
+        });
 
-        LoadBanner();
-        LoadInterstitial();
-    }
-
-
-
-    public void RestartScene()
-    {
-        // Initialize AdMob
-        MobileAds.Initialize(initStatus => { });
-
-        LoadBanner();
-        LoadInterstitial();
+        InvokeRepeating(nameof(CheckAndShowBanner), 1, 30);
     }
 
     // -----------------------------------------------------------
@@ -59,17 +55,61 @@ public class GoogleAdMobController : MonoBehaviour
             bannerView.Destroy();
         }
 
-        bannerView = new BannerView(bannerID, AdSize.Banner, AdPosition.Top);
+        bannerView = new BannerView(bannerID, AdSize.Banner, AdPosition.Bottom);
+
+        // Banner başarıyla yüklendiğinde tetiklenir
+        bannerView.OnBannerAdLoaded += () =>
+        {
+            Debug.Log("Banner başarıyla yüklendi.");
+            isBannerLoaded = true;
+        };
+
+        // Banner yüklenemediğinde tetiklenir
+        bannerView.OnBannerAdLoadFailed += (LoadAdError error) =>
+        {
+            Debug.LogError("Banner yüklenemedi: " + error.GetMessage());
+            isBannerLoaded = false;
+
+            // 2. ÇÖZÜM: Eğer reklam gelmezse sistemi kendi haline bırakmıyoruz.
+            // 5 saniye sonra CheckAndShowBanner metodunu çağırarak tekrar denemesini sağlıyoruz.
+            Invoke(nameof(CheckAndShowBanner), 5f);
+        };
 
         AdRequest request = new AdRequest();
-
         bannerView.LoadAd(request);
+    }
+
+    // İstediğin kontrol metodu: Gelmiş mi kontrol et, gelmediyse yükle/göster
+    public void CheckAndShowBanner()
+    {
+        if (bannerView == null || !isBannerLoaded)
+        {
+            Debug.Log("Banner henüz gelmemiş veya null. Yeniden yükleniyor...");
+            LoadBanner(); // Yükleme isteği atar, yüklendiğinde otomatik görünür.
+        }
+        else
+        {
+            Debug.Log("Banner zaten yüklü, gösteriliyor.");
+            bannerView.Show(); 
+        }
     }
 
     public void HideBanner()
     {
         if (bannerView != null)
+        {
             bannerView.Hide();
+        }
+    }
+
+    public void DestroyBannerAd()
+    {
+        if (bannerView != null)
+        {
+            bannerView.Destroy();
+            bannerView = null;
+            isBannerLoaded = false; // Yıkıldığında durumu sıfırla
+        }
     }
 
     // -----------------------------------------------------------
@@ -77,7 +117,6 @@ public class GoogleAdMobController : MonoBehaviour
     // -----------------------------------------------------------
     public void LoadInterstitial()
     {
-
         // Destroy old ad
         if (interstitial != null)
         {
@@ -91,21 +130,18 @@ public class GoogleAdMobController : MonoBehaviour
                 if (error != null)
                 {
                     Debug.Log("Interstitial failed to load: " + error.GetMessage());
+                    
+                    // Interstitial için de garantiye almak istersen 10 saniye sonra tekrar deneyebilirsin:
+                    Invoke(nameof(LoadInterstitial), 10f);
                     return;
                 }
 
                 interstitial = ad;
             });
-        Debug.Log("SLLOADDDAda");
     }
 
-    public void DestroyBannerAd()
-    {
-        bannerView.Destroy();
-    }
     public void ShowInterstitialAd()
     {
-        Debug.Log("SHOW INTERSSS");
         if (interstitial != null && interstitial.CanShowAd())
         {
             interstitial.Show();
