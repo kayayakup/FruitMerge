@@ -29,6 +29,7 @@ public class MergeManager : MonoBehaviour
     private IEnumerator MergeRoutine(Fruit a, Fruit b)
     {
         Vector3 pos = (a.transform.position + b.transform.position) * 0.5f;
+        FruitData mergedData = a.Data;
         float   dur = GameConfig.MergeAnim;
 
         AudioManager.Instance?.PlayMerge();
@@ -38,19 +39,19 @@ public class MergeManager : MonoBehaviour
         yield return StartCoroutine(b.ScaleOut(dur));
 
         // Award score
-        scoreMgr.AddScore(a.Data.scoreValue);
+        scoreMgr.AddScore(mergedData.scoreValue);
 
         // Visual burst
-        SpawnBurst(pos, a.Data.primaryColor);
+        SpawnBurst(pos, mergedData.primaryColor);
 
         // Return to pools
         pool.Return(a);
         pool.Return(b);
 
         // Spawn the next tier (if any)
-        if (FruitDatabase.HasNext(a.FruitType))
+        if (FruitDatabase.HasNext(mergedData.type))
         {
-            var next  = pool.Get(FruitDatabase.Next(a.FruitType).type);
+            var next  = pool.Get(FruitDatabase.Next(mergedData.type).type);
             next.Spawn(pos, false);
         }
     }

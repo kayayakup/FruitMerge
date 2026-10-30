@@ -393,6 +393,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05799cacbb8c70343ae917e7c36f5d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoogleAdMobController
+  androidBannerAdUnitId: ca-app-pub-5398339005079750/5339700667
+  androidInterstitialAdUnitId: ca-app-pub-5398339005079750/4587924028
+  androidRewardedAdUnitId: ca-app-pub-5398339005079750/2919028483
 --- !u!4 &1546529015
 Transform:
   m_ObjectHideFlags: 0

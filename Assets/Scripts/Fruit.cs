@@ -14,15 +14,16 @@ public class Fruit : MonoBehaviour
     public bool      IsHeld        { get; private set; }
     public bool      IsNewlySpawned{ get; private set; }
     public bool      IsBeingMerged { get; private set; }
+    public Bounds    WorldBounds   => col.bounds;
 
     // ── Components ────────────────────────────────────────────
     private Rigidbody2D    rb;
-    private Collider2D     col;
+    private CircleCollider2D col;
     private SpriteRenderer sr;
     private MergeManager   mergeMgr;
 
     // ── Scale factor (set by FruitPool based on sprite size) ──
-    private float _scaleFactor = 1f;
+    private float _scaleFactor = 1.5f;
 
     // ── Private ───────────────────────────────────────────────
     private float spawnTime;
@@ -32,7 +33,7 @@ public class Fruit : MonoBehaviour
     private void Awake()
     {
         rb  = GetComponent<Rigidbody2D>();
-        col = GetComponent<Collider2D>();
+        col = GetComponent<CircleCollider2D>();
         sr  = GetComponent<SpriteRenderer>();
     }
 
@@ -41,6 +42,19 @@ public class Fruit : MonoBehaviour
         Data = data;
         _scaleFactor = scaleFactor;
         transform.localScale = Vector3.one * _scaleFactor;
+    }
+
+    public void ChangeType(FruitData data, float scaleFactor, Sprite sprite, float colliderRadius)
+    {
+        float currentScale = _scaleFactor > 0f
+            ? transform.localScale.x / _scaleFactor
+            : 1f;
+
+        Data = data;
+        _scaleFactor = scaleFactor;
+        sr.sprite = sprite;
+        col.radius = colliderRadius;
+        transform.localScale = Vector3.one * (_scaleFactor * currentScale);
     }
 
     public void SetMergeManager(MergeManager mm) => mergeMgr = mm;
@@ -58,7 +72,7 @@ public class Fruit : MonoBehaviour
 
         // Scale-in animation
         transform.localScale = Vector3.zero;
-        StartCoroutine(ScaleTo(Vector3.one * _scaleFactor, GameConfig.SpawnAnim));
+        StartCoroutine(ScaleTo(GameConfig.SpawnAnim));
 
         if (!held) GameManager.Instance?.RegisterFruit(this);
     }
@@ -160,16 +174,16 @@ public class Fruit : MonoBehaviour
         else IsNewlySpawned = false;
     }
 
-    private IEnumerator ScaleTo(Vector3 target, float duration)
+    private IEnumerator ScaleTo(float duration)
     {
         Vector3 start = transform.localScale;
         for (float t = 0f; t < duration; t += Time.deltaTime)
         {
             float p = Mathf.Clamp01(t / duration);
             float e = 1f - Mathf.Pow(1f - p, 3f);   // cubic ease-out
-            transform.localScale = Vector3.Lerp(start, target, e);
+            transform.localScale = Vector3.Lerp(start, Vector3.one * _scaleFactor, e);
             yield return null;
         }
-        transform.localScale = target;
+        transform.localScale = Vector3.one * _scaleFactor;
     }
 }

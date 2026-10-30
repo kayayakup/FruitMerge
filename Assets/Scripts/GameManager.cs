@@ -10,6 +10,9 @@ public enum GameState { Idle, Playing, GameOver }
 
 public class GameManager : MonoBehaviour
 {
+    private const float InterstitialIntervalSeconds = 180f;
+    private const int InterstitialWarningSeconds = 3;
+
     public static GameManager Instance { get; private set; }
 
     public GameState State { get; private set; } = GameState.Idle;
@@ -23,6 +26,12 @@ public class GameManager : MonoBehaviour
 
     // ── Game-over tracking ───────────────────────────────────
     private readonly List<Fruit> activeFruits = new();
+    private bool gameOverInProgress;
+    private bool rewardedContinuePending;
+    private bool rewardedContinueEarned;
+    private float timeScaleBeforeGameOver = 1f;
+
+    public bool IsRewardedContinuePending => rewardedContinuePending;
 
     // ─────────────────────────────────────────────────────────
     public void Initialize(ScoreManager sm, FruitSpawner sp,
@@ -30,12 +39,18 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         scoreMgr = sm; spawner = sp; uiMgr = ui; ssMgr = ss;
+        StartCoroutine(TimedInterstitialRoutine());
         StartGame();
     }
 
     // ── Public API ────────────────────────────────────────────
     public void StartGame()
     {
+        Time.timeScale = 1f;
+        gameOverInProgress = false;
+        rewardedContinuePending = false;
+        rewardedContinueEarned = false;
+
         // Return all active fruits to pool before clearing
         var pool = FruitPool.Instance;
         if (pool != null)
@@ -59,52 +74,173 @@ public class GameManager : MonoBehaviour
 
     public void TriggerGameOver()
     {
-        if (State == GameState.GameOver) return;
+        if (State != GameState.Playing || gameOverInProgress) return;
+
+        gameOverInProgress = true;
+        timeScaleBeforeGameOver = Time.timeScale > 0f ? Time.timeScale : 1f;
+        Time.timeScale = 0f;
+        SetState(GameState.GameOver);
+        GoogleAdMobController.Instance?.LoadRewarded();
         StartCoroutine(GameOverRoutine());
+    }
+
+    public bool TryContinueWithRewarded()
+    {
+        if (State != GameState.GameOver || rewardedContinuePending)
+            return false;
+
+        RemoveFruitsOutsideBasket();
+
+        GoogleAdMobController adMob = GoogleAdMobController.Instance;
+        if (adMob == null || !adMob.IsRewardedConfigured)
+        {
+            Debug.LogWarning("[Game] Rewarded continue is unavailable: no ad unit ID is configured.");
+            return false;
+        }
+
+        if (!adMob.IsRewardedReady())
+        {
+            adMob.LoadRewarded();
+            return false;
+        }
+
+        rewardedContinuePending = true;
+        rewardedContinueEarned = false;
+
+        if (adMob.ShowRewarded(OnRewardedContinueEarned, OnRewardedContinueClosed))
+            return true;
+
+        rewardedContinuePending = false;
+        return false;
+    }
+
+    private void OnRewardedContinueEarned(GoogleMobileAds.Api.Reward _)
+    {
+        rewardedContinueEarned = true;
+    }
+
+    private void OnRewardedContinueClosed()
+    {
+        bool shouldContinue = rewardedContinuePending && rewardedContinueEarned;
+        rewardedContinuePending = false;
+        rewardedContinueEarned = false;
+
+        if (shouldContinue)
+            ContinueAfterRewarded();
+    }
+
+    private void ContinueAfterRewarded()
+    {
+        if (State != GameState.GameOver)
+            return;
+
+        FruitPool pool = FruitPool.Instance;
+        for (int i = activeFruits.Count - 1; i >= 0; i--)
+        {
+            Fruit fruit = activeFruits[i];
+            if (fruit == null || !fruit.gameObject.activeSelf)
+                continue;
+
+            pool?.DowngradeOneTier(fruit);
+        }
+
+        Time.timeScale = timeScaleBeforeGameOver;
+        gameOverInProgress = false;
+        uiMgr.HideGameOver();
+        SetState(GameState.Playing);
     }
 
     public void RegisterFruit  (Fruit f) { if (!activeFruits.Contains(f)) activeFruits.Add(f); }
     public void UnregisterFruit(Fruit f) => activeFruits.Remove(f);
+
+    private void RemoveFruitsOutsideBasket()
+    {
+        FruitPool pool = FruitPool.Instance;
+        Fruit[] sceneFruits = FindObjectsByType<Fruit>(FindObjectsSortMode.None);
+
+        foreach (Fruit fruit in sceneFruits)
+        {
+            if (fruit == null || fruit.IsHeld || !IsOutsideBasket(fruit))
+                continue;
+
+            if (pool != null)
+                pool.Return(fruit);
+            else
+            {
+                UnregisterFruit(fruit);
+                Destroy(fruit.gameObject);
+            }
+        }
+    }
 
     // ── Game-over line check (every frame) ──────────────────
     private void Update()
     {
         if (State != GameState.Playing) return;
 
-        bool fallenOut = false;
-        foreach (var f in activeFruits)
+        for (int i = activeFruits.Count - 1; i >= 0; i--)
         {
-            if (f == null || !f.gameObject.activeSelf) continue;
-            if (f.IsHeld) continue;
-
-            // 1. Check if fruit fell significantly below the screen (original safety)
-            if (f.transform.position.y < GameConfig.BottomCenterY - 10f)
+            Fruit fruit = activeFruits[i];
+            if (fruit == null || !fruit.gameObject.activeSelf)
             {
-                fallenOut = true;
-                break;
+                activeFruits.RemoveAt(i);
+                continue;
             }
 
-            // 2. Check if fruit is outside basket width and falls 1 unit below the basket top
-            float basketTop = GameConfig.GameOverLineY + 3f;
-            if (Mathf.Abs(f.transform.position.x) > GameConfig.HalfWidth && f.transform.position.y < basketTop - 1f)
+            if (fruit.IsHeld) continue;
+
+            if (IsBelowBasketFloor(fruit))
             {
-                fallenOut = true;
-                break;
+                TriggerGameOver();
+                return;
             }
         }
+    }
 
-        if (fallenOut) TriggerGameOver();
+    private static bool IsOutsideBasket(Fruit fruit)
+    {
+        float x = fruit.transform.position.x;
+        return x < -GameConfig.HalfWidth || x > GameConfig.HalfWidth;
+    }
+
+    private static bool IsBelowBasketFloor(Fruit fruit)
+    {
+        return fruit.WorldBounds.max.y < GameConfig.FloorY;
     }
 
     // ── Helpers ───────────────────────────────────────────────
     private IEnumerator GameOverRoutine()
     {
-        GoogleAdMobController.Instance?.ShowInterstitialAd();
-        SetState(GameState.GameOver);
         AudioManager.Instance?.PlayGameOver();
         yield return new WaitForEndOfFrame();
         var shot = ssMgr.Capture();
         uiMgr.ShowGameOver(shot, scoreMgr.CurrentScore, scoreMgr.BestScore);
+    }
+
+    private IEnumerator TimedInterstitialRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSecondsRealtime(
+                InterstitialIntervalSeconds - InterstitialWarningSeconds);
+
+            while (State != GameState.Playing)
+                yield return new WaitForSecondsRealtime(0.25f);
+
+            for (int seconds = InterstitialWarningSeconds; seconds > 0; seconds--)
+            {
+                if (State != GameState.Playing)
+                    break;
+
+                uiMgr.ShowInterstitialWarning(seconds);
+                yield return new WaitForSecondsRealtime(1f);
+            }
+
+            uiMgr.HideInterstitialWarning();
+
+            if (State == GameState.Playing)
+                GoogleAdMobController.Instance?.ShowInterstitialAd();
+        }
     }
 
     private void SetState(GameState s) { State = s; OnStateChanged?.Invoke(s); }

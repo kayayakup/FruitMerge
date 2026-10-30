@@ -24,6 +24,12 @@ public class UIManager : MonoBehaviour
     private GameObject   goPanel;
     private TMP_Text     goScore, goBest;
     private RawImage     goShot;
+    private Button       rewardedContinueButton;
+    private TMP_Text     rewardedContinueLabel;
+
+    // ── Timed interstitial warning ────────────────────────────
+    private GameObject interstitialWarningPanel;
+    private TMP_Text   interstitialWarningText;
 
     // ── Canvas ────────────────────────────────────────────────
     private Canvas       canvas;
@@ -37,6 +43,7 @@ public class UIManager : MonoBehaviour
         BuildSafeArea();
         BuildHUD();
         BuildNextPreview();
+        BuildInterstitialWarning();
         BuildGameOverPanel();
         scoreMgr.OnScoreChanged += (cur, best) =>
         {
@@ -72,9 +79,32 @@ public class UIManager : MonoBehaviour
         goScore.text   = score.ToString();
         goBest.text    = best.ToString();
         goPanel.SetActive(true);
+        GoogleAdMobController.Instance?.LoadRewarded();
+        RefreshRewardedContinueButton();
     }
 
     public void HideGameOver() => goPanel?.SetActive(false);
+
+    public void ShowInterstitialWarning(int seconds)
+    {
+        if (interstitialWarningPanel == null)
+            return;
+
+        interstitialWarningText.text = $"REKLAM {seconds} SANİYE İÇİNDE";
+        interstitialWarningPanel.SetActive(true);
+    }
+
+    public void HideInterstitialWarning()
+    {
+        if (interstitialWarningPanel != null)
+            interstitialWarningPanel.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (goPanel != null && goPanel.activeSelf)
+            RefreshRewardedContinueButton();
+    }
 
     // ── Canvas ───────────────────────────────────────────────
     private void BuildCanvas()
@@ -208,6 +238,27 @@ public class UIManager : MonoBehaviour
         ri.offsetMin = ri.offsetMax = Vector2.zero;
     }
 
+    private void BuildInterstitialWarning()
+    {
+        interstitialWarningPanel = MakeRectGO("InterstitialWarning", canvas.transform);
+        var rt = (RectTransform)interstitialWarningPanel.transform;
+        rt.anchorMin = rt.anchorMax = new Vector2(0.5f, 0.82f);
+        rt.pivot = new Vector2(0.5f, 0.5f);
+        rt.sizeDelta = new Vector2(420, 72);
+
+        var background = interstitialWarningPanel.AddComponent<Image>();
+        background.color = new Color(0.08f, 0.07f, 0.12f, 0.92f);
+
+        interstitialWarningText = MakeLabel(
+            "InterstitialWarningText", Vector2.zero, Vector2.zero,
+            TextAnchor.MiddleCenter, 22, interstitialWarningPanel.transform);
+        interstitialWarningText.fontStyle = FontStyles.Bold;
+        interstitialWarningText.alignment = TextAlignmentOptions.Center;
+        FullStretch((RectTransform)interstitialWarningText.transform);
+
+        interstitialWarningPanel.SetActive(false);
+    }
+
     // ── Premium Game-over Panel ──────────────────────────────
     private void BuildGameOverPanel()
     {
@@ -324,7 +375,28 @@ public class UIManager : MonoBehaviour
         gbRt.pivot = new Vector2(1, 0);
         gbRt.sizeDelta = new Vector2(0, 40);
 
-        // ── Play Again button (aynı kalır) ──
+        // ── Rewarded continue button ──
+        var continueGO = MakeRectGO("RewardedContinueBtn", card.transform);
+        var continueRt = (RectTransform)continueGO.transform;
+        continueRt.anchorMin = new Vector2(0.12f, 0.16f);
+        continueRt.anchorMax = new Vector2(0.88f, 0.26f);
+        continueRt.offsetMin = continueRt.offsetMax = Vector2.zero;
+        var continueImg = continueGO.AddComponent<Image>();
+        continueImg.color = new Color(0.20f, 0.62f, 0.34f);
+        rewardedContinueButton = continueGO.AddComponent<Button>();
+        rewardedContinueButton.targetGraphic = continueImg;
+        rewardedContinueButton.onClick.AddListener(OnRewardedContinueClicked);
+
+        rewardedContinueLabel = MakeLabel(
+            "RewardedContinueTxt", Vector2.zero, Vector2.zero,
+            TextAnchor.MiddleCenter, 20, continueGO.transform);
+        rewardedContinueLabel.text = "CONTINUE (WATCH AD)";
+        rewardedContinueLabel.fontStyle = FontStyles.Bold;
+        rewardedContinueLabel.raycastTarget = false;
+        rewardedContinueLabel.alignment = TextAlignmentOptions.Center;
+        FullStretch((RectTransform)rewardedContinueLabel.transform);
+
+        // ── Play Again button ──
         var btnGO = MakeRectGO("RestartBtn", card.transform);
         var btnRt = (RectTransform)btnGO.transform;
         btnRt.anchorMin = new Vector2(0.12f, 0.04f); btnRt.anchorMax = new Vector2(0.88f, 0.14f);
@@ -351,8 +423,55 @@ public class UIManager : MonoBehaviour
     private void OnPlayAgainClicked()
     {
         AudioManager.Instance?.PlayButtonClick();
+        Time.timeScale = 1f;
         // Scene reload — guaranteed clean state
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void OnRewardedContinueClicked()
+    {
+        AudioManager.Instance?.PlayButtonClick();
+        GameManager.Instance?.TryContinueWithRewarded();
+        RefreshRewardedContinueButton();
+    }
+
+    private void RefreshRewardedContinueButton()
+    {
+        if (rewardedContinueButton == null || rewardedContinueLabel == null)
+            return;
+
+        GoogleAdMobController adMob = GoogleAdMobController.Instance;
+        if (adMob == null || !adMob.IsRewardedConfigured)
+        {
+            rewardedContinueLabel.text = "REWARDED AD UNAVAILABLE";
+            rewardedContinueButton.interactable = false;
+            return;
+        }
+
+        if (GameManager.Instance != null &&
+            GameManager.Instance.IsRewardedContinuePending)
+        {
+            rewardedContinueLabel.text = "WAITING FOR REWARDED AD...";
+            rewardedContinueButton.interactable = false;
+            return;
+        }
+
+        if (adMob.IsRewardedReady())
+        {
+            rewardedContinueLabel.text = "CONTINUE (WATCH AD)";
+            rewardedContinueButton.interactable = true;
+            return;
+        }
+
+        if (adMob.IsRewardedRequestPending())
+        {
+            rewardedContinueLabel.text = "LOADING REWARDED AD...";
+            rewardedContinueButton.interactable = false;
+            return;
+        }
+
+        rewardedContinueLabel.text = "RETRY REWARDED AD";
+        rewardedContinueButton.interactable = true;
     }
 
     // ── UI Helpers ───────────────────────────────────────────

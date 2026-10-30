@@ -73,6 +73,25 @@ public class FruitPool : MonoBehaviour
     // ── Public accessors ─────────────────────────────────────
     public Sprite GetSprite(FruitType type) => sprites[type];
 
+    public bool DowngradeOneTier(Fruit fruit)
+    {
+        if (fruit == null || fruit.FruitType == FruitType.Cherry)
+            return false;
+
+        FruitType lowerType = (FruitType)((int)fruit.FruitType - 1);
+        Sprite sprite = sprites[lowerType];
+        float colliderRadius = hasCustomSprite[lowerType]
+            ? sprite.bounds.size.x * 0.5f
+            : 1f;
+
+        fruit.ChangeType(
+            FruitDatabase.Get(lowerType),
+            scaleFactors[lowerType],
+            sprite,
+            colliderRadius);
+        return true;
+    }
+
     // ── Pool API ──────────────────────────────────────────────
     public Fruit Get(FruitType type)
     {
