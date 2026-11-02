@@ -23,7 +23,7 @@ public class Fruit : MonoBehaviour
     private MergeManager   mergeMgr;
 
     // ── Scale factor (set by FruitPool based on sprite size) ──
-    private float _scaleFactor = 1.5f;
+    public float _scaleFactor = 1.5f;
 
     // ── Private ───────────────────────────────────────────────
     private float spawnTime;
